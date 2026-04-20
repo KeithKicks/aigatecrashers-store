@@ -440,7 +440,9 @@ input, textarea, select {
   margin-bottom: 24px;
 }
 
-.hero h1 {
+/* Legacy pre-2026-revamp hero rules — scoped out so they don't fight
+   the new .hero-title / .hero-sub selectors. Kept in place for reference. */
+.legacy-hero h1 {
   font-size: 3rem;
   font-weight: 900;
   color: var(--text-white);
@@ -449,14 +451,14 @@ input, textarea, select {
   letter-spacing: -0.03em;
 }
 
-.hero h1 span {
+.legacy-hero h1 span {
   background: linear-gradient(135deg, var(--primary-bright), var(--primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.hero p {
+.legacy-hero p {
   font-size: 1.15rem;
   color: var(--text-body);
   max-width: 600px;
@@ -2239,11 +2241,11 @@ body.cart-open {
     padding: 72px 0 60px;
   }
 
-  .hero h1 {
+  .legacy-hero h1 {
     font-size: 2rem;
   }
 
-  .hero p {
+  .legacy-hero p {
     font-size: 1rem;
   }
 
