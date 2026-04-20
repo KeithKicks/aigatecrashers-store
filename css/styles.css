@@ -4492,3 +4492,149 @@ article.blog-article blockquote,
 
 /* Polish legacy breadcrumbs container spacing */
 .breadcrumbs.container{ margin: 24px auto 0; }
+
+/* =============================================================
+   Phase 5g: Nav starts dark on every non-light page
+   Previously .nav-wrap was transparent until .scrolled. On pages
+   without a dark hero (blog articles, etc.) that made the nav
+   read as "light" until you scrolled. Give it a dark-tinted
+   glass background from load on all pages except those that
+   opt into the light treatment.
+   ============================================================= */
+body:not([data-hero-mode="light"]) .nav-wrap{
+  background: color-mix(in oklch, var(--bg-dark) 72%, transparent);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  border-bottom-color: color-mix(in oklch, var(--line-dark) 40%, transparent);
+}
+body:not([data-hero-mode="light"]) .nav-wrap.scrolled{
+  background: color-mix(in oklch, var(--bg-dark) 88%, transparent);
+  border-bottom-color: var(--line-dark);
+}
+
+/* =============================================================
+   Phase 5g: Blog page polish
+   - Related Posts grid: proper layout + spacing (was cramped)
+   - Blog index cards: shorter, less aggressive stretching
+   ============================================================= */
+
+/* Blog article page — Related Posts section */
+.related-posts{
+  margin-top: 72px;
+  padding-top: 56px;
+  padding-bottom: 24px;
+  border-top: 1px solid var(--line);
+}
+.related-posts h3{
+  font-family: var(--f-serif);
+  font-weight: 400;
+  font-size: clamp(26px, 3vw, 34px);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 28px;
+}
+.related-posts .blog-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+.related-posts .blog-card{
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s var(--ease), border-color .2s var(--ease), box-shadow .25s var(--ease);
+  text-decoration: none;
+  color: inherit;
+}
+.related-posts .blog-card:hover{
+  transform: translateY(-2px);
+  border-color: color-mix(in oklch, var(--accent) 28%, var(--line));
+  box-shadow: var(--shadow);
+}
+.related-posts .blog-card-image{
+  aspect-ratio: 16 / 9;
+  background:
+    repeating-linear-gradient(45deg,
+      color-mix(in oklch, var(--accent) 10%, var(--bg-panel)) 0 18px,
+      color-mix(in oklch, var(--accent) 16%, var(--bg-panel)) 18px 36px);
+}
+.related-posts .blog-card-image--business{
+  background:
+    repeating-linear-gradient(45deg,
+      color-mix(in oklch, var(--accent) 10%, var(--bg-panel)) 0 18px,
+      color-mix(in oklch, var(--accent) 18%, var(--bg-panel)) 18px 36px);
+}
+.related-posts .blog-card-image--money{
+  background:
+    repeating-linear-gradient(45deg,
+      color-mix(in oklch, var(--warm) 12%, var(--bg-panel)) 0 18px,
+      color-mix(in oklch, var(--warm) 22%, var(--bg-panel)) 18px 36px);
+}
+.related-posts .blog-card-image--prompts{
+  background:
+    repeating-linear-gradient(45deg,
+      color-mix(in oklch, oklch(0.65 0.2 290) 12%, var(--bg-panel)) 0 18px,
+      color-mix(in oklch, oklch(0.65 0.2 290) 22%, var(--bg-panel)) 18px 36px);
+}
+.related-posts .blog-card-body{
+  padding: 20px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.related-posts .blog-card-tag{
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+}
+.related-posts .blog-card h4,
+.related-posts .blog-card h3:not(.blog-title){
+  font-family: var(--f-sans);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--ink);
+  margin: 2px 0 4px;
+}
+.related-posts .blog-card-read{
+  font-size: 12.5px;
+  color: var(--ink-muted);
+  margin-top: 6px;
+}
+
+/* Blog index cards — less tall, cleaner rhythm */
+.blog-index-card{
+  background: var(--bg) !important;
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius-lg) !important;
+}
+.blog-index-card:hover{
+  border-color: color-mix(in oklch, var(--accent) 28%, var(--line)) !important;
+  box-shadow: var(--shadow) !important;
+}
+.blog-index-card-body{
+  padding: 22px 24px 20px !important;
+}
+.blog-index-card h2{
+  font-size: 1.1rem !important;
+  color: var(--ink) !important;
+  line-height: 1.3 !important;
+  margin-bottom: 10px !important;
+}
+.blog-index-card p{
+  font-size: 0.92rem !important;
+  color: var(--ink-soft) !important;
+  line-height: 1.55 !important;
+  /* Don't stretch cards to match each other — let them size to content */
+  flex: 0 0 auto !important;
+}
+.blog-index-card-footer{
+  margin-top: 14px !important;
+  padding-top: 12px !important;
+}
