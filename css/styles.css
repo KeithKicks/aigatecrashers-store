@@ -3494,6 +3494,15 @@ body[data-hero-mode="light"] .nav-burger{background:var(--bg-panel);border-color
 .hero[data-mode="dark"] h1,
 .hero[data-mode="dark"] h2,
 .hero[data-mode="dark"] h3{ color: #fff !important; }
+
+/* Dark surfaces elsewhere (CTA box, train-visual feature card,
+   any .hero-like block). Legacy h1-h6 rule sets navy which is invisible
+   on dark — force white explicitly. */
+.cta-box h1, .cta-box h2, .cta-box h3,
+.cta-lead h1, .cta-lead h2, .cta-lead h3,
+.train-visual h1, .train-visual h2, .train-visual h3{
+  color: #fff !important;
+}
 .hero[data-mode="dark"] .btn-ghost{border-color: oklch(0.35 0.01 270);color:#fff}
 .hero[data-mode="dark"] .btn-ghost:hover{background: oklch(0.22 0.012 270); border-color: oklch(0.5 0.01 270)}
 .hero[data-mode="dark"] .btn-primary{background:#fff;color:var(--ink);box-shadow:0 8px 22px -10px var(--accent-glow)}
