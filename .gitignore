@@ -1,0 +1,41 @@
+# ============================================================
+# AI Gatecrashers Store — .gitignore
+# ============================================================
+
+# OS
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Claude Code agent workspaces & local settings
+.claude/worktrees/
+.claude/settings.local.json
+.claude/launch.json
+
+# Local archives (large, regenerable)
+assets/aigatecrashers-store*.tar.gz
+assets/aigatecrashers-store*.zip
+assets/prompt-pack-deliverables.tar.gz
+assets/zildSivd
+
+# Paid product deliverables — NEVER commit to public repo
+deliverables/
+
+# Legacy reference assets (original brand kit, kept locally only)
+assets/reference/
+
+# Standalone md content that's out of repo scope
+assets/marketing-strategy-aigatecrashers.md
+assets/notion-deep-dive-report.md
+assets/email-sequences/
+assets/prompt-pack-deliverables/
+assets/prompt-packs/
+
+# Node (if ever used)
+node_modules/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo

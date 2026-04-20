@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Don't index this page -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <title>Thanks for your purchase — AI Gatecrashers</title>
+  <meta name="description" content="Your order is in. Check your inbox for your download link and next-step instructions." />
+  <link rel="canonical" href="https://aigatecrashers.com/thank-you.html" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css?v=2026-04-20" />
+
+  <style>
+    .ty-wrap {
+      min-height: calc(100vh - 120px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 40%, rgba(15, 164, 217, 0.08) 0%, transparent 70%),
+        var(--bg-body);
+    }
+    .ty-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      max-width: 620px;
+      width: 100%;
+      padding: 52px 44px;
+      text-align: center;
+      box-shadow: 0 12px 40px rgba(15, 28, 63, 0.08);
+    }
+    .ty-check {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-bright), var(--primary));
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 24px rgba(15, 164, 217, 0.28);
+    }
+    .ty-card h1 {
+      font-size: 2rem;
+      color: var(--text-heading);
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .ty-card p.lead {
+      font-size: 1.05rem;
+      color: var(--text-body);
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+    .ty-steps {
+      text-align: left;
+      background: var(--bg-section);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin: 0 auto 28px;
+    }
+    .ty-steps h2 {
+      font-size: 0.82rem;
+      color: var(--primary);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .ty-steps ol {
+      list-style: none;
+      counter-reset: step;
+      padding: 0;
+      margin: 0;
+    }
+    .ty-steps ol li {
+      position: relative;
+      counter-increment: step;
+      padding: 10px 0 10px 40px;
+      color: var(--text-body);
+      font-size: 0.98rem;
+      line-height: 1.55;
+      border-bottom: 1px solid var(--border);
+    }
+    .ty-steps ol li:last-child { border-bottom: none; }
+    .ty-steps ol li::before {
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ty-ctas {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+    .ty-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--primary-bright), var(--primary));
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 14px 26px;
+      border-radius: var(--radius-btn);
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(15, 164, 217, 0.22);
+      transition: transform 0.2s ease;
+    }
+    .ty-primary:hover { transform: translateY(-1px); color: #fff; }
+    .ty-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--text-heading);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 13px 25px;
+      border-radius: var(--radius-btn);
+      border: 1.5px solid var(--border);
+      text-decoration: none;
+      transition: border-color 0.2s ease;
+    }
+    .ty-secondary:hover { border-color: var(--primary); color: var(--text-heading); }
+    .ty-footer-note {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-top: 6px;
+    }
+    .ty-footer-note a { color: var(--primary); text-decoration: none; }
+    .ty-footer-note a:hover { text-decoration: underline; }
+
+    .ty-order {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+    }
+    .ty-order strong { color: var(--text-heading); font-weight: 600; }
+
+    @media (max-width: 560px) {
+      .ty-card { padding: 36px 24px; }
+      .ty-card h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body data-hero-mode="light">
+  <!-- SHELL:HEADER:START -->
+<div class="nav-wrap" id="navWrap">
+  <div class="container">
+    <div class="nav">
+      <a href="/" class="brand">
+        <span class="brand-mark"></span>
+        <span class="wordmark" style="font-family: Helvetica"><span class="ai">Ai</span>GATECRASHERS</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/#start">Start here</a>
+        <a href="/#trainings">Trainings</a>
+        <a href="/store/">Store</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#usecases" class="live">For non-profits</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="/store/" class="nav-search" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          Search
+          <kbd>⌘K</kbd>
+        </a>
+        <a href="mailto:hello@aigatecrashers.com" class="nav-login">Sign in</a>
+        <a href="/#newsletter" class="nav-cta">
+          Get 50 free prompts
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-burger" aria-label="Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SHELL:HEADER:END -->
+
+  <main class="ty-wrap">
+    <div class="ty-card">
+      <div class="ty-check">✓</div>
+      <h1>You're in. Thank you.</h1>
+      <p class="lead">Your order went through and you're on the list. Your download and onboarding email should land in your inbox within a minute or two.</p>
+
+      <div class="ty-steps">
+        <h2>What happens next</h2>
+        <ol>
+          <li><strong>Check your inbox.</strong> Look for an email from <em>hello@aigatecrashers.com</em> with your download link(s). If you don't see it in 5 minutes, check spam.</li>
+          <li><strong>Open the "Use this first" section.</strong> Every product starts with a quick-start so you can get a win in under an hour.</li>
+          <li><strong>Reply to the welcome email if you hit a wall.</strong> A real human (me, Keith) reads and answers every reply within 1 business day.</li>
+        </ol>
+      </div>
+
+      <div class="ty-ctas">
+        <a href="/store/" class="ty-primary">Browse more products</a>
+        <a href="/blog/" class="ty-secondary">Read the blog</a>
+      </div>
+
+      <p class="ty-footer-note">
+        Need help? Email <a href="mailto:hello@aigatecrashers.com">hello@aigatecrashers.com</a>.
+        Every order has a 7-day, no-questions refund.
+      </p>
+
+      <p class="ty-order" id="ty-order-ref"></p>
+    </div>
+  </main>
+
+  <script>
+    // Stripe appends ?session_id=... to the success URL. Show it for reference.
+    (function () {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var sid = params.get('session_id');
+        if (sid) {
+          var el = document.getElementById('ty-order-ref');
+          if (el) el.innerHTML = 'Order reference: <strong>' + sid.replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 20) + '…</strong>';
+        }
+      } catch (e) { /* no-op */ }
+    })();
+  </script>
+</body>
+</html>

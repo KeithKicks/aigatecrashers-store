@@ -19,6 +19,9 @@
   function init() {
     setupCart();
     setupFilters();
+    setupSearch();
+    setupSort();
+    setupCheckout();
     setupFAQ();
     setupMobileMenu();
     setupNewsletter();
@@ -36,10 +39,11 @@
     // Wire up all add-to-cart buttons
     document.querySelectorAll('.js-add-to-cart').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var id    = btn.dataset.productId;
-        var name  = btn.dataset.productName;
-        var price = parseFloat(btn.dataset.productPrice);
-        addToCart(id, name, price);
+        var id           = btn.dataset.productId;
+        var name         = btn.dataset.productName;
+        var price        = parseFloat(btn.dataset.productPrice);
+        var checkoutUrl  = btn.dataset.checkoutUrl || null;
+        addToCart(id, name, price, checkoutUrl);
       });
     });
 
@@ -83,8 +87,9 @@
    * @param {string} id
    * @param {string} name
    * @param {number} price
+   * @param {string|null} [checkoutUrl] Stripe Payment Link URL for this product.
    */
-  function addToCart(id, name, price) {
+  function addToCart(id, name, price, checkoutUrl) {
     var existing = cart.find(function (item) { return item.id === id; });
 
     if (existing) {
@@ -93,7 +98,7 @@
       return;
     }
 
-    cart.push({ id: id, name: name, price: price });
+    cart.push({ id: id, name: name, price: price, checkoutUrl: checkoutUrl || null });
     updateCartUI();
     openCart();
   }
@@ -103,10 +108,11 @@
    * @param {string} id
    * @param {string} name
    * @param {number} price
+   * @param {string|null} [checkoutUrl]
    */
-  function addToCartSilent(id, name, price) {
+  function addToCartSilent(id, name, price, checkoutUrl) {
     if (!cart.find(function (item) { return item.id === id; })) {
-      cart.push({ id: id, name: name, price: price });
+      cart.push({ id: id, name: name, price: price, checkoutUrl: checkoutUrl || null });
       updateCartUI();
     }
   }
@@ -196,7 +202,7 @@
   }
 
   // ================================================================
-  // CATEGORY FILTERS
+  // CATEGORY FILTERS (legacy single-tag data-category + new multi-tag data-tags)
   // ================================================================
 
   function setupFilters() {
@@ -207,7 +213,7 @@
 
     pills.forEach(function (pill) {
       pill.addEventListener('click', function () {
-        var category = pill.dataset.category || 'all';
+        var category = pill.dataset.filter || pill.dataset.category || 'all';
 
         // Update active state
         pills.forEach(function (p) { p.classList.remove('active'); });
@@ -215,24 +221,177 @@
 
         // Filter product cards with a smooth fade
         cards.forEach(function (card) {
-          var match = category === 'all' || card.dataset.category === category;
+          var match = cardMatchesCategory(card, category);
+          applyCardVisibility(card, match);
+        });
+      });
+    });
+  }
 
-          if (match) {
-            card.style.display = '';
-            // Small rAF delay so the display:'' takes effect before opacity
-            requestAnimationFrame(function () {
-              card.style.opacity = '1';
-              card.style.transform = '';
-            });
-          } else {
-            card.style.opacity = '0';
-            card.style.transform = 'scale(0.97)';
-            setTimeout(function () {
-              if (card.style.opacity === '0') {
-                card.style.display = 'none';
-              }
-            }, 300);
+  /**
+   * Returns true if a product card matches the given category slug.
+   * Supports multi-tag via `data-tags="tag1,tag2"` and legacy single `data-category`.
+   */
+  function cardMatchesCategory(card, category) {
+    if (category === 'all') return true;
+    var tagsAttr = (card.dataset.tags || card.dataset.category || '').toLowerCase();
+    var tags = tagsAttr.split(',').map(function (t) { return t.trim(); });
+    return tags.indexOf(category) !== -1;
+  }
+
+  function applyCardVisibility(card, visible) {
+    if (visible) {
+      card.classList.remove('hidden');
+      card.style.display = '';
+      requestAnimationFrame(function () {
+        card.style.opacity = '1';
+        card.style.transform = '';
+      });
+    } else {
+      card.style.opacity = '0';
+      card.style.transform = 'scale(0.97)';
+      setTimeout(function () {
+        if (card.style.opacity === '0') {
+          card.style.display = 'none';
+          card.classList.add('hidden');
+        }
+      }, 250);
+    }
+  }
+
+  // ================================================================
+  // SEARCH (client-side filter over product name + tags + description)
+  // ================================================================
+
+  function setupSearch() {
+    var input = document.getElementById('store-search-input');
+    if (!input) return;
+
+    var cards = document.querySelectorAll('.product-card');
+    var empty = document.getElementById('store-empty');
+
+    function doSearch() {
+      var q = (input.value || '').trim().toLowerCase();
+      var anyVisible = false;
+
+      cards.forEach(function (card) {
+        if (q === '') {
+          applyCardVisibility(card, true);
+          anyVisible = true;
+          return;
+        }
+        var title = (card.querySelector('.card-title') || {}).textContent || '';
+        var desc  = (card.querySelector('.card-desc')  || {}).textContent || '';
+        var tags  = card.dataset.tags || '';
+        var hay = (title + ' ' + desc + ' ' + tags).toLowerCase();
+        var match = hay.indexOf(q) !== -1;
+        applyCardVisibility(card, match);
+        if (match) anyVisible = true;
+      });
+
+      if (empty) empty.style.display = (q !== '' && !anyVisible) ? 'block' : 'none';
+
+      // Hide entire category sections whose grids have no visible cards
+      document.querySelectorAll('.category-section').forEach(function (section) {
+        var visibleInSection = section.querySelectorAll('.product-card:not(.hidden)').length;
+        section.style.display = (q !== '' && visibleInSection === 0) ? 'none' : '';
+      });
+    }
+
+    // Debounced input handler
+    var t = null;
+    input.addEventListener('input', function () {
+      clearTimeout(t);
+      t = setTimeout(doSearch, 120);
+    });
+
+    // Clear on ESC
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        input.value = '';
+        doSearch();
+      }
+    });
+  }
+
+  // ================================================================
+  // SORT (most popular / price asc / price desc / newest)
+  // ================================================================
+
+  function setupSort() {
+    var select = document.getElementById('store-sort-select');
+    if (!select) return;
+
+    select.addEventListener('change', function () {
+      var mode = select.value;
+      document.querySelectorAll('[data-category-grid]').forEach(function (grid) {
+        var cards = Array.prototype.slice.call(grid.querySelectorAll('.product-card'));
+        cards.sort(function (a, b) { return sortFn(a, b, mode); });
+        cards.forEach(function (c) { grid.appendChild(c); });
+      });
+    });
+  }
+
+  function sortFn(a, b, mode) {
+    switch (mode) {
+      case 'price-asc':
+        return num(a, 'price') - num(b, 'price');
+      case 'price-desc':
+        return num(b, 'price') - num(a, 'price');
+      case 'newest':
+        return (b.dataset.date || '').localeCompare(a.dataset.date || '');
+      case 'popular':
+      default:
+        return num(b, 'popularity') - num(a, 'popularity');
+    }
+  }
+
+  function num(el, key) {
+    var v = parseFloat(el.dataset[key]);
+    return isNaN(v) ? 0 : v;
+  }
+
+  // ================================================================
+  // CHECKOUT (Stripe Payment Links)
+  //
+  // Each product's Add-to-Cart button carries data-checkout-url pointing
+  // at its Stripe Payment Link. The cart's Checkout button routes to that
+  // URL when the cart has exactly one item. Multi-item carts get a note
+  // until a backend is wired up.
+  // ================================================================
+
+  function setupCheckout() {
+    var btns = document.querySelectorAll('.cart-checkout, .js-checkout');
+    if (!btns.length) return;
+
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (cart.length === 0) return;
+
+        if (cart.length === 1) {
+          var item = cart[0];
+          if (item.checkoutUrl) {
+            window.location.href = item.checkoutUrl;
+            return;
           }
+          // Fallback: no Stripe URL attached — send to support
+          alert('This product is not yet wired up for instant checkout. Email Support@aigatecrashers.com and we will invoice you.');
+          return;
+        }
+
+        // Multi-item: Stripe Payment Links are 1-item per link. For now, open each
+        // in a new tab so the customer completes them in sequence. We'll replace
+        // this with a single bundled checkout once a backend exists.
+        var confirmed = confirm(
+          'You have ' + cart.length + ' items in your cart.\n\n' +
+          'Each will open in a new tab for separate checkout. ' +
+          'Email us if you\u2019d prefer a single invoice.\n\nContinue?'
+        );
+        if (!confirmed) return;
+
+        cart.forEach(function (item) {
+          if (item.checkoutUrl) window.open(item.checkoutUrl, '_blank');
         });
       });
     });
@@ -262,11 +421,14 @@
 
   function setupMobileMenu() {
     var toggle = document.querySelector('.mobile-menu-toggle');
-    var nav    = document.querySelector('.nav-links');
+    // Prefer canonical `.mobile-nav` (dropdown dedicated to mobile).
+    // Fall back to legacy `.nav-links` for older pages.
+    var nav    = document.querySelector('.mobile-nav') || document.querySelector('.nav-links');
 
     if (!toggle || !nav) return;
 
-    toggle.addEventListener('click', function () {
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
       var isOpen = nav.classList.toggle('active');
       toggle.classList.toggle('active', isOpen);
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
@@ -333,15 +495,16 @@
   function setupOrderBumps() {
     document.querySelectorAll('.order-bump input[type="checkbox"]').forEach(function (cb) {
       cb.addEventListener('change', function () {
-        var bump  = cb.closest('.order-bump');
-        var id    = cb.dataset.bumpId;
-        var name  = cb.dataset.bumpName;
-        var price = parseFloat(cb.dataset.bumpPrice);
+        var bump         = cb.closest('.order-bump');
+        var id           = cb.dataset.bumpId;
+        var name         = cb.dataset.bumpName;
+        var price        = parseFloat(cb.dataset.bumpPrice);
+        var checkoutUrl  = cb.dataset.checkoutUrl || null;
 
         bump.classList.toggle('checked', cb.checked);
 
         if (cb.checked) {
-          addToCartSilent(id, name, price);
+          addToCartSilent(id, name, price, checkoutUrl);
         } else {
           var idx = cart.findIndex(function (item) { return item.id === id; });
           if (idx > -1) removeFromCart(idx);

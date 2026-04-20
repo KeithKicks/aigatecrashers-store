@@ -5,32 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO Meta -->
-  <title>AI Gatecrashers — AI Tools, Prompt Packs &amp; Courses That Actually Work</title>
-  <meta name="description" content="Premium ChatGPT prompt packs, AI courses, and business kits built for creators and entrepreneurs. Practical tools — not hype. From $7." />
+  <title>AI Gatecrashers — AI for humans, not hype</title>
+  <meta name="description" content="Plain-English AI training, prompt packs, and playbooks that help small businesses and non-profits use AI to save time, win grants, and stop guessing. No coding, no jargon. Built by Keith Allen Schuh." />
   <link rel="canonical" href="https://aigatecrashers.com/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aigatecrashers.com/" />
-  <meta property="og:title" content="AI Gatecrashers — AI Tools, Prompt Packs &amp; Courses That Actually Work" />
-  <meta property="og:description" content="Premium ChatGPT prompt packs, AI courses, and business kits built for creators and entrepreneurs. Practical tools — not hype. From $7." />
-  <meta property="og:image" content="https://aigatecrashers.com/assets/og-image.jpg" />
+  <meta property="og:title" content="AI Gatecrashers — AI for humans, not hype" />
+  <meta property="og:description" content="Plain-English AI training, prompt packs, and playbooks for small businesses, non-profits, and first-time AI users. No jargon. No hype." />
+  <meta property="og:image" content="https://aigatecrashers.com/assets/logo-stacked.png" />
   <meta property="og:site_name" content="AI Gatecrashers" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@aigatecrashers" />
-  <meta name="twitter:title" content="AI Gatecrashers — AI Tools, Prompt Packs &amp; Courses That Actually Work" />
-  <meta name="twitter:description" content="Premium ChatGPT prompt packs, AI courses, and business kits built for creators and entrepreneurs. Practical tools — not hype. From $7." />
-  <meta name="twitter:image" content="https://aigatecrashers.com/assets/og-image.jpg" />
+  <meta name="twitter:title" content="AI Gatecrashers — AI for humans, not hype" />
+  <meta name="twitter:description" content="Plain-English AI training, prompt packs, and playbooks for small businesses, non-profits, and first-time AI users. No jargon. No hype." />
+  <meta name="twitter:image" content="https://aigatecrashers.com/assets/logo-stacked.png" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css?v=2026-04-20b" />
 
   <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
@@ -39,8 +39,10 @@
     "@type": "Organization",
     "name": "AI Gatecrashers",
     "url": "https://aigatecrashers.com",
-    "email": "Support@aigatecrashers.com",
-    "logo": "https://aigatecrashers.com/assets/logo.png",
+    "email": "hello@aigatecrashers.com",
+    "logo": "https://aigatecrashers.com/assets/logo-stacked.png",
+    "description": "AI training, prompt packs, and playbooks for small businesses, non-profits, and first-time AI users.",
+    "founder": { "@type": "Person", "name": "Keith Allen Schuh" },
     "sameAs": [
       "https://twitter.com/aigatecrashers",
       "https://instagram.com/aigatecrashers"
@@ -59,896 +61,726 @@
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://aigatecrashers.com/search?q={search_term_string}"
+        "urlTemplate": "https://aigatecrashers.com/store/?q={search_term_string}"
       },
       "query-input": "required name=search_term_string"
     }
   }
   </script>
 
-  <!-- Homepage-specific styles -->
-  <style>
-    /* ---- HEADER FIX ---- */
-    .hp-header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(10, 10, 15, 0.85);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-      height: 68px;
-    }
-
-    .hp-header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100%;
-      gap: 24px;
-    }
-
-    .hp-logo {
-      font-size: 1.3rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      white-space: nowrap;
-      flex-shrink: 0;
-      text-decoration: none;
-    }
-
-    .hp-nav {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .hp-nav a {
-      color: var(--text-body);
-      font-size: 0.9rem;
-      font-weight: 500;
-      padding: 8px 16px;
-      border-radius: var(--radius-btn);
-      transition: color 0.3s ease, background 0.3s ease;
-      text-decoration: none;
-    }
-
-    .hp-nav a:hover {
-      color: var(--text-white);
-      background: var(--bg-hover);
-    }
-
-    .hp-hamburger {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-      width: 40px;
-      height: 40px;
-      background: transparent;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-btn);
-      cursor: pointer;
-      padding: 8px;
-    }
-
-    .hp-hamburger span {
-      display: block;
-      width: 18px;
-      height: 2px;
-      background: var(--text-white);
-      border-radius: 2px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .hp-hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .hp-hamburger.active span:nth-child(2) { opacity: 0; }
-    .hp-hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
-    .hp-mobile-nav {
-      display: none;
-      position: absolute;
-      top: 68px;
-      left: 0;
-      right: 0;
-      background: rgba(10, 10, 15, 0.98);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-      padding: 12px 24px 20px;
-      z-index: 99;
-      animation: fadeSlideUp 0.2s ease;
-    }
-
-    .hp-mobile-nav.active { display: block; }
-
-    .hp-mobile-nav a {
-      display: block;
-      color: var(--text-body);
-      font-size: 0.95rem;
-      font-weight: 500;
-      padding: 12px;
-      border-radius: var(--radius-btn);
-      text-decoration: none;
-      transition: color 0.3s ease, background 0.3s ease;
-    }
-
-    .hp-mobile-nav a:hover {
-      color: var(--text-white);
-      background: var(--bg-hover);
-    }
-
-    @media (max-width: 768px) {
-      .hp-nav { display: none; }
-      .hp-hamburger { display: flex; }
-    }
-
-    /* ---- HERO ---- */
-    .hp-hero {
-      position: relative;
-      padding: 120px 0 100px;
-      text-align: center;
-      overflow: hidden;
-      background:
-        radial-gradient(ellipse 70% 50% at 50% 40%, rgba(0, 212, 255, 0.06) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 60% at 30% 60%, rgba(124, 58, 237, 0.05) 0%, transparent 60%);
-    }
-
-    .hp-hero .container { position: relative; z-index: 1; }
-
-    .hp-hero-eyebrow {
-      display: inline-block;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--primary);
-      background: rgba(0, 212, 255, 0.08);
-      border: 1px solid rgba(0, 212, 255, 0.15);
-      padding: 6px 18px;
-      border-radius: var(--radius-full);
-      margin-bottom: 28px;
-    }
-
-    .hp-hero h1 {
-      font-size: 3.2rem;
-      font-weight: 900;
-      color: var(--text-white);
-      max-width: 780px;
-      margin: 0 auto 24px;
-      letter-spacing: -0.03em;
-      line-height: 1.1;
-    }
-
-    .hp-hero h1 .gradient {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hp-hero p {
-      font-size: 1.15rem;
-      color: var(--text-body);
-      max-width: 560px;
-      margin: 0 auto 44px;
-      line-height: 1.7;
-    }
-
-    .hp-hero-ctas {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 640px) {
-      .hp-hero { padding: 80px 0 64px; }
-      .hp-hero h1 { font-size: 2.1rem; }
-      .hp-hero p { font-size: 1rem; }
-      .hp-hero-ctas { flex-direction: column; align-items: center; }
-      .hp-hero-ctas a { width: 100%; max-width: 320px; text-align: center; }
-    }
-
-    /* ---- VALUE PROPS ---- */
-    .hp-values { padding: 80px 0; }
-
-    .hp-values .section-header { margin-bottom: 48px; }
-
-    .hp-values-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .hp-value-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-card);
-      padding: 36px 28px;
-      text-align: center;
-      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .hp-value-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(0, 212, 255, 0.2);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-    }
-
-    .hp-value-icon {
-      font-size: 2.8rem;
-      margin-bottom: 20px;
-      display: block;
-      line-height: 1;
-    }
-
-    .hp-value-card h3 {
-      font-size: 1.15rem;
-      color: var(--text-white);
-      margin-bottom: 10px;
-    }
-
-    .hp-value-card p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
-
-    .hp-value-link {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--primary);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .hp-value-link:hover { color: var(--text-white); }
-
-    .hp-value-link::after {
-      content: ' \2192';
-    }
-
-    @media (max-width: 768px) {
-      .hp-values-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
-    }
-
-    /* ---- FEATURED PRODUCTS ---- */
-    .hp-featured {
-      padding: 80px 0;
-      background: linear-gradient(180deg, rgba(0, 212, 255, 0.02) 0%, transparent 100%);
-    }
-
-    .hp-featured-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .hp-product-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-card);
-      overflow: hidden;
-      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-    }
-
-    .hp-product-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(0, 212, 255, 0.2);
-      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
-    }
-
-    .hp-product-image {
-      height: 160px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-
-    .hp-product-image.blue { background: linear-gradient(135deg, #0a1628, rgba(0, 212, 255, 0.12)); }
-    .hp-product-image.purple { background: linear-gradient(135deg, #1a0a28, rgba(124, 58, 237, 0.12)); }
-    .hp-product-image.green { background: linear-gradient(135deg, #0a1a10, rgba(34, 197, 94, 0.12)); }
-    .hp-product-image.orange { background: linear-gradient(135deg, #1a100a, rgba(255, 107, 53, 0.12)); }
-
-    .hp-product-image .emoji {
-      font-size: 3rem;
-      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
-      transition: transform 0.3s ease;
-    }
-
-    .hp-product-card:hover .emoji { transform: scale(1.1); }
-
-    .hp-product-body {
-      padding: 20px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-
-    .hp-product-body h3 {
-      font-size: 0.95rem;
-      color: var(--text-white);
-      line-height: 1.3;
-      margin: 0;
-    }
-
-    .hp-product-body .desc {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-      flex: 1;
-    }
-
-    .hp-product-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 8px;
-    }
-
-    .hp-product-price {
-      color: var(--green);
-      font-weight: 800;
-      font-size: 1.1rem;
-    }
-
-    .hp-product-cta {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    @media (max-width: 1024px) {
-      .hp-featured-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @media (max-width: 640px) {
-      .hp-featured-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
-    }
-
-    /* ---- BLOG SECTION ---- */
-    .hp-blog { padding: 80px 0; }
-
-    .hp-blog-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .hp-blog-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-card);
-      overflow: hidden;
-      transition: transform 0.3s ease, border-color 0.3s ease;
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-    }
-
-    .hp-blog-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(0, 212, 255, 0.15);
-    }
-
-    .hp-blog-image {
-      height: 170px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #0a1628, rgba(0, 212, 255, 0.1));
-    }
-
-    .hp-blog-image .emoji { font-size: 2.8rem; }
-
-    .hp-blog-body {
-      padding: 20px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .hp-blog-tag {
-      color: var(--primary);
-      font-size: 0.72rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 8px;
-    }
-
-    .hp-blog-body h3 {
-      font-size: 1rem;
-      color: var(--text-white);
-      line-height: 1.3;
-      margin-bottom: 10px;
-    }
-
-    .hp-blog-body p {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      flex: 1;
-    }
-
-    .hp-blog-read {
-      margin-top: 14px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    @media (max-width: 768px) {
-      .hp-blog-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
-    }
-
-    /* ---- NEWSLETTER ---- */
-    .hp-newsletter {
-      padding: 80px 0;
-    }
-
-    .hp-newsletter-box {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 56px 48px;
-      text-align: center;
-      max-width: 680px;
-      margin: 0 auto;
-    }
-
-    .hp-newsletter-box h2 { margin-bottom: 12px; }
-
-    .hp-newsletter-box > p {
-      color: var(--text-muted);
-      max-width: 460px;
-      margin: 0 auto 32px;
-      font-size: 0.95rem;
-    }
-
-    .hp-nl-form {
-      display: flex;
-      max-width: 460px;
-      margin: 0 auto;
-    }
-
-    .hp-nl-form input[type="email"] {
-      flex: 1;
-      background: var(--bg-body);
-      border: 1px solid var(--border);
-      border-right: none;
-      border-radius: var(--radius-btn) 0 0 var(--radius-btn);
-      padding: 14px 16px;
-      color: var(--text-white);
-      font-size: 0.95rem;
-      font-family: var(--font);
-      outline: none;
-      transition: border-color 0.3s ease;
-      min-width: 0;
-    }
-
-    .hp-nl-form input[type="email"]::placeholder { color: var(--text-muted); }
-    .hp-nl-form input[type="email"]:focus { border-color: var(--primary); }
-
-    .hp-nl-form button {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: var(--text-white);
-      font-weight: 700;
-      font-size: 0.9rem;
-      font-family: var(--font);
-      padding: 14px 24px;
-      border-radius: 0 var(--radius-btn) var(--radius-btn) 0;
-      border: none;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: opacity 0.3s ease;
-    }
-
-    .hp-nl-form button:hover { opacity: 0.9; }
-
-    .hp-nl-disclaimer {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      margin-top: 14px;
-    }
-
-    @media (max-width: 640px) {
-      .hp-newsletter-box { padding: 36px 24px; }
-      .hp-nl-form { flex-direction: column; }
-      .hp-nl-form input[type="email"] {
-        border-right: 1px solid var(--border);
-        border-radius: var(--radius-btn) var(--radius-btn) 0 0;
+  <!-- JSON-LD: FAQPage for AEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need to know how to code to use any of this?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Every product and training here is designed for non-technical owners and teams. You'll copy prompts, paste them into ChatGPT or Claude, and read the output. If you can send an email, you can use these."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a paid ChatGPT subscription?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The free tier of ChatGPT, Claude, or Gemini works for most of what's in our prompt packs. A paid plan unlocks more capacity and newer models, but it's not required to get real results."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this safe for my non-profit? What about donor data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. We teach you which tools are safe for sensitive data (and which aren't), and every template includes a short 'what to redact before you paste' checklist. Non-profits use these daily for grants, donor comms, and volunteer onboarding."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I've literally never used AI before?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with the free newsletter (50 starter prompts) or the ChatGPT Accelerator Challenge ($27), a 10-day walkthrough that takes you from zero to confident. Both are built for first-time users."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the refund policy work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every product has a 7-day, no-questions-asked refund. Email hello@aigatecrashers.com with your order number and we'll refund within 24 hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will this be obsolete in six months when a new model drops?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The specific prompts evolve, but the frameworks don't. We update the packs quarterly, and every update is free for people who already bought. The fundamentals of how to talk to AI to get what you want haven't changed since 2023."
+        }
       }
-      .hp-nl-form button {
-        border-radius: 0 0 var(--radius-btn) var(--radius-btn);
-        padding: 14px;
-      }
-    }
-
-    /* ---- FOOTER ---- */
-    .hp-footer {
-      background: var(--bg-footer);
-      padding: 60px 0 30px;
-      border-top: 1px solid var(--border);
-    }
-
-    .hp-footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 48px;
-      margin-bottom: 0;
-    }
-
-    .hp-footer-brand { max-width: 280px; }
-
-    .hp-footer-brand .hp-logo {
-      display: inline-block;
-      margin-bottom: 16px;
-    }
-
-    .hp-footer-brand p {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-    }
-
-    .hp-footer-col h4 {
-      color: var(--text-white);
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 16px;
-    }
-
-    .hp-footer-col a {
-      display: block;
-      color: var(--text-muted);
-      font-size: 0.88rem;
-      margin-bottom: 10px;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .hp-footer-col a:hover { color: var(--primary); }
-
-    .hp-footer-bottom {
-      border-top: 1px solid var(--border);
-      margin-top: 48px;
-      padding-top: 24px;
-      text-align: center;
-    }
-
-    .hp-footer-bottom p {
-      color: var(--text-muted);
-      font-size: 0.82rem;
-      margin: 0;
-    }
-
-    @media (max-width: 768px) {
-      .hp-footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
-      .hp-footer-brand { max-width: 100%; grid-column: 1 / -1; }
-    }
-
-    @media (max-width: 640px) {
-      .hp-footer-grid { grid-template-columns: 1fr; gap: 28px; }
-      .hp-footer-brand { grid-column: auto; }
-      .hp-footer-bottom { text-align: center; }
-    }
-
-    /* ---- SECTION DIVIDER ---- */
-    .hp-divider {
-      height: 1px;
-      background: var(--border);
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- ===================== HEADER ===================== -->
-  <header class="hp-header">
-    <div class="container">
-      <a href="index.html" class="hp-logo">AI Gatecrashers</a>
-
-      <nav>
-        <ul class="hp-nav">
-          <li><a href="store/index.html">Store</a></li>
-          <li><a href="blog/">Blog</a></li>
-          <li><a href="mailto:Support@aigatecrashers.com">About</a></li>
-        </ul>
-      </nav>
-
-      <button class="hp-hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <div class="hp-mobile-nav">
-      <a href="store/index.html">Store</a>
-      <a href="blog/">Blog</a>
-      <a href="mailto:Support@aigatecrashers.com">About</a>
-    </div>
-  </header>
-
-  <!-- ===================== HERO ===================== -->
-  <section class="hp-hero">
-    <div class="container">
-      <span class="hp-hero-eyebrow">Prompt Packs &bull; Courses &bull; Business Kits</span>
-      <h1>AI Tools That <span class="gradient">Actually Work</span></h1>
-      <p>Practical prompt packs, step-by-step courses, and ready-made business kits that help you do more with ChatGPT and AI — without the hype.</p>
-      <div class="hp-hero-ctas">
-        <a href="store/index.html" class="cta-button cta-button-lg">Explore the Store</a>
-        <a href="blog/" class="cta-button-secondary cta-button-lg">Read the Blog</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== WHAT WE DO ===================== -->
-  <section class="hp-values">
-    <div class="container">
-      <div class="section-header">
-        <h2>What We Make</h2>
-        <p>Everything you need to put AI to work — organized, tested, and ready to go.</p>
-      </div>
-
-      <div class="hp-values-grid">
-        <div class="hp-value-card">
-          <span class="hp-value-icon">&#128172;</span>
-          <h3>Prompt Packs</h3>
-          <p>500+ copy-paste prompts organized by niche. Business, marketing, sales, SEO, social media, and more.</p>
-          <a href="store/index.html" class="hp-value-link">Browse packs</a>
-        </div>
-
-        <div class="hp-value-card">
-          <span class="hp-value-icon">&#127891;</span>
-          <h3>Courses &amp; Guides</h3>
-          <p>Step-by-step programs that teach you how to use AI — from beginner basics to building a full business.</p>
-          <a href="store/index.html" class="hp-value-link">See courses</a>
-        </div>
-
-        <div class="hp-value-card">
-          <span class="hp-value-icon">&#128188;</span>
-          <h3>Business Kits</h3>
-          <p>Complete starter kits with templates, SOPs, idea banks, and tools to launch and grow with AI.</p>
-          <a href="store/index.html" class="hp-value-link">View kits</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="hp-divider"></div>
-
-  <!-- ===================== FEATURED PRODUCTS ===================== -->
-  <section class="hp-featured">
-    <div class="container">
-      <div class="section-header">
-        <h2>Popular Right Now</h2>
-        <p>Our most-loved products — picked by thousands of creators and entrepreneurs.</p>
-      </div>
-
-      <div class="hp-featured-grid">
-
-        <a href="products/chatgpt-accelerator-challenge.html" class="hp-product-card">
-          <div class="hp-product-image blue">
-            <span class="emoji">&#127942;</span>
-            <span class="badge badge-bestseller">Best Seller</span>
-          </div>
-          <div class="hp-product-body">
-            <h3>The ChatGPT Accelerator Challenge</h3>
-            <p class="desc">10-part challenge: go from beginner to ChatGPT pro in 10 days.</p>
-            <div class="hp-product-footer">
-              <span class="hp-product-price">$27</span>
-              <span class="hp-product-cta">View &rarr;</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="products/chatgpt-prompts-business.html" class="hp-product-card">
-          <div class="hp-product-image blue">
-            <span class="emoji">&#128202;</span>
-          </div>
-          <div class="hp-product-body">
-            <h3>500 ChatGPT Prompts for Business</h3>
-            <p class="desc">Battle-tested prompts for strategy, operations, market research, and closing deals.</p>
-            <div class="hp-product-footer">
-              <span class="hp-product-price">$7</span>
-              <span class="hp-product-cta">View &rarr;</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="products/ai-side-hustle-starter-kit.html" class="hp-product-card">
-          <div class="hp-product-image green">
-            <span class="emoji">&#128640;</span>
-            <span class="badge badge-popular">Popular</span>
-          </div>
-          <div class="hp-product-body">
-            <h3>The AI Side Hustle Starter Kit</h3>
-            <p class="desc">101 business ideas + 487 niches + ChatGPT quick-start. Everything to launch.</p>
-            <div class="hp-product-footer">
-              <span class="hp-product-price">$9</span>
-              <span class="hp-product-cta">View &rarr;</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="products/7-figure-ai-roadmap.html" class="hp-product-card">
-          <div class="hp-product-image purple">
-            <span class="emoji">&#128506;</span>
-          </div>
-          <div class="hp-product-body">
-            <h3>The 7-Figure AI Business Roadmap</h3>
-            <p class="desc">10-module system for building a digital product empire with AI.</p>
-            <div class="hp-product-footer">
-              <span class="hp-product-price">$47</span>
-              <span class="hp-product-cta">View &rarr;</span>
-            </div>
-          </div>
-        </a>
-
-      </div>
-
-      <div style="text-align:center; margin-top:40px;">
-        <a href="store/index.html" class="cta-button-secondary">View All Products</a>
-      </div>
-    </div>
-  </section>
-
-  <div class="hp-divider"></div>
-
-  <!-- ===================== FROM THE BLOG ===================== -->
-  <section class="hp-blog">
-    <div class="container">
-      <div class="section-header">
-        <h2>From the Blog</h2>
-        <p>Guides, strategies, and ideas to help you make the most of AI.</p>
-      </div>
-
-      <div class="hp-blog-grid">
-
-        <a href="blog/how-to-make-money-with-chatgpt-2026.html" class="hp-blog-card">
-          <div class="hp-blog-image">
-            <span class="emoji">&#128176;</span>
-          </div>
-          <div class="hp-blog-body">
-            <span class="hp-blog-tag">Guide</span>
-            <h3>How to Make Money with ChatGPT in 2026</h3>
-            <p>Practical methods real people are using right now to earn income with AI tools.</p>
-            <span class="hp-blog-read">Read more &rarr;</span>
-          </div>
-        </a>
-
-        <a href="blog/best-chatgpt-prompts-for-copywriting.html" class="hp-blog-card">
-          <div class="hp-blog-image">
-            <span class="emoji">&#9997;&#65039;</span>
-          </div>
-          <div class="hp-blog-body">
-            <span class="hp-blog-tag">Prompts</span>
-            <h3>Best ChatGPT Prompts for Copywriting</h3>
-            <p>The prompts top copywriters use to write headlines, emails, ads, and sales pages faster.</p>
-            <span class="hp-blog-read">Read more &rarr;</span>
-          </div>
-        </a>
-
-        <a href="blog/how-to-sell-digital-products-with-ai.html" class="hp-blog-card">
-          <div class="hp-blog-image">
-            <span class="emoji">&#128640;</span>
-          </div>
-          <div class="hp-blog-body">
-            <span class="hp-blog-tag">Strategy</span>
-            <h3>How to Sell Digital Products with AI</h3>
-            <p>From idea to first sale — a step-by-step look at building and selling digital products using AI.</p>
-            <span class="hp-blog-read">Read more &rarr;</span>
-          </div>
-        </a>
-
-      </div>
-
-      <div style="text-align:center; margin-top:40px;">
-        <a href="blog/" class="cta-button-secondary">All Blog Posts</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== NEWSLETTER ===================== -->
-  <section class="hp-newsletter" id="newsletter">
-    <div class="container">
-      <div class="hp-newsletter-box">
-        <h2>Get 50 Free ChatGPT Prompts</h2>
-        <p>Join thousands of creators and entrepreneurs who are building with AI. Get our best starter prompts — free.</p>
-        <form class="hp-nl-form" action="#" method="post" novalidate>
-          <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address" />
-          <button type="submit">Send My Prompts</button>
-        </form>
-        <p class="hp-nl-disclaimer">No spam, ever. Unsubscribe anytime.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="hp-footer">
-    <div class="container">
-      <div class="hp-footer-grid">
-
-        <div class="hp-footer-brand">
-          <a href="index.html" class="hp-logo">AI Gatecrashers</a>
-          <p>Premium AI tools for creators and entrepreneurs.</p>
-        </div>
-
-        <div class="hp-footer-col">
-          <h4>Products</h4>
-          <a href="products/chatgpt-prompts-business.html">Business Prompt Pack</a>
-          <a href="products/chatgpt-prompts-marketing.html">Marketing Prompt Pack</a>
-          <a href="products/ai-side-hustle-starter-kit.html">Side Hustle Starter Kit</a>
-          <a href="products/chatgpt-accelerator-challenge.html">ChatGPT Accelerator</a>
-          <a href="products/ai-mega-collection.html">AI Mega Collection</a>
-        </div>
-
-        <div class="hp-footer-col">
-          <h4>Resources</h4>
-          <a href="blog/how-to-make-money-with-chatgpt-2026.html">Make Money with ChatGPT</a>
-          <a href="blog/best-chatgpt-prompts-for-copywriting.html">Copywriting Prompts</a>
-          <a href="blog/how-to-sell-digital-products-with-ai.html">Sell Digital Products</a>
-          <a href="blog/">All Blog Posts</a>
-        </div>
-
-        <div class="hp-footer-col">
-          <h4>Connect</h4>
-          <a href="mailto:Support@aigatecrashers.com">Support@aigatecrashers.com</a>
-          <a href="https://twitter.com/aigatecrashers" target="_blank" rel="noopener noreferrer">Twitter / X</a>
-          <a href="https://instagram.com/aigatecrashers" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://youtube.com/@aigatecrashers" target="_blank" rel="noopener noreferrer">YouTube</a>
-        </div>
-
-      </div>
-
-      <div class="hp-footer-bottom">
-        <p>&copy; 2026 AI Gatecrashers. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Mobile menu JS -->
-  <script>
-    (function () {
-      var btn = document.querySelector('.hp-hamburger');
-      var nav = document.querySelector('.hp-mobile-nav');
-      if (!btn || !nav) return;
-      btn.addEventListener('click', function () {
-        var open = nav.classList.toggle('active');
-        btn.classList.toggle('active');
-        btn.setAttribute('aria-expanded', open);
-      });
-      // Close on link click
-      nav.querySelectorAll('a').forEach(function (a) {
-        a.addEventListener('click', function () {
-          nav.classList.remove('active');
-          btn.classList.remove('active');
-          btn.setAttribute('aria-expanded', 'false');
-        });
-      });
-    })();
+    ]
+  }
   </script>
 
-  <!-- Store JS (for any shared utilities) -->
-  <script src="js/store.js"></script>
+  <!-- JSON-LD: ItemList pointing into the store -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Popular trainings and prompt packs for small businesses",
+    "url": "https://aigatecrashers.com/",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"The ChatGPT Accelerator Challenge (10-day training)","url":"https://aigatecrashers.com/products/chatgpt-accelerator-challenge.html"},
+      {"@type":"ListItem","position":2,"name":"Non-profit AI Playbook","url":"https://aigatecrashers.com/products/nonprofit-ai-playbook.html"},
+      {"@type":"ListItem","position":3,"name":"The 7-Figure AI Business Roadmap","url":"https://aigatecrashers.com/products/7-figure-ai-roadmap.html"},
+      {"@type":"ListItem","position":4,"name":"The AI Side Hustle Starter Kit","url":"https://aigatecrashers.com/products/ai-side-hustle-starter-kit.html"},
+      {"@type":"ListItem","position":5,"name":"55 Digital Marketing SOPs","url":"https://aigatecrashers.com/products/marketing-sops-pack.html"}
+    ]
+  }
+  </script>
+</head>
+
+<body data-headline="serif" data-hero-mode="dark">
+
+<!-- ================= NAV ================= -->
+<!-- SHELL:HEADER:START -->
+<div class="nav-wrap" id="navWrap">
+  <div class="container">
+    <div class="nav">
+      <a href="/" class="brand">
+        <span class="brand-mark"></span>
+        <span class="wordmark" style="font-family: Helvetica"><span class="ai">Ai</span>GATECRASHERS</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/#start">Start here</a>
+        <a href="/#trainings">Trainings</a>
+        <a href="/store/">Store</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#usecases" class="live">For non-profits</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="/store/" class="nav-search" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          Search
+          <kbd>⌘K</kbd>
+        </a>
+        <a href="mailto:hello@aigatecrashers.com" class="nav-login">Sign in</a>
+        <a href="/#newsletter" class="nav-cta">
+          Get 50 free prompts
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-burger" aria-label="Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SHELL:HEADER:END -->
+
+<!-- ================= HERO ================= -->
+<section class="hero" data-mode="dark" data-layout="center" id="hero">
+  <div class="hero-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="logo-ghost"></div>
+    <div class="grid"></div>
+  </div>
+
+  <div class="container hero-inner">
+    <div class="hero-grid">
+
+      <div class="hero-lede">
+        <span class="pill"><span class="dot"></span> Built for first-time AI users · 2026 edition</span>
+        <h1 class="hero-title" id="heroTitle">AI for <span class="squiggle">humans</span>,
+<em>not hype.</em></h1>
+        <p class="hero-sub">Plain-English training, prompt packs, and playbooks that help small businesses and non-profits use AI to save time, win grants, and stop guessing! No coding, No jargon, No doom-scrolling LinkedIn threads at midnight.</p>
+
+        <div class="hero-ctas">
+          <a href="#start" class="btn btn-primary">
+            New to AI? Start here
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#trainings" class="btn btn-ghost">Browse trainings</a>
+        </div>
+
+        <div class="hero-trust">
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> 7-day refund on everything</span>
+          <span class="sep"></span>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Works with free ChatGPT</span>
+          <span class="sep"></span>
+          <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Non-profit friendly license</span>
+        </div>
+
+        <div class="keith-strip">
+          <div class="keith-avatar">KS</div>
+          <div>Made by <strong style="color:inherit">Keith Allen Schuh</strong> — one human, answering every email himself.</div>
+        </div>
+      </div>
+
+      <!-- LIVE DEMO -->
+      <div class="hero-demo-wrap demo-wrap" id="demoWrap">
+        <!-- Playful coral hint pointing to the pill row -->
+        <div class="demo-hint" aria-hidden="true">
+          <span class="demo-hint-label">Try an example!</span>
+          <svg class="demo-hint-arrow" viewBox="0 0 140 110" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <!-- shaft: curves from upper-left down to tip (96, 92) -->
+            <path d="M 8 14 C 30 38, 58 66, 96 92" stroke-dasharray="2 6" />
+            <!-- arrowhead: both wings meet at the tip (96, 92), angled ±30° off the shaft tangent -->
+            <path d="M 82 91 L 96 92 L 90 79" stroke-dasharray="0" />
+          </svg>
+        </div>
+
+        <div class="chip chip-1">
+          <span class="chip-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </span>
+          <div><strong>2.8×</strong> faster grant drafts</div>
+        </div>
+        <div class="chip chip-2">
+          <span class="chip-icon warm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </span>
+          <div><strong>4,200+</strong> owners started</div>
+        </div>
+        <div class="chip chip-3">
+          <span class="chip-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          </span>
+          <div>First win in <strong>one hour</strong></div>
+        </div>
+
+        <div class="demo-card" id="demoCard">
+          <div class="demo-head">
+            <div class="demo-dots"><span></span><span></span><span></span></div>
+            <div class="demo-url">chat.openai.com · Gatecrashers Prompt Pack</div>
+          </div>
+          <div class="demo-body">
+
+            <div class="demo-prompt">
+              <div class="who">🙂</div>
+              <div class="msg" id="demoUserMsg">I run a 3-person literacy non-profit. Draft a warm thank-you email to a donor who just gave $500.</div>
+            </div>
+
+            <div class="demo-prompt them">
+              <div class="who">✨</div>
+              <div class="msg" style="min-width:260px">
+                <div class="demo-typing" id="demoOutput"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="demo-pill-row">
+            <span class="lbl">Try →</span>
+            <button data-demo="donor" class="active">Donor thank-you</button>
+            <button data-demo="grant">Grant opener</button>
+            <button data-demo="sop">Team SOP</button>
+            <button data-demo="social">Social post</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOGO / TRUST STRIP ================= -->
+<section class="logo-strip" style="margin: 16px 0px 0px">
+  <div class="container">
+    <div class="logo-strip-head">Built to work with the tools you already use</div>
+    <div class="logo-row">
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+        ChatGPT
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3.5L6 20l1.5-6.5L3 9l6-1z"/></svg>
+        Claude
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 12 12 22 2 12"/></svg>
+        Gemini
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 10h18"/></svg>
+        Notion
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/></svg>
+        Airtable
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v6H4zM4 14h10v6H4zM18 14h2v6h-2z"/></svg>
+        Google Docs
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= START HERE / PATHS ================= -->
+<section class="paths" id="start">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Start here</span>
+      <h2>What do you want AI to do for you <em style="font-style:italic">this week?</em></h2>
+      <p>Three starting points. Pick the one that matches where you are today — you'll land on the right tools, not a product pile.</p>
+    </div>
+
+    <div class="path-grid">
+
+      <a class="path-card" href="/store/?filter=get-customers" data-path>
+        <span class="path-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </span>
+        <h3>Bring in more customers or donors</h3>
+        <p>Marketing, email, SEO, social, sales copy. Get the right message in front of the right people without hiring an agency.</p>
+        <span class="path-arrow">See this path
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a class="path-card" href="/store/?filter=run-business" data-path>
+        <span class="path-icon warm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </span>
+        <h3>Run my org with less busywork</h3>
+        <p>SOPs, meeting prep, hiring, reporting, board updates. Hand the repetitive stuff to AI so you can do the work only you can do.</p>
+        <span class="path-arrow">See this path
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+      <a class="path-card" href="/store/?filter=side-business" data-path>
+        <span class="path-icon green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg>
+        </span>
+        <h3>Start something new with AI</h3>
+        <p>Side hustles, digital products, mini-courses, freelance services. Validate an idea and launch something real in weeks, not years.</p>
+        <span class="path-arrow">See this path
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAININGS ================= -->
+<section class="trainings" id="trainings">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Trainings &amp; playbooks</span>
+      <h2>Go from <em>unsure</em> to confident</h2>
+      <p>Step-by-step programs for owners and teams who want to actually learn AI — not just hoard PDFs they'll never open.</p>
+    </div>
+
+    <div class="trainings-grid">
+
+      <!-- Featured card -->
+      <a href="/products/chatgpt-accelerator-challenge.html" class="train-card feature">
+        <div class="train-body">
+          <span class="train-tag">★ Best for beginners</span>
+          <h3>The ChatGPT Accelerator Challenge</h3>
+          <p>A 10-day guided program that walks you from "I've only heard of ChatGPT" to "I use it every day in my org." One short lesson a day, real exercises, no fluff. Great for small teams to go through together.</p>
+          <div class="train-foot">
+            <div class="train-price">$27 <span class="was">$79</span></div>
+            <span class="train-go">Start the challenge
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+        <div class="train-visual">
+          <div>
+            <span class="kicker">10-day curriculum</span>
+            <div style="font-family:var(--f-serif);font-size:28px;font-weight:400;margin-top:10px;line-height:1.1;letter-spacing:-.02em">From zero to shipping,<br/><em>one lesson a day.</em></div>
+          </div>
+          <div class="curric">
+            <div class="c-row done"><span class="n">01</span> What is a prompt, really?</div>
+            <div class="c-row done"><span class="n">02</span> Your first 5 real-work prompts</div>
+            <div class="c-row"><span class="n">03</span> Writing in your own voice</div>
+            <div class="c-row" style="opacity:.55"><span class="n">04</span> Making AI factual (not creative)</div>
+            <div class="c-row" style="opacity:.4"><span class="n">...</span> 6 more days</div>
+          </div>
+        </div>
+      </a>
+
+      <a href="/products/nonprofit-ai-playbook.html" class="train-card">
+        <div class="train-body">
+          <span class="train-tag warm">For mission-led orgs</span>
+          <h3>Non-profit AI Playbook</h3>
+          <p>60+ prompts and templates for grant writing, donor communications, volunteer onboarding, and board reporting. Written with real non-profit staff, not a tech bro's LinkedIn.</p>
+          <div class="train-foot">
+            <div class="train-price">$37</div>
+            <span class="train-go">Open the playbook
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/products/7-figure-ai-roadmap.html" class="train-card">
+        <div class="train-body">
+          <span class="train-tag">For serious builders</span>
+          <h3>7-Figure AI Business Roadmap</h3>
+          <p>A 10-module system for people building a real business with AI — digital products, services, content, or all three. Frameworks and templates, module by module.</p>
+          <div class="train-foot">
+            <div class="train-price">$47</div>
+            <span class="train-go">See the roadmap
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/products/ai-side-hustle-starter-kit.html" class="train-card">
+        <div class="train-body">
+          <span class="train-tag">For side-hustlers</span>
+          <h3>AI Side Hustle Starter Kit</h3>
+          <p>101 validated ideas, 487 profitable niches, and a ChatGPT quick-start you can use tonight. The "where do I even start" kit for people with energy but no plan.</p>
+          <div class="train-foot">
+            <div class="train-price">$9</div>
+            <span class="train-go">Open the kit
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/products/marketing-sops-pack.html" class="train-card">
+        <div class="train-body">
+          <span class="train-tag">For small teams</span>
+          <h3>55 Digital Marketing SOPs</h3>
+          <p>Plug-and-play procedures your team can follow today: email campaigns, social posts, SEO audits, ad copy, lead magnets. Standardize the boring stuff.</p>
+          <div class="train-foot">
+            <div class="train-price">$17</div>
+            <span class="train-go">See the SOPs
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="how">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">How it works</span>
+      <h2>Three steps from <em>confused</em> to shipping</h2>
+      <p>Every product on this site is designed to get you to a concrete outcome, not just more theory in a Google Drive folder.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Pick a path or training</h3>
+        <p>Choose the starting point that matches what you need this week. Not sure? Start with the free newsletter — it's built for first-week users.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Download and open it</h3>
+        <p>Everything ships instantly as a Notion page, PDF, or both. Works with ChatGPT, Claude, and Gemini — free plans included.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Use it this week</h3>
+        <p>Each product includes a "Use this first" quick-start so you get a real win in the first hour. Not someday — this week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= USE CASES ================= -->
+<section class="usecases" id="usecases">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Who this is built for</span>
+      <h2>Built for small budgets and <em>real work</em></h2>
+      <p>Most AI content online is written for Silicon Valley. This site is written for the rest of us.</p>
+    </div>
+
+    <div class="uc-grid">
+      <div class="uc smb">
+        <span class="uc-badge">Small businesses</span>
+        <h3>Local shops, service businesses, solo founders</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Write service descriptions, quotes, and emails in half the time</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Draft hiring posts, SOPs, and training docs without hiring a consultant</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Turn customer reviews into marketing copy that still sounds like you</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Handle after-hours inquiries with AI-drafted replies you approve in one click</li>
+        </ul>
+        <a href="/store/?filter=smb" class="uc-link">See SMB tools →</a>
+      </div>
+
+      <div class="uc np">
+        <span class="uc-badge">Non-profits &amp; mission-led orgs</span>
+        <h3>Teams of 1–10 doing big work on tight budgets</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Draft grant applications and case statements 3× faster</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Personalize donor thank-you letters at scale without losing the warmth</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Write volunteer onboarding, policy drafts, and event recaps in plain English</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Translate board-level reporting into something staff can actually act on</li>
+        </ul>
+        <a href="/products/nonprofit-ai-playbook.html" class="uc-link">See non-profit tools →</a>
+      </div>
+    </div>
+
+    <div class="safe-note">
+      <div class="icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <p><strong>Never used AI before?</strong> That's the whole point. Every product explains what to click, what to type, and what to expect back — written in plain English, no jargon buried in footnotes. And if it's not for you, we'll refund you in 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testi">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">What people are saying</span>
+      <h2>Real owners, real orgs, <em>real wins.</em></h2>
+    </div>
+
+    <div class="testi-grid">
+      <div class="t-card big">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"The ChatGPT Accelerator is the first AI training that didn't assume I was already fluent. Our four-person non-profit went through it together over two weeks. Now we draft grant intros in minutes, not afternoons."</p>
+        <div class="t-author">
+          <div class="t-avatar">PK</div>
+          <div>
+            <div class="t-name">Priya K.</div>
+            <div class="t-role">Exec Director · Youth Literacy Non-profit</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"I run a dental office. Bought the marketing SOPs expecting fluff — got a pack my office manager uses every week. Worth way more than $17."</p>
+        <div class="t-author">
+          <div class="t-avatar">DR</div>
+          <div>
+            <div class="t-name">Dr. Renee M.</div>
+            <div class="t-role">Family Dentistry Owner</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"Best $7 I've spent on business stuff, full stop. The prompts pack paid for itself on the first use — I drafted a client proposal in 20 minutes instead of two hours."</p>
+        <div class="t-author">
+          <div class="t-avatar">JR</div>
+          <div>
+            <div class="t-name">James R.</div>
+            <div class="t-role">Freelance Marketing Consultant</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"I was scared of AI — convinced it would replace me. Keith's stuff made it feel like a helpful coworker, not a threat. Now I use it daily and work fewer hours."</p>
+        <div class="t-author">
+          <div class="t-avatar">TG</div>
+          <div>
+            <div class="t-name">Teresa G.</div>
+            <div class="t-role">Solo Bookkeeper · 22 years in practice</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"Our food-pantry staff is 60+ and not 'tech people.' They read the playbook, opened ChatGPT, and wrote the winter appeal in one sitting. Raised $14,200."</p>
+        <div class="t-author">
+          <div class="t-avatar">MB</div>
+          <div>
+            <div class="t-name">Marcus B.</div>
+            <div class="t-role">Board Chair · Regional Food Pantry</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="stat-val">4,200+</div><div class="stat-lbl">Owners started</div></div>
+      <div class="stat"><div class="stat-val">312</div><div class="stat-lbl">Non-profits served</div></div>
+      <div class="stat"><div class="stat-val">4.9/5</div><div class="stat-lbl">Across 800+ reviews</div></div>
+      <div class="stat"><div class="stat-val">7 days</div><div class="stat-lbl">No-questions refund</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOG ================= -->
+<section class="blog">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">From the notebook</span>
+      <h2>Plain-English guides, <em>zero jargon.</em></h2>
+      <p>Honest reviews, first-week walkthroughs, and how-tos from the trenches of small-business AI.</p>
+    </div>
+
+    <div class="blog-grid">
+      <a href="/blog/chatgpt-for-small-business-owners.html" class="b-card">
+        <div class="b-image">
+          <span class="tag">For owners</span>
+          PROMPT / BUSINESS
+        </div>
+        <div class="b-body">
+          <h3>ChatGPT for small business owners: what it actually does</h3>
+          <p>Where AI genuinely helps a local business — and the three places it still falls on its face. Honest, specific, no hype.</p>
+          <div class="b-meta">8 min read <span class="dot"></span> Apr 14</div>
+        </div>
+      </a>
+
+      <a href="/blog/how-to-use-chatgpt-for-business.html" class="b-card">
+        <div class="b-image warm">
+          <span class="tag">Getting started</span>
+          FIRST WEEK
+        </div>
+        <div class="b-body">
+          <h3>How to use ChatGPT for business (your first 7 days)</h3>
+          <p>A week-long walkthrough for owners who've opened ChatGPT once, felt overwhelmed, and closed it again. You're not alone.</p>
+          <div class="b-meta">12 min read <span class="dot"></span> Apr 9</div>
+        </div>
+      </a>
+
+      <a href="/blog/ai-grant-writing-without-sounding-like-a-robot.html" class="b-card">
+        <div class="b-image dark">
+          <span class="tag">Non-profits</span>
+          GRANT WRITING
+        </div>
+        <div class="b-body">
+          <h3>AI grant writing, without sounding like a robot</h3>
+          <p>The exact prompt chain we use to take messy notes from a program director and produce a warm, specific grant draft.</p>
+          <div class="b-meta">14 min read <span class="dot"></span> Apr 2</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="kicker">Common questions</span>
+      <h2>The stuff people ask us <em>every week.</em></h2>
+    </div>
+
+    <div class="faq-inner">
+      <details open>
+        <summary>Do I need to know how to code to use any of this?</summary>
+        <p>No. Every product and training here is designed for non-technical owners and teams. You'll copy prompts, paste them into ChatGPT or Claude, and read the output. If you can send an email, you can use these.</p>
+      </details>
+      <details>
+        <summary>Do I need a paid ChatGPT subscription?</summary>
+        <p>No. The free tier of ChatGPT, Claude, or Gemini works for most of what's in our prompt packs. A paid plan unlocks more capacity and newer models, but it's not required to get real results.</p>
+      </details>
+      <details>
+        <summary>Is this safe for my non-profit? What about donor data?</summary>
+        <p>Yes. We teach you which tools are safe for sensitive data (and which aren't), and every template includes a short "what to redact before you paste" checklist. Non-profits use these daily for grants, donor comms, and volunteer onboarding.</p>
+      </details>
+      <details>
+        <summary>What if I've literally never used AI before?</summary>
+        <p>Start with the free newsletter (50 starter prompts) or the ChatGPT Accelerator Challenge ($27), a 10-day walkthrough that takes you from zero to confident. Both are built for first-time users.</p>
+      </details>
+      <details>
+        <summary>How does the refund policy work?</summary>
+        <p>Every product has a 7-day, no-questions-asked refund. Email <span class="mention"><a href="mailto:hello@aigatecrashers.com">hello@aigatecrashers.com</a></span> with your order number and we'll refund within 24 hours. We'd rather have the honest feedback than a grumpy customer.</p>
+      </details>
+      <details>
+        <summary>Will this be obsolete in six months when a new model drops?</summary>
+        <p>The specific prompts evolve, but the frameworks don't. We update the packs quarterly, and every update is free for people who already bought. The fundamentals of "how to talk to AI to get what you want" haven't changed since 2023.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA / NEWSLETTER ================= -->
+<section class="cta" id="newsletter">
+  <div class="container">
+    <div class="cta-box">
+      <div class="cta-lead">
+        <span class="kicker">Free · 50 starter prompts</span>
+        <h2>The friendliest onboarding to AI you'll get this year.</h2>
+        <p>A curated pack of 50 copy-paste prompts for owners, non-profit staff, and first-timers. One email, instant download, no course-bro tactics.</p>
+      </div>
+      <div class="cta-form">
+        <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Sent ✓'">
+          <input type="email" placeholder="your@email.com" required aria-label="Email" />
+          <button type="submit">Send the prompts</button>
+        </form>
+        <div class="cta-perks">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> No spam, ever</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Unsub in one click</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Built by a human</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<!-- SHELL:FOOTER:START -->
+<footer class="site-footer-v2">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <img src="/assets/logo-stacked.png" alt="AI Gatecrashers" style="width:140px;height:auto;margin-bottom:16px;display:block" />
+        <p>Plain-English AI training, prompt packs, and playbooks for small businesses, non-profits, and first-time AI users. Built by Keith Allen Schuh.</p>
+        <div class="f-socials">
+          <a href="https://twitter.com/aigatecrashers" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.522 7.455L22 22h-5.85l-4.586-5.99L6.3 22H3.544l6.98-7.978L2 2h6.056l4.14 5.473L18.244 2zm-1.02 18h1.546L7.5 4H5.96l11.264 16z"/></svg></a>
+          <a href="https://instagram.com/aigatecrashers" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="https://youtube.com/@aigatecrashers" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-4-.5-5.8a3 3 0 0 0-2.1-2.1C18.6 3.6 12 3.6 12 3.6s-6.6 0-8.4.5a3 3 0 0 0-2.1 2.1C1 8 1 12 1 12s0 4 .5 5.8a3 3 0 0 0 2.1 2.1c1.8.5 8.4.5 8.4.5s6.6 0 8.4-.5a3 3 0 0 0 2.1-2.1C23 16 23 12 23 12zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+          <a href="mailto:hello@aigatecrashers.com" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Start</h4>
+        <a href="/#start">New to AI</a>
+        <a href="/#trainings">Trainings</a>
+        <a href="/#usecases">For non-profits</a>
+        <a href="/#newsletter">Free prompts</a>
+      </div>
+      <div class="f-col">
+        <h4>Products</h4>
+        <a href="/products/chatgpt-accelerator-challenge.html">ChatGPT Accelerator</a>
+        <a href="/products/7-figure-ai-roadmap.html">7-Figure AI Roadmap</a>
+        <a href="/products/nonprofit-ai-playbook.html">Non-profit Playbook</a>
+        <a href="/products/marketing-sops-pack.html">Marketing SOPs</a>
+        <a href="/store/">All products</a>
+      </div>
+      <div class="f-col">
+        <h4>Connect</h4>
+        <a href="mailto:hello@aigatecrashers.com">hello@aigatecrashers.com</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#faq">Refund policy</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 AI Gatecrashers.</span>
+      <span class="built">Built by one human, with care <span style="color:var(--warm)">♥</span></span>
+    </div>
+  </div>
+</footer>
+<script src="/js/nav.js?v=2026-04-20c"></script>
+<!-- SHELL:FOOTER:END -->
+
+<!-- ================= JS ================= -->
+<script src="/js/home.js?v=2026-04-20b"></script>
 </body>
 </html>

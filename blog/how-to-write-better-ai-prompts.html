@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta -->
+  <title>How to Write Better AI Prompts in Under 10 Minutes (With Examples) | AI Gatecrashers</title>
+  <meta name="description" content="A practical framework for writing AI prompts that actually give you useful outputs. Works with ChatGPT, Claude, and Gemini. Includes the 5-part formula and before/after examples.">
+  <link rel="canonical" href="https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html">
+  <meta property="og:title" content="How to Write Better AI Prompts in Under 10 Minutes (With Examples) | AI Gatecrashers">
+  <meta property="og:description" content="A practical framework for writing AI prompts that actually give you useful outputs. Works with ChatGPT, Claude, and Gemini. Includes the 5-part formula and before/after examples.">
+  <meta property="og:image" content="https://aigatecrashers.com/assets/og-image.jpg">
+  <meta property="og:site_name" content="AI Gatecrashers">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@aigatecrashers">
+  <meta name="twitter:title" content="How to Write Better AI Prompts in Under 10 Minutes (With Examples) | AI Gatecrashers">
+  <meta name="twitter:description" content="A practical framework for writing AI prompts that actually give you useful outputs. Works with ChatGPT, Claude, and Gemini. Includes the 5-part formula and before/after examples.">
+  <meta name="twitter:image" content="https://aigatecrashers.com/assets/og-image.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css?v=2026-04-20">
+
+  <!-- JSON-LD: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Write Better AI Prompts in Under 10 Minutes (With Examples)",
+    "description": "A practical framework for writing AI prompts that actually give you useful outputs. Works with ChatGPT, Claude, and Gemini. Includes the 5-part formula and before/after examples.",
+    "author": {
+      "@type": "Person",
+      "name": "Keith Allen Schuh",
+      "url": "https://aigatecrashers.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Gatecrashers",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aigatecrashers.com/assets/logo.png"
+      }
+    },
+    "datePublished": "2026-03-18",
+    "dateModified": "2026-04-20",
+    "url": "https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html",
+    "image": "https://aigatecrashers.com/assets/og-image.jpg",
+    "mainEntityOfPage": "https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html"
+  }
+  </script>
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aigatecrashers.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aigatecrashers.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "How to Write Better AI Prompts in Under 10 Minutes", "item": "https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Write Better AI Prompts Using the 5-Part Formula",
+    "description": "A five-step framework for writing AI prompts that produce specific, useful outputs instead of generic filler. Works with ChatGPT, Claude, and Gemini.",
+    "totalTime": "PT10M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Assign a Role",
+        "url": "https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html#formula",
+        "text": "Tell the model who it is. Give it a specific professional identity tied to your task. 'You are a B2B copywriter who specializes in SaaS landing pages' produces sharper output than 'write me some copy.'"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Add Context",
+        "url": "https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html#formula",
+        "text": "Give the model the background it needs: your product, your audience, the situation. Paste in relevant text, data, or examples. The more specific your context, the less the model fills in the blanks with generic defaults."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "State the Task Clearly",
+        "url": "https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html#formula",
+        "text": "One clear verb tells the model what to produce. Write, summarize, list, compare, rewrite. Vague requests like 'help me with' produce vague outputs. Be direct about exactly what you want the model to create."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 4,
+        "name": "Set Constraints",
+        "url": "https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html#formula",
+        "text": "Tell the model what to avoid and what limits to respect. Word counts, banned phrases, tone restrictions, audience age, reading level. Constraints cut the output from a five-page essay to the two paragraphs you actually needed."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 5,
+        "name": "Specify a Format",
+        "url": "https://aigatecrashers.com/blog/how-to-write-better-ai-prompts.html#formula",
+        "text": "Name the structure you want: numbered list, table, bullet points, email with subject line, three-paragraph op-ed. When you skip the format spec, the model guesses. It often guesses wrong."
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How long should a good AI prompt be?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Long enough to cover the five parts: role, context, task, constraints, format. That usually runs three to eight sentences. Longer prompts are not inherently better, a focused 80-word prompt beats a rambling 400-word one. If you find yourself writing a page, break the task into steps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do these prompting techniques work with Claude and Gemini, not just ChatGPT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The five-part framework works across all major models because it addresses what every large language model needs: a persona, background information, a clear task, guardrails, and a structure. Claude tends to follow format specs more precisely. Gemini benefits from shorter context windows when searching recent information. The core formula does not change."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does AI keep giving me generic outputs even when I try to be specific?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Usually because one of three things is missing: context about your actual audience, a constraint on what to avoid, or a format spec. Generic prompts train the model to produce generic answers because there is no signal pointing toward something specific. Paste in a sample of your own writing or a competitor example and the output quality jumps almost immediately."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is prompt engineering hard to learn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The fundamentals take under an hour to learn and a week of daily practice to internalize. You do not need to memorize jargon or follow any official certification. The five-part formula covers 90 percent of everyday use cases. Advanced techniques like chain-of-thought prompting and few-shot examples layer on naturally once the basics are solid."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I stop AI from making up facts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Two habits help most. First, paste in your source material and tell the model to work only from what you have provided. Second, add 'if you are unsure of a fact, say so rather than guessing' to your prompt. Models are polite by default and will often invent a confident-sounding answer rather than admit uncertainty. Explicitly giving them permission to say they do not know reduces fabrication significantly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is meta-prompting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meta-prompting means asking an AI to write or improve your prompts for you. You describe the task you are trying to accomplish and ask the model to produce a well-structured prompt you can then run. It sounds circular but it works well: the model knows its own tendencies and can build in the role, context, and constraints that humans tend to forget."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <!-- SHELL:HEADER:START -->
+<div class="nav-wrap" id="navWrap">
+  <div class="container">
+    <div class="nav">
+      <a href="/" class="brand">
+        <span class="brand-mark"></span>
+        <span class="wordmark" style="font-family: Helvetica"><span class="ai">Ai</span>GATECRASHERS</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="/#start">Start here</a>
+        <a href="/#trainings">Trainings</a>
+        <a href="/store/">Store</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#usecases" class="live">For non-profits</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="/store/" class="nav-search" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          Search
+          <kbd>⌘K</kbd>
+        </a>
+        <a href="mailto:hello@aigatecrashers.com" class="nav-login">Sign in</a>
+        <a href="/#newsletter" class="nav-cta">
+          Get 50 free prompts
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-burger" aria-label="Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SHELL:HEADER:END -->
+
+  <!-- CART OVERLAY -->
+  <div class="cart-overlay js-cart-overlay"></div>
+  <aside class="cart-panel js-cart-panel" aria-label="Shopping cart">
+    <div class="cart-panel-header">
+      <h2>Your Cart</h2>
+      <button class="cart-close js-cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items js-cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span class="js-cart-total">$0.00</span></div>
+      <button class="cta-button js-checkout">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- BREADCRUMBS -->
+  <nav class="breadcrumbs container" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <a href="../blog/">Blog</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <span>How to Write Better AI Prompts in Under 10 Minutes</span>
+  </nav>
+
+  <!-- BLOG POST -->
+  <main class="blog-post container">
+
+    <article>
+      <header class="blog-post-header">
+        <div class="blog-post-meta">
+          <span class="reading-time">7 min read</span>
+          <span class="meta-sep">&middot;</span>
+          <time datetime="2026-03-18">March 18, 2026</time>
+        </div>
+        <h1>How to Write Better AI Prompts in Under 10 Minutes (With Examples)</h1>
+        <p class="author-byline" style="color:#6b7280;font-size:0.9rem;margin:0 0 32px;">By <strong style="color:#0f1c3f;">Keith Allen Schuh</strong> &middot; Published March 18, 2026 &middot; Updated April 20, 2026</p>
+      </header>
+
+      <div class="blog-post-body">
+
+        <div class="tldr" style="background:#eaf5fc;border-left:4px solid #0fa4d9;padding:20px 24px;border-radius:10px;margin:24px 0;">
+          <strong style="display:block;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;color:#0fa4d9;margin-bottom:8px;">TL;DR</strong>
+          <p style="margin:0;color:#3a4258;line-height:1.6;">Great AI prompts have five parts: a role, context, a clear task, constraints, and a format spec. Most people skip three of them. Fix that and your outputs jump from generic to useful in the same session.</p>
+        </div>
+
+        <h2 id="diagnosis">Why are your AI outputs so generic?</h2>
+
+        <p>You have been there. You type a question into ChatGPT, read the response, and feel nothing. It is technically correct. It is also completely useless, the kind of paragraph that could have been written about any company, any product, any audience. You close the tab thinking AI is overhyped.</p>
+
+        <p>The problem almost never lives in the model. It lives in the prompt.</p>
+
+        <p>Large language models are prediction engines. They generate the most statistically likely next word given what you gave them. If you give them a vague three-word question, the most likely output is a vague, generic answer. The model is doing exactly what you asked. You just asked for the wrong thing.</p>
+
+        <p>Think of it this way: if you hired a new freelancer and handed them a sticky note that said "write me some marketing copy," you would get back something forgettable. Give that same freelancer a one-page brief with your product, your target customer, three competing examples, a word count, and the tone you want, suddenly the first draft is usable. The model works exactly the same way.</p>
+
+        <p>The fix is not complicated. There are five things every useful AI prompt needs, and most people include one or two. Add the other three and your outputs will change inside the same conversation.</p>
+
+        <h2 id="formula">What makes a great AI prompt? The 5-part formula</h2>
+
+        <p>This framework applies whether you are writing ChatGPT prompts, working with Claude, or using Gemini. The underlying principle is the same: give the model enough signal to stop guessing. Here are the five parts.</p>
+
+        <h3>Part 1. Role</h3>
+        <p>Tell the model who it is. Not just "you are an expert," but a specific professional with a specific background. The role activates a narrower slice of the model's training and pushes it toward domain-specific vocabulary, reasoning patterns, and conventions.</p>
+
+        <pre><code>Without role: "Write a subject line for my email."
+
+With role: "You are an email copywriter who has written B2B cold outreach
+for SaaS companies for ten years."</code></pre>
+
+        <p>The role does not need to be long. One sentence is enough. What matters is that it is specific rather than general.</p>
+
+        <h3>Part 2. Context</h3>
+        <p>Context is the background information the model cannot know unless you provide it. Your product, your customer, the situation you are in, competing examples. OpenAI's prompt engineering documentation notes that "the more information you give the model, the better it can tailor its response to your needs." That is not a suggestion. It is how the system works.</p>
+
+        <pre><code>Without context: "Help me write a product description."
+
+With context: "My product is a $29 prompt template pack for solo consultants
+who charge $150/hr and bill 20 hours a week. They are not technical.
+They want to save time on client deliverables without sounding like a robot."</code></pre>
+
+        <p>The context section is where most people leave the most output quality on the table. Paste in real text. Paste in a competitor description you admire. Paste in three past emails you wrote that sounded right. The model will pattern-match from those examples.</p>
+
+        <h3>Part 3. Task</h3>
+        <p>One clear verb. Write, summarize, list, compare, rewrite, extract, critique. If you cannot state the task in a single sentence starting with a verb, the task is not clear enough yet.</p>
+
+        <pre><code>Weak task: "Can you help me think about my landing page?"
+
+Strong task: "Write three alternative headlines for my landing page.
+Each headline should be under 10 words and focus on time saved,
+not features."</code></pre>
+
+        <p>Vague task language ("help me with," "think about," "explore") produces exploratory outputs. If you want something specific, ask for something specific.</p>
+
+        <h3>Part 4. Constraints</h3>
+        <p>Constraints are the boundaries. Word count, what to avoid, the reading level, banned phrases, the tone. Without constraints, the model defaults to the most statistically average version of what you asked for. Constraints force it out of average.</p>
+
+        <pre><code>Without constraints: "Write a cold email."
+
+With constraints: "Under 120 words. No subject line question marks. No emojis.
+No mention of 'AI-powered.' Write as if the sender is a person,
+not a company. End with one specific question, not a call to action."</code></pre>
+
+        <p>Anthropic's prompt engineering documentation makes a similar point: "Be clear and direct" is the single most useful piece of advice they offer. Constraints are how you enforce clarity.</p>
+
+        <h3>Part 5. Format</h3>
+        <p>Tell the model what the output should look like. Numbered list, bullet points, a table, a three-paragraph email, an FAQ, a script. When you skip the format spec, the model guesses. It often guesses wrong, handing you a five-paragraph essay when you needed a six-item checklist.</p>
+
+        <pre><code>Without format: "Give me some ideas for social posts."
+
+With format: "Give me 5 LinkedIn posts. Format each post as:
+Line 1: One-sentence hook (no questions)
+Lines 2-4: Three bullet points with specific examples
+Line 5: One call-to-action sentence
+Each post should be under 150 words."</code></pre>
+
+        <p>Format specs are especially important for outputs that go directly into other tools, spreadsheets, email clients, CMSs. Specifying the structure once saves you from reformatting every output manually.</p>
+
+        <h2 id="comparison">What does a bad prompt look like vs. a great one?</h2>
+
+        <p>Theory is easier to absorb with concrete examples. Here are three side-by-side comparisons covering common use cases. Read both versions and notice what information the great prompt provides that the weak one leaves out.</p>
+
+        <h3>Example 1: Blog post intro</h3>
+        <pre><code>WEAK:
+"Write an intro for a blog post about productivity."
+
+GREAT:
+"You are a productivity writer who covers tools and systems for freelancers.
+Write an opening paragraph for a blog post titled 'Why Your Task Manager
+Is Making You Less Productive.' Target audience: freelancers with 3+ years
+of experience who already use tools like Todoist or Notion and are skeptical
+of adding more systems. Tone: direct, slightly contrarian. No rhetorical
+questions. Under 80 words."</code></pre>
+
+        <h3>Example 2: Customer email reply</h3>
+        <pre><code>WEAK:
+"Write a reply to an angry customer email."
+
+GREAT:
+"You are a customer support specialist for a small e-commerce brand
+that sells handmade goods. A customer emailed to say their order arrived
+damaged and they want a refund. Our policy is to offer either a replacement
+or a full refund. Write a reply that acknowledges their frustration,
+apologizes without admitting legal fault, and offers both options clearly.
+Under 100 words. No corporate-speak. First-person singular, warm but
+professional tone."</code></pre>
+
+        <h3>Example 3: Social media caption</h3>
+        <pre><code>WEAK:
+"Write a caption for an Instagram post about my new product launch."
+
+GREAT:
+"You are a social media copywriter for a direct-to-consumer skincare brand
+targeting women 28-42. Write a caption for an Instagram post announcing
+the launch of a new SPF moisturizer priced at $38. The product's main
+differentiator is that it does not leave a white cast on darker skin tones.
+Tone: confident, inclusive, factual. No exclamation points. No hashtags
+in the caption body. Under 60 words. End with a single clear CTA to
+click the link in bio."</code></pre>
+
+        <p>Notice what every great prompt does: it names who the model is, gives enough background to make decisions, states exactly what to produce, and draws a box around the output with constraints and a format. That structure is repeatable across any task.</p>
+
+        <h2 id="voice">How do I get AI to write in my voice?</h2>
+
+        <p>This is the question I get most often from content creators and solopreneurs. The good news is that the fix is simple. The bad news is that most people skip it.</p>
+
+        <p>The fix: paste samples of your own writing into the prompt. At least three examples. Then ask the model to extract a style description before writing anything new.</p>
+
+        <pre><code>"Read these three emails I wrote. Extract a list of style observations:
+sentence length patterns, vocabulary level, structural habits, phrases I
+use, things I avoid. Then write a new email in that style about [topic]."
+
+[Paste Email 1]
+[Paste Email 2]
+[Paste Email 3]</code></pre>
+
+        <p>The extracted style list is something you can save and reuse. Drop it into any future prompt as a context block. Over time, your AI outputs start to sound less like a LinkedIn thought-leader and more like you.</p>
+
+        <p>A few other techniques that help: tell the model what you do not sound like ("not corporate, not academic, not casual-bro"), give it a reference writer whose style is similar to yours, and ask it to flag any phrases in its output that feel off-brand so you can address them in the next iteration.</p>
+
+        <p>If you want a head start on the style-extraction process, the <a href="https://aigatecrashers.com/products/ai-starter-pack.html">AI Starter Pack</a> includes pre-built voice-extraction prompts you can run against any writing sample in under five minutes.</p>
+
+        <h2 id="research">How do I get AI to do research without making stuff up?</h2>
+
+        <p>Hallucination is real. Models are trained to produce fluent, confident-sounding text. They will invent a citation, a statistic, or a case study rather than admit uncertainty. This is not a bug you can patch with better hardware. It is a property of how these systems work, and it requires a workflow response.</p>
+
+        <p>Two techniques reduce fabrication significantly.</p>
+
+        <p><strong>Source-grounded prompting.</strong> Paste in the source material and instruct the model to work only from what you gave it.</p>
+
+        <pre><code>"Based only on the text below, summarize the three main arguments.
+Do not add information from outside this text. If a claim is not
+supported by the text, say so rather than inferring it.
+
+[Paste article, report, or transcript here]"</code></pre>
+
+        <p><strong>Explicit uncertainty permission.</strong> Models default to confidence because confident outputs feel like better service. You can override this.</p>
+
+        <pre><code>"If you are not certain of a fact, say 'I am not certain about this'
+rather than stating it as fact. I would rather have a caveat than
+a wrong answer presented with confidence."</code></pre>
+
+        <p>Google's Gemini prompt guidance specifically recommends adding grounding context when you need reliable, source-based outputs. The same principle applies across every major model. Treat unsourced AI outputs as draft-quality claims that need verification before you publish or send them.</p>
+
+        <p>For anything that involves numbers, recent events, or named people, run a quick verification pass. The five minutes you spend checking two facts is faster than managing the fallout from publishing an invented statistic.</p>
+
+        <h2 id="cross-model">Does this work with Claude and Gemini too?</h2>
+
+        <p>Yes. The five-part formula is model-agnostic because it addresses what every large language model needs: a persona to adopt, background to work from, a task with a single clear verb, guardrails on the output, and a structural template.</p>
+
+        <p>That said, there are practical differences worth knowing.</p>
+
+        <p><strong>Claude</strong> tends to follow formatting instructions precisely and handles long-form tasks well. It also tends to add caveats and hedges unless you explicitly tell it not to. If you want direct, assertive copy, include "be direct, skip the hedges and caveats" in your constraints. Anthropic's prompt engineering documentation is worth reading if you work with Claude regularly.</p>
+
+        <p><strong>Gemini</strong> has a stronger real-time web integration than the other models, which makes it better for research tasks that require current information. Google's Gemini prompt guidance emphasizes being explicit about what type of response you want (factual, creative, analytical) at the start of the prompt. That instruction also improves outputs from other models, so it is a good habit regardless of which tool you use.</p>
+
+        <p><strong>ChatGPT</strong> (GPT-4 and later) responds well to few-shot examples, showing it one or two examples of what you want rather than only describing it. If your format instructions are complex, pasting a sample output and saying "format it like this" often works better than writing a detailed format spec from scratch.</p>
+
+        <p>The core framework transfers. The adjustments are small. If you already have a prompt library that works in ChatGPT, most of those prompts will produce comparable outputs in Claude or Gemini with minimal editing. For a deep dive on applying this across business use cases, the post on <a href="https://aigatecrashers.com/blog/chatgpt-for-small-business-owners.html">using ChatGPT as a small business owner</a> covers the workflow side in more detail.</p>
+
+        <h2 id="meta-prompting">The meta-prompting trick: using AI to write your prompts</h2>
+
+        <p>Once you understand the five-part formula, you can use it to do something that sounds like a paradox: ask the AI to write your prompts for you.</p>
+
+        <p>Meta-prompting works like this. You describe the task you are trying to accomplish, tell the model what the output will be used for, and ask it to write you a high-quality prompt structured around role, context, task, constraints, and format. You then run that prompt.</p>
+
+        <pre><code>"I need to write a prompt that will produce a competitive analysis
+comparing my SaaS pricing page to three competitors. The analysis
+will be used by my marketing team to redesign our pricing page.
+Write me a well-structured prompt for this task, including a clear
+role, relevant context placeholders, the specific task, constraints,
+and output format."</code></pre>
+
+        <p>The model knows its own tendencies. It will often produce a prompt with structure and constraints you would not have thought to include. This is particularly useful when you are approaching a task type you have not prompted for before.</p>
+
+        <p>If you want to take this further, the <a href="https://aigatecrashers.com/products/stop-guessing-prompt-builder.html">Stop Guessing Prompt Builder</a> is a structured tool I built specifically around meta-prompting principles. Instead of writing your prompts from scratch, you answer a short set of questions and it assembles the five-part prompt for you. Useful when you want the framework applied consistently without rebuilding it every time.</p>
+
+        <p>There is also a broader collection of tested, ready-to-use prompts in the <a href="https://aigatecrashers.com/products/chatgpt-prompts-business.html">Business &amp; Strategy Prompt Pack</a> if you would rather start with proven prompts and adapt them, rather than building from scratch.</p>
+
+        <div class="blog-cta-box">
+          <p>Want an AI that builds your prompts for you? The <strong>Stop Guessing Prompt Builder</strong> uses structured questions to assemble a five-part prompt automatically. No formula to memorize, no guessing on structure.</p>
+          <a href="../products/stop-guessing-prompt-builder.html" class="cta-button">See the Stop Guessing Prompt Builder</a>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+
+        <details>
+          <summary><strong>How long should a good AI prompt be?</strong></summary>
+          <p>Long enough to cover the five parts: role, context, task, constraints, format. That usually runs three to eight sentences. Longer prompts are not inherently better, a focused 80-word prompt beats a rambling 400-word one. If you find yourself writing a page, break the task into steps.</p>
+        </details>
+
+        <details>
+          <summary><strong>Do these prompting techniques work with Claude and Gemini, not just ChatGPT?</strong></summary>
+          <p>Yes. The five-part framework works across all major models because it addresses what every large language model needs: a persona, background information, a clear task, guardrails, and a structure. Claude tends to follow format specs more precisely. Gemini benefits from shorter context when searching recent information. The core formula does not change.</p>
+        </details>
+
+        <details>
+          <summary><strong>Why does AI keep giving me generic outputs even when I try to be specific?</strong></summary>
+          <p>Usually because one of three things is missing: context about your actual audience, a constraint on what to avoid, or a format spec. Generic prompts train the model to produce generic answers because there is no signal pointing toward something specific. Paste in a sample of your own writing or a competitor example and the output quality jumps almost immediately.</p>
+        </details>
+
+        <details>
+          <summary><strong>Is prompt engineering hard to learn?</strong></summary>
+          <p>No. The fundamentals take under an hour to learn and a week of daily practice to internalize. You do not need to memorize jargon or follow any official certification. The five-part formula covers 90 percent of everyday use cases. Advanced techniques like chain-of-thought prompting and few-shot examples layer on naturally once the basics are solid.</p>
+        </details>
+
+        <details>
+          <summary><strong>How do I stop AI from making up facts?</strong></summary>
+          <p>Two habits help most. First, paste in your source material and tell the model to work only from what you provided. Second, add "if you are unsure of a fact, say so rather than guessing" to your prompt. Models are polite by default and will often invent a confident-sounding answer rather than admit uncertainty. Explicitly giving them permission to say they do not know reduces fabrication significantly.</p>
+        </details>
+
+        <details>
+          <summary><strong>What is meta-prompting?</strong></summary>
+          <p>Meta-prompting means asking an AI to write or improve your prompts for you. You describe the task you are trying to accomplish and ask the model to produce a well-structured prompt you can then run. It sounds circular but it works well: the model knows its own tendencies and can build in the role, context, and constraints that humans tend to forget. The <a href="https://aigatecrashers.com/products/stop-guessing-prompt-builder.html">Stop Guessing Prompt Builder</a> automates this process.</p>
+        </details>
+
+        <div class="blog-cta-box blog-cta-box--featured">
+          <p>Ready to put all of this into practice? The <strong>AI Starter Pack</strong> bundles everything you need to go from beginner to confident AI user: a prompt library, voice-extraction templates, and step-by-step workflows for the most common tasks.</p>
+          <a href="../products/ai-starter-pack.html" class="cta-button">Get the AI Starter Pack</a>
+        </div>
+
+      </div><!-- /.blog-post-body -->
+    </article>
+
+    <!-- RELATED POSTS -->
+    <section class="related-posts">
+      <h2>Related Posts</h2>
+      <div class="blog-cards">
+
+        <a href="how-to-use-chatgpt-for-business.html" class="blog-card">
+          <div class="blog-card-image blog-card-image--business"></div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Business</span>
+            <h3>How to Use ChatGPT for Business in 2026: The Complete Guide</h3>
+            <p>Practical workflows for small business owners across strategy, marketing, operations, customer service, and product development.</p>
+            <span class="blog-card-read">8 min read &rsaquo;</span>
+          </div>
+        </a>
+
+        <a href="ai-side-hustle-ideas.html" class="blog-card">
+          <div class="blog-card-image blog-card-image--hustle"></div>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Side Hustles</span>
+            <h3>AI Side Hustle Ideas That Actually Make Money in 2026</h3>
+            <p>Five proven AI side hustle categories, real monetization paths, and a $50 validation framework to test demand before you build anything.</p>
+            <span class="blog-card-read">9 min read &rsaquo;</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <!-- SHELL:FOOTER:START -->
+<footer class="site-footer-v2">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <img src="/assets/logo-stacked.png" alt="AI Gatecrashers" style="width:140px;height:auto;margin-bottom:16px;display:block" />
+        <p>Plain-English AI training, prompt packs, and playbooks for small businesses, non-profits, and first-time AI users. Built by Keith Allen Schuh.</p>
+        <div class="f-socials">
+          <a href="https://twitter.com/aigatecrashers" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.522 7.455L22 22h-5.85l-4.586-5.99L6.3 22H3.544l6.98-7.978L2 2h6.056l4.14 5.473L18.244 2zm-1.02 18h1.546L7.5 4H5.96l11.264 16z"/></svg></a>
+          <a href="https://instagram.com/aigatecrashers" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a>
+          <a href="https://youtube.com/@aigatecrashers" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-4-.5-5.8a3 3 0 0 0-2.1-2.1C18.6 3.6 12 3.6 12 3.6s-6.6 0-8.4.5a3 3 0 0 0-2.1 2.1C1 8 1 12 1 12s0 4 .5 5.8a3 3 0 0 0 2.1 2.1c1.8.5 8.4.5 8.4.5s6.6 0 8.4-.5a3 3 0 0 0 2.1-2.1C23 16 23 12 23 12zM10 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+          <a href="mailto:hello@aigatecrashers.com" aria-label="Email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></a>
+        </div>
+      </div>
+      <div class="f-col">
+        <h4>Start</h4>
+        <a href="/#start">New to AI</a>
+        <a href="/#trainings">Trainings</a>
+        <a href="/#usecases">For non-profits</a>
+        <a href="/#newsletter">Free prompts</a>
+      </div>
+      <div class="f-col">
+        <h4>Products</h4>
+        <a href="/products/chatgpt-accelerator-challenge.html">ChatGPT Accelerator</a>
+        <a href="/products/7-figure-ai-roadmap.html">7-Figure AI Roadmap</a>
+        <a href="/products/nonprofit-ai-playbook.html">Non-profit Playbook</a>
+        <a href="/products/marketing-sops-pack.html">Marketing SOPs</a>
+        <a href="/store/">All products</a>
+      </div>
+      <div class="f-col">
+        <h4>Connect</h4>
+        <a href="mailto:hello@aigatecrashers.com">hello@aigatecrashers.com</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#faq">Refund policy</a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 AI Gatecrashers.</span>
+      <span class="built">Built by one human, with care <span style="color:var(--warm)">♥</span></span>
+    </div>
+  </div>
+</footer>
+<script src="/js/nav.js?v=2026-04-20c"></script>
+<!-- SHELL:FOOTER:END -->
+
+  <!-- Store JS -->
+  <script src="../js/store.js"></script>
+</body>
+</html>
