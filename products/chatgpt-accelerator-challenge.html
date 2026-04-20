@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The ChatGPT Accelerator Challenge — Go From Beginner to Pro in 10 Days | AI Gatecrashers</title>
+  <meta name="description" content="10 challenges. 10 days. One transformation. The structured path that takes you from casual ChatGPT user to power user — with real projects at every step. Just $27.">
+  <link rel="canonical" href="https://aigatecrashers.com/products/chatgpt-accelerator-challenge.html">
+  <meta property="og:title" content="The ChatGPT Accelerator Challenge — Go From Beginner to Pro in 10 Days | AI Gatecrashers">
+  <meta property="og:description" content="10 challenges. 10 days. One transformation. You'll use ChatGPT better than 99% of people.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://aigatecrashers.com/products/chatgpt-accelerator-challenge.html">
+  <meta property="og:site_name" content="AI Gatecrashers">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@aigatecrashers">
+  <meta name="twitter:title" content="The ChatGPT Accelerator Challenge — Go From Beginner to Pro in 10 Days | AI Gatecrashers">
+  <meta name="twitter:description" content="10 challenges. 10 days. One transformation. You'll use ChatGPT better than 99% of people.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <style>
+    /* === ACCELERATOR CHALLENGE — PAGE-SPECIFIC STYLES === */
+    .curriculum-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+      counter-reset: module-counter;
+    }
+    .curriculum-list li {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+      margin-bottom: 0.75rem;
+      background: var(--bg-card);
+      transition: border-color var(--transition), transform var(--transition);
+      counter-increment: module-counter;
+    }
+    .curriculum-list li:hover {
+      border-color: var(--primary);
+      transform: translateX(4px);
+    }
+    .module-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 2.25rem;
+      height: 2.25rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .module-text strong {
+      display: block;
+      color: var(--text-white);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .module-text p {
+      font-size: 0.9rem;
+      margin: 0;
+      color: var(--text-muted);
+    }
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .stat-pill {
+      text-align: center;
+      padding: 1.25rem 0.75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+    }
+    .stat-pill .stat-num {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+    .stat-pill .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+      padding: 1.5rem;
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '\201C';
+      font-size: 3rem;
+      color: var(--primary);
+      opacity: 0.4;
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .testimonial-card p {
+      font-size: 0.95rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+      color: var(--text-body);
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .testimonial-avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .testimonial-name {
+      font-weight: 600;
+      color: var(--text-white);
+      font-size: 0.9rem;
+    }
+    .testimonial-role {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .upsell-box {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(0, 212, 255, 0.08));
+      border: 1px solid rgba(124, 58, 237, 0.4);
+      border-radius: var(--radius-card);
+      padding: 1.75rem;
+      margin: 2.5rem 0;
+      text-align: center;
+    }
+    .upsell-box .upsell-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+    .upsell-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .upsell-box p {
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+    .upsell-link {
+      display: inline-block;
+      padding: 0.75rem 1.75rem;
+      background: linear-gradient(135deg, var(--secondary), #9b59b6);
+      color: #fff;
+      border-radius: var(--radius-btn);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: opacity var(--transition), transform var(--transition);
+    }
+    .upsell-link:hover { opacity: 0.9; transform: translateY(-1px); }
+    .outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .outcome-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-left: 3px solid var(--primary);
+      border-radius: var(--radius-card);
+      padding: 1.25rem 1.5rem;
+    }
+    .outcome-card p { margin: 0; font-size: 0.95rem; }
+    @media (max-width: 640px) {
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .testimonial-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "The ChatGPT Accelerator Challenge",
+    "description": "10 challenges. 10 days. One transformation. A structured 10-day curriculum that takes you from casual ChatGPT user to power user — with real projects at every step.",
+    "brand": { "@type": "Brand", "name": "AI Gatecrashers" },
+    "offers": {
+      "@type": "Offer",
+      "price": "27.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://aigatecrashers.com/products/chatgpt-accelerator-challenge.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aigatecrashers.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://aigatecrashers.com/#products" },
+      { "@type": "ListItem", "position": 3, "name": "The ChatGPT Accelerator Challenge", "item": "https://aigatecrashers.com/products/chatgpt-accelerator-challenge.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much time per day does this require?",
+        "acceptedAnswer": { "@type": "Answer", "text": "30–60 minutes per challenge. Some people binge the whole thing in a weekend." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this just theory or are there real exercises?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No theory-only content. Every challenge includes hands-on exercises with real outputs you can use immediately." }
+      },
+      {
+        "@type": "Question",
+        "name": "I already use ChatGPT daily — will I learn anything new?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Beta testers who were 'advanced users' said challenges 7–10 changed how they work. The advanced prompting and automation sections go significantly deeper than most daily users ever explore." }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I fall behind the 10-day schedule?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It's fully self-paced. Take 10 days or 10 weeks — your access never expires." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a paid ChatGPT subscription?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The free tier works for most challenges. A few advanced exercises benefit from GPT-4 access, but free alternatives are noted throughout." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header sticky-header">
+    <div class="header-inner container">
+      <a href="../index.html" class="logo">AI Gatecrashers</a>
+      <nav class="main-nav">
+        <a href="../index.html#products">Shop</a>
+        <a href="../index.html#courses">Courses</a>
+        <a href="../blog/">Blog</a>
+        <button class="cart-btn js-cart-open" aria-label="Open cart">Cart <span class="cart-count">0</span></button>
+      </nav>
+      <button class="mobile-menu-toggle js-mobile-menu" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <nav class="mobile-nav js-mobile-nav">
+      <a href="../index.html#products">Shop</a>
+      <a href="../index.html#courses">Courses</a>
+      <a href="../blog/">Blog</a>
+    </nav>
+  </header>
+
+  <!-- CART OVERLAY -->
+  <div class="cart-overlay js-cart-overlay"></div>
+  <aside class="cart-panel js-cart-panel" aria-label="Shopping cart">
+    <div class="cart-panel-header">
+      <h2>Your Cart</h2>
+      <button class="cart-close js-cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items js-cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span class="js-cart-total">$0.00</span></div>
+      <button class="cta-button js-checkout">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- BREADCRUMBS -->
+  <nav class="breadcrumbs container" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <a href="../index.html#products">Products</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <span>The ChatGPT Accelerator Challenge</span>
+  </nav>
+
+  <!-- PRODUCT HERO -->
+  <section class="product-hero product-hero--course">
+    <div class="container product-hero-inner">
+      <div class="product-hero-text">
+        <div class="product-badge">10-Day Structured Challenge</div>
+        <h1>The ChatGPT Accelerator Challenge</h1>
+        <p class="product-tagline">10 challenges. 10 days. One transformation. You'll use ChatGPT better than 99% of people — with real projects to prove it.</p>
+        <div class="product-hero-price">
+          <span class="price-main">$27</span>
+          <span class="price-note">One-time purchase. Lifetime access. Self-paced.</span>
+        </div>
+        <div class="hero-cta-wrap" style="margin-top:1.5rem;">
+          <button class="cta-button cta-button-lg js-add-to-cart" data-product-id="accelerator" data-product-name="The ChatGPT Accelerator Challenge" data-product-price="27">Start the Challenge &mdash; $27</button>
+        </div>
+      </div>
+      <div class="product-hero-image">
+        <div class="card-image course">
+          <span class="card-image-label">10-Day Course</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS ROW -->
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-pill"><span class="stat-num">10</span><span class="stat-label">Challenges</span></div>
+      <div class="stat-pill"><span class="stat-num">30+</span><span class="stat-label">Exercises</span></div>
+      <div class="stat-pill"><span class="stat-num">&#8734;</span><span class="stat-label">Lifetime Access</span></div>
+      <div class="stat-pill"><span class="stat-num">100%</span><span class="stat-label">Self-Paced</span></div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="product-main container">
+    <div class="product-layout">
+
+      <!-- LEFT COLUMN: Content -->
+      <div class="product-content">
+
+        <!-- Introduction -->
+        <section class="content-section">
+          <h2>Most People Use ChatGPT Wrong</h2>
+          <p>They type a question, get a mediocre answer, shrug, and close the tab. That's not AI — that's a fancy search engine.</p>
+          <p>The difference between someone who gets average outputs and someone who produces extraordinary work with ChatGPT isn't intelligence, experience, or even the model they're using. It's how they think about prompts, how they structure conversations, and how they build systems around AI instead of just using it reactively.</p>
+          <p>The ChatGPT Accelerator Challenge teaches you that entire mindset shift — one practical challenge at a time. By Challenge 10, you'll have real outputs, real templates, and a real advantage that most people won't catch up to for years.</p>
+        </section>
+
+        <!-- Curriculum -->
+        <section class="content-section">
+          <h2>The 10-Challenge Curriculum</h2>
+          <p>Every challenge builds on the last. Every challenge produces something you can actually use. No filler, no fluff — just 10 progressive steps from beginner to power user.</p>
+
+          <ol class="curriculum-list">
+            <li>
+              <div class="module-number">1</div>
+              <div class="module-text">
+                <strong>Challenge 1: The Foundation</strong>
+                <p>Understand how ChatGPT actually thinks — and how to think with it rather than at it. This mental model shift is what separates users who get mediocre outputs from those who get exceptional ones.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">2</div>
+              <div class="module-text">
+                <strong>Challenge 2: Prompt Architecture</strong>
+                <p>Learn the frameworks that separate amateurs from power users. Role, context, constraints, format — the four levers that control every output you'll ever generate.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">3</div>
+              <div class="module-text">
+                <strong>Challenge 3: Business Applications</strong>
+                <p>Turn ChatGPT into your personal strategy consultant. From market analysis to competitive positioning to meeting prep — the professional use cases that save hours every week.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">4</div>
+              <div class="module-text">
+                <strong>Challenge 4: Content Machine</strong>
+                <p>Generate weeks of content in hours. Blog posts, social captions, email sequences, video scripts — learn the workflow that keeps the content calendar full without burning out.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">5</div>
+              <div class="module-text">
+                <strong>Challenge 5: Data &amp; Analysis</strong>
+                <p>Make ChatGPT your personal analyst. Summarize reports, extract insights, spot trends, build comparisons — without needing a data science background.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">6</div>
+              <div class="module-text">
+                <strong>Challenge 6: Automation Basics</strong>
+                <p>Build workflows that run themselves. Connect ChatGPT to your existing tools to create systems that handle repeatable tasks — so you stop doing the same thing twice.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">7</div>
+              <div class="module-text">
+                <strong>Challenge 7: Advanced Prompting</strong>
+                <p>Chains, personas, and system prompts — the techniques that make your AI interactions 10x more powerful. This is where most "advanced users" discover they were still thinking too small.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">8</div>
+              <div class="module-text">
+                <strong>Challenge 8: Creative Applications</strong>
+                <p>From raw brainstorm to polished output in one session. Ideation, iteration, refinement — the creative workflow that makes AI feel like a true collaborator.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">9</div>
+              <div class="module-text">
+                <strong>Challenge 9: Building Products</strong>
+                <p>Use AI to create things people will actually pay for. Digital products, guides, templates, courses — the full product creation workflow from idea to deliverable.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">10</div>
+              <div class="module-text">
+                <strong>Challenge 10: Your AI-Powered Future</strong>
+                <p>Putting it all together. Build your personal AI operating system — the prompts, templates, and workflows you'll reuse for years. Your competitive advantage starts here.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Who This Is For -->
+        <section class="content-section">
+          <h2>Who This Challenge Is Built For</h2>
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-emoji">&#128120;</div>
+              <h3>Complete Beginners</h3>
+              <p>You've heard about ChatGPT and maybe typed a few prompts, but you feel like you're barely scratching the surface. This challenge gives you the structured path — not random YouTube tutorials — that takes you from "curious" to "confident" in 10 focused sessions.</p>
+            </div>
+            <div class="persona-card">
+              <div class="persona-emoji">&#128084;</div>
+              <h3>Working Professionals</h3>
+              <p>You use ChatGPT at work but you know you're not getting everything out of it. Challenges 3–6 are built specifically for professional applications — strategy, content, data, and automation — that will immediately impact how much you can produce in a workday.</p>
+            </div>
+            <div class="persona-card">
+              <div class="persona-emoji">&#127979;</div>
+              <h3>Educators &amp; Trainers</h3>
+              <p>You need to get a team, class, or organization up to speed on AI — fast. This challenge is the structured curriculum that gives everyone the same solid foundation. Complete it yourself first, then bring your team through it.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- What You'll Achieve -->
+        <section class="content-section">
+          <h2>What You'll Be Able to Do After 10 Days</h2>
+          <div class="outcomes-grid">
+            <div class="outcome-card">
+              <p>&#9989; Confidently use ChatGPT for any professional task — writing, analysis, strategy, content, or product creation</p>
+            </div>
+            <div class="outcome-card">
+              <p>&#9989; Build a personal library of prompt templates you'll reuse for months without starting from scratch</p>
+            </div>
+            <div class="outcome-card">
+              <p>&#9989; Understand AI capabilities that most people won't discover for years — the advanced techniques that actually matter</p>
+            </div>
+            <div class="outcome-card">
+              <p>&#9989; Complete real projects during each challenge — not theory exercises, but actual outputs you can use or publish</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="content-section">
+          <h2>What Early Challengers Are Saying</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <p>"I've been using ChatGPT for almost a year and thought I knew what I was doing. Challenge 7 — the advanced prompting module — completely changed how I structure my conversations. I'm getting outputs in one pass that used to take me six back-and-forths. The ROI on this $27 is absurd."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"></div>
+                <div>
+                  <div class="testimonial-name">James R.</div>
+                  <div class="testimonial-role">Senior Product Manager, SaaS company</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p>"I run a small marketing agency and needed my team to actually understand AI — not just dabble. I had everyone go through the Accelerator Challenge in their first week. The content machine module alone has changed how we produce deliverables for clients. Campaigns that took us 3 days now take an afternoon."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"></div>
+                <div>
+                  <div class="testimonial-name">Maria S.</div>
+                  <div class="testimonial-role">Founder, boutique marketing agency</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p>"I teach high school English and wanted to bring AI into my classroom responsibly. This challenge gave me such a thorough grounding in what ChatGPT can and can't do that I now teach a full AI literacy unit for my students. The foundation module especially — I've recommended this to every teacher I know."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"></div>
+                <div>
+                  <div class="testimonial-name">Patricia N.</div>
+                  <div class="testimonial-role">High School English Teacher</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem;">* Testimonials from beta testers. Results vary.</p>
+        </section>
+
+        <!-- Upsell Box -->
+        <div class="upsell-box">
+          <div class="upsell-label">Ready to go further?</div>
+          <h3>Want the complete business system?</h3>
+          <p>The Accelerator Challenge teaches you to use ChatGPT like a pro. The 7-Figure AI Business Roadmap shows you how to build a business with it — from first product to first sale in 30 days.</p>
+          <a href="7-figure-ai-roadmap.html" class="upsell-link">Upgrade to The 7-Figure AI Business Roadmap &mdash; $47 &rarr;</a>
+        </div>
+
+        <!-- FAQ -->
+        <section class="content-section faq-section">
+          <h2>Frequently Asked Questions</h2>
+
+          <details class="faq-item">
+            <summary>How much time per day does this require?</summary>
+            <p>Each challenge is designed to be completed in 30–60 minutes. Most people do one challenge per day. Some binge the whole thing over a weekend — there's no pace requirement. You'll always have the material available to revisit.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is this just theory, or are there real exercises?</summary>
+            <p>Every challenge is built around hands-on exercises with real outputs. By the end of Challenge 10, you'll have produced actual work — prompts, templates, content, analysis, and product concepts — that you can use or publish immediately. No theory-only sections.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>I already use ChatGPT daily — will I learn anything new?</summary>
+            <p>Almost certainly. Our beta testers who considered themselves "advanced users" consistently said challenges 7–10 changed how they work. The advanced prompting, automation, and product-building sections go significantly deeper than most daily users ever explore. If you've never used system prompts, prompt chaining, or persona-based conversations, you're going to have several "why didn't I know this sooner" moments.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What if I fall behind the 10-day schedule?</summary>
+            <p>It's fully self-paced — the 10-day structure is a recommended cadence, not a hard deadline. Take 10 days or 10 weeks. Your access never expires. Pick it up where you left off whenever your schedule allows.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I need a paid ChatGPT subscription?</summary>
+            <p>The free tier works for the majority of challenges. A handful of advanced exercises are optimized for GPT-4 and benefit from a ChatGPT Plus subscription — but alternatives are noted for each one. You can complete the entire challenge for free if needed.</p>
+          </details>
+        </section>
+
+      </div><!-- /product-content -->
+
+      <!-- RIGHT COLUMN: Purchase Box -->
+      <aside class="product-purchase-box js-sticky-box">
+        <div class="purchase-box-inner">
+          <div class="purchase-price">
+            <span class="purchase-price-main">$27</span>
+            <span class="purchase-price-note">One-time &mdash; Lifetime access</span>
+          </div>
+          <ul class="purchase-includes">
+            <li>&#10003; 10 structured challenges</li>
+            <li>&#10003; 30+ hands-on exercises</li>
+            <li>&#10003; Real outputs at every step</li>
+            <li>&#10003; Prompt template library</li>
+            <li>&#10003; Advanced prompting techniques</li>
+            <li>&#10003; Business &amp; content applications</li>
+            <li>&#10003; Fully self-paced — no deadlines</li>
+            <li>&#10003; Lifetime access — never expires</li>
+            <li>&#10003; 7-day money-back guarantee</li>
+          </ul>
+          <button class="cta-button cta-button-lg js-add-to-cart" data-product-id="accelerator" data-product-name="The ChatGPT Accelerator Challenge" data-product-price="27" style="width:100%">Add to Cart &mdash; $27</button>
+          <div class="purchase-guarantee">
+            <span class="guarantee-icon">&#128737;</span>
+            7-Day Money-Back Guarantee
+          </div>
+        </div>
+      </aside>
+
+    </div><!-- /product-layout -->
+  </main>
+
+  <!-- BOTTOM CTA -->
+  <section class="product-cta-section">
+    <div class="container product-cta-inner">
+      <h2>Start the ChatGPT Accelerator Challenge &mdash; $27</h2>
+      <p>10 challenges. Real exercises. Lifetime access. In 10 days you'll use ChatGPT in ways most professionals won't discover for years. Your advantage starts the moment you begin Challenge 1.</p>
+      <button class="cta-button cta-button-lg js-add-to-cart" data-product-id="accelerator" data-product-name="The ChatGPT Accelerator Challenge" data-product-price="27">Get Instant Access &mdash; $27</button>
+      <p class="cta-sub">Instant delivery &bull; Self-paced &bull; 7-day guarantee &bull; Lifetime access</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>AI Gatecrashers</h4>
+        <p>Practical AI tools and digital resources for entrepreneurs, side hustlers, and creators who want results — not theory.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="chatgpt-accelerator-challenge.html">ChatGPT Accelerator Challenge</a></li>
+          <li><a href="7-figure-ai-roadmap.html">7-Figure AI Business Roadmap</a></li>
+          <li><a href="ultra-ai-builder-kit.html">Ultra AI Builder Kit</a></li>
+          <li><a href="ai-mega-collection.html">AI Mega Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../index.html#courses">Courses</a></li>
+          <li><a href="../index.html#products">All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="mailto:Support@aigatecrashers.com">Support@aigatecrashers.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 AI Gatecrashers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/store.js"></script>
+</body>
+</html>

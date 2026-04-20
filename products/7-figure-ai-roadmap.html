@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 7-Figure AI Business Roadmap — Build a Digital Product Empire with AI | AI Gatecrashers</title>
+  <meta name="description" content="The exact 10-module system for building and selling digital products using AI. From zero to your first sale in 30 days. No audience required. Start with $50 max. Just $47.">
+  <link rel="canonical" href="https://aigatecrashers.com/products/7-figure-ai-roadmap.html">
+  <meta property="og:title" content="The 7-Figure AI Business Roadmap — Build a Digital Product Empire with AI | AI Gatecrashers">
+  <meta property="og:description" content="The exact 10-module system we use to create and sell digital products using AI. From zero to your first sale in 30 days.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://aigatecrashers.com/products/7-figure-ai-roadmap.html">
+  <meta property="og:site_name" content="AI Gatecrashers">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@aigatecrashers">
+  <meta name="twitter:title" content="The 7-Figure AI Business Roadmap — Build a Digital Product Empire with AI | AI Gatecrashers">
+  <meta name="twitter:description" content="The exact 10-module system we use to create and sell digital products using AI. From zero to your first sale in 30 days.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <style>
+    /* === 7-FIGURE ROADMAP — PAGE-SPECIFIC STYLES === */
+    .curriculum-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+    .curriculum-list li {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+      margin-bottom: 0.75rem;
+      background: var(--bg-card);
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .curriculum-list li:hover {
+      border-color: var(--primary);
+      transform: translateX(4px);
+    }
+    .curriculum-list li.bonus-item {
+      border-color: rgba(255, 107, 53, 0.35);
+      background: rgba(255, 107, 53, 0.05);
+    }
+    .curriculum-list li.bonus-item:hover { border-color: var(--orange); }
+    .module-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 2.25rem;
+      height: 2.25rem;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .module-number.bonus { background: linear-gradient(135deg, var(--orange), #e67e22); }
+    .module-text strong {
+      display: block;
+      color: var(--text-white);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .module-text p {
+      font-size: 0.9rem;
+      margin: 0;
+      color: var(--text-muted);
+    }
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .stat-pill {
+      text-align: center;
+      padding: 1.25rem 0.75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+    }
+    .stat-pill .stat-num {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+    .stat-pill .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .selling-points {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .selling-point {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .selling-point .sp-icon { font-size: 2rem; margin-bottom: 0.75rem; display: block; }
+    .selling-point h4 { font-size: 1rem; margin-bottom: 0.4rem; }
+    .selling-point p { font-size: 0.875rem; margin: 0; }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin: 2rem 0;
+    }
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+      padding: 1.5rem;
+    }
+    .testimonial-card::before {
+      content: '\201C';
+      font-size: 3rem;
+      color: var(--primary);
+      opacity: 0.4;
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .testimonial-card p {
+      font-size: 0.95rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .testimonial-author { display: flex; align-items: center; gap: 0.75rem; }
+    .testimonial-avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .testimonial-name { font-weight: 600; color: var(--text-white); font-size: 0.9rem; }
+    .testimonial-role { font-size: 0.8rem; color: var(--text-muted); }
+    .upsell-box {
+      background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(0, 212, 255, 0.08));
+      border: 1px solid rgba(124, 58, 237, 0.4);
+      border-radius: var(--radius-card);
+      padding: 1.75rem;
+      margin: 2.5rem 0;
+      text-align: center;
+    }
+    .upsell-box .upsell-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+    .upsell-box h3 { font-size: 1.2rem; margin-bottom: 0.75rem; }
+    .upsell-box p { font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .upsell-link {
+      display: inline-block;
+      padding: 0.75rem 1.75rem;
+      background: linear-gradient(135deg, var(--secondary), #9b59b6);
+      color: #fff;
+      border-radius: var(--radius-btn);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: opacity var(--transition), transform var(--transition);
+    }
+    .upsell-link:hover { opacity: 0.9; transform: translateY(-1px); }
+    .benefit-list { list-style: none; padding: 0; margin: 1.5rem 0; }
+    .benefit-list li {
+      padding: 0.6rem 0;
+      padding-left: 1.75rem;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .benefit-list li:last-child { border-bottom: none; }
+    .benefit-list li::before {
+      content: '&#10003;';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-weight: 700;
+    }
+    @media (max-width: 640px) {
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .testimonial-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "The 7-Figure AI Business Roadmap",
+    "description": "The exact 10-module system for building and selling digital products using AI. From zero to your first sale in 30 days. No audience required.",
+    "brand": { "@type": "Brand", "name": "AI Gatecrashers" },
+    "offers": {
+      "@type": "Offer",
+      "price": "47.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://aigatecrashers.com/products/7-figure-ai-roadmap.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aigatecrashers.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://aigatecrashers.com/#products" },
+      { "@type": "ListItem", "position": 3, "name": "The 7-Figure AI Business Roadmap", "item": "https://aigatecrashers.com/products/7-figure-ai-roadmap.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is this for beginners?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Module 1 starts from absolute zero. No prior business or tech experience needed." }
+      },
+      {
+        "@type": "Question",
+        "name": "How fast can I make my first sale?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The system is designed for 30 days to first sale. Some students do it in 2 weeks." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need money for ads?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Module 6 starts at just $5/day. But Modules 1-5 are fully focused on organic sales first — you can generate revenue before spending a dollar on ads." }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of digital products will I create?",
+        "acceptedAnswer": { "@type": "Answer", "text": "E-books, courses, templates, prompt packs, guides, SOPs — all created with AI at 10x the normal speed." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this just ChatGPT tutorials?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. This is a complete business system. ChatGPT is one tool within a much bigger framework that includes market research, product creation, funnels, ads, and scaling." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header sticky-header">
+    <div class="header-inner container">
+      <a href="../index.html" class="logo">AI Gatecrashers</a>
+      <nav class="main-nav">
+        <a href="../index.html#products">Shop</a>
+        <a href="../index.html#courses">Courses</a>
+        <a href="../blog/">Blog</a>
+        <button class="cart-btn js-cart-open" aria-label="Open cart">Cart <span class="cart-count">0</span></button>
+      </nav>
+      <button class="mobile-menu-toggle js-mobile-menu" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <nav class="mobile-nav js-mobile-nav">
+      <a href="../index.html#products">Shop</a>
+      <a href="../index.html#courses">Courses</a>
+      <a href="../blog/">Blog</a>
+    </nav>
+  </header>
+
+  <!-- CART OVERLAY -->
+  <div class="cart-overlay js-cart-overlay"></div>
+  <aside class="cart-panel js-cart-panel" aria-label="Shopping cart">
+    <div class="cart-panel-header">
+      <h2>Your Cart</h2>
+      <button class="cart-close js-cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items js-cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span class="js-cart-total">$0.00</span></div>
+      <button class="cta-button js-checkout">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- BREADCRUMBS -->
+  <nav class="breadcrumbs container" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <a href="../index.html#products">Products</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <span>The 7-Figure AI Business Roadmap</span>
+  </nav>
+
+  <!-- PRODUCT HERO -->
+  <section class="product-hero product-hero--course">
+    <div class="container product-hero-inner">
+      <div class="product-hero-text">
+        <div class="product-badge">10-Module Business Course</div>
+        <h1>The 7-Figure AI Business Roadmap</h1>
+        <p class="product-tagline">The exact 10-module system we use to create and sell digital products using AI. From zero to your first sale in 30 days.</p>
+        <div class="product-hero-price">
+          <span class="price-main">$47</span>
+          <span class="price-note">One-time purchase. Lifetime access. Instant delivery.</span>
+        </div>
+        <div class="hero-cta-wrap" style="margin-top:1.5rem;">
+          <button class="cta-button cta-button-lg js-add-to-cart" data-product-id="roadmap" data-product-name="The 7-Figure AI Business Roadmap" data-product-price="47">Get the Roadmap &mdash; $47</button>
+        </div>
+      </div>
+      <div class="product-hero-image">
+        <div class="card-image course">
+          <span class="card-image-label">10-Module Course</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS ROW -->
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-pill"><span class="stat-num">10</span><span class="stat-label">Modules</span></div>
+      <div class="stat-pill"><span class="stat-num">100+</span><span class="stat-label">Action Steps</span></div>
+      <div class="stat-pill"><span class="stat-num">+1</span><span class="stat-label">Bonus Library</span></div>
+      <div class="stat-pill"><span class="stat-num">&#8734;</span><span class="stat-label">Lifetime Access</span></div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="product-main container">
+    <div class="product-layout">
+
+      <!-- LEFT COLUMN -->
+      <div class="product-content">
+
+        <!-- Introduction -->
+        <section class="content-section">
+          <h2>The System Behind Real AI Businesses</h2>
+          <p>Most people trying to build a digital product business get stuck in one of three places: they can't figure out what to sell, they build something nobody wants, or they launch to silence because they have no audience and no system for reaching buyers.</p>
+          <p>The 7-Figure AI Business Roadmap solves all three — in sequence. Before you build anything, you find proven demand. Before you spend on ads, you test with a tiny budget. Before you scale, you confirm the economics work. This is how sustainable digital product businesses are built.</p>
+          <p>And with AI at every step — product creation, content generation, funnel copy, ad creative — what used to take months now takes days. We've been through this cycle ourselves, and we documented the exact process.</p>
+        </section>
+
+        <!-- Key Selling Points -->
+        <section class="content-section">
+          <h2>What Makes This System Different</h2>
+          <div class="selling-points">
+            <div class="selling-point">
+              <span class="sp-icon">&#127919;</span>
+              <h4>No Audience Required</h4>
+              <p>Module 3 teaches you how to find hungry buyers before you build a single thing. You don't need followers, an email list, or a social presence to start.</p>
+            </div>
+            <div class="selling-point">
+              <span class="sp-icon">&#128176;</span>
+              <h4>Test for Under $50</h4>
+              <p>Before you scale anything, you validate it with the smallest possible investment. Module 6 starts at $5/day. You don't risk your savings on an untested idea.</p>
+            </div>
+            <div class="selling-point">
+              <span class="sp-icon">&#129302;</span>
+              <h4>AI Builds the Product</h4>
+              <p>Digital products that once took months to create now take 48 hours with AI. Module 4 walks through the complete build process — from concept to finished deliverable.</p>
+            </div>
+            <div class="selling-point">
+              <span class="sp-icon">&#128200;</span>
+              <h4>Proven, Repeatable System</h4>
+              <p>This isn't hypothetical. We've run this system ourselves, and others have used it to build businesses from scratch. The process compounds — each iteration gets better.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Curriculum -->
+        <section class="content-section">
+          <h2>The Complete 10-Module Curriculum</h2>
+          <p>Every module is action-oriented with specific deliverables. You're not just watching videos — you're building a real business as you go.</p>
+
+          <ol class="curriculum-list">
+            <li>
+              <div class="module-number">1</div>
+              <div class="module-text">
+                <strong>Module 1: Blueprint for Success</strong>
+                <p>Map your business model and set concrete revenue targets. Choose the right product type for your skills and timeline. Build the strategic foundation that makes every subsequent module more effective.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">2</div>
+              <div class="module-text">
+                <strong>Module 2: Toolbox Essentials</strong>
+                <p>The exact tech stack — most of it free or under $20/month. No bloated setups, no unnecessary subscriptions. Just the tools that actually matter and how to use them from day one.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">3</div>
+              <div class="module-text">
+                <strong>Module 3: Target Market Finder</strong>
+                <p>Find hungry buyers before you build anything. The research process that uncovers what people are already spending money on, where they're looking for solutions, and how to position your product as the obvious answer.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">4</div>
+              <div class="module-text">
+                <strong>Module 4: Build Your First Product</strong>
+                <p>Create a sellable digital product in 48 hours using AI. E-books, prompt packs, templates, guides, mini-courses — the full creation workflow from blank page to finished, packaged, ready-to-sell product.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">5</div>
+              <div class="module-text">
+                <strong>Module 5: Your Automated Sales Machine</strong>
+                <p>Build the funnel that sells while you sleep. Landing pages, email sequences, checkout flows — everything automated so your business earns revenue even when you're not at your desk.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">6</div>
+              <div class="module-text">
+                <strong>Module 6: Ads That Convert</strong>
+                <p>Run profitable ads starting at just $5/day. The exact ad frameworks, targeting strategies, and creative approaches that work for digital products — and how to know immediately whether an ad is working.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">7</div>
+              <div class="module-text">
+                <strong>Module 7: Measuring What Matters</strong>
+                <p>The only metrics that matter — and how to ignore the rest. Know exactly where your money comes from, what's working, what isn't, and where to focus your energy for maximum impact.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">8</div>
+              <div class="module-text">
+                <strong>Module 8: Refine, Optimize, Repeat</strong>
+                <p>The iteration loop that compounds results. How to diagnose what's underperforming, make targeted improvements, and build on wins — so each cycle performs better than the last.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">9</div>
+              <div class="module-text">
+                <strong>Module 9: Scale Your Ads Like a Pro</strong>
+                <p>Take a winning campaign from $5/day to $500/day without losing your shirt. The scaling ladder, budget management, creative refresh cycles, and the signals that tell you when to push and when to pull back.</p>
+              </div>
+            </li>
+            <li>
+              <div class="module-number">10</div>
+              <div class="module-text">
+                <strong>Module 10: Next-Level Growth with AI</strong>
+                <p>Advanced strategies for 6–7 figure scaling. Product ladders, back-end offers, affiliate systems, and leveraging AI to expand faster than a traditional team could. The long game for serious builders.</p>
+              </div>
+            </li>
+            <li class="bonus-item">
+              <div class="module-number bonus">&#9733;</div>
+              <div class="module-text">
+                <strong>BONUS: AI Product Library</strong>
+                <p>Pre-built product templates ready to customize and sell. Don't start from a blank page — start from a proven structure and make it yours. Templates for every product type covered in Module 4.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Who This Is For -->
+        <section class="content-section">
+          <h2>Who This Roadmap Is For</h2>
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-emoji">&#128640;</div>
+              <h3>First-Time Entrepreneurs</h3>
+              <p>You've wanted to start an online business but never had a clear system to follow. Module 1 starts from absolute zero — no assumed knowledge, no jargon, no "you should already know this." Just a clear step-by-step path from idea to first sale.</p>
+            </div>
+            <div class="persona-card">
+              <div class="persona-emoji">&#128188;</div>
+              <h3>Professionals Adding a Revenue Stream</h3>
+              <p>You have expertise worth packaging. The AI product creation process in Module 4 turns your knowledge into a digital product in 48 hours — without needing to be a designer, developer, or content creator.</p>
+            </div>
+            <div class="persona-card">
+              <div class="persona-emoji">&#128203;</div>
+              <h3>Existing Sellers Ready to Scale</h3>
+              <p>You've made some sales but don't have a system. Modules 7–10 are built for this moment — measuring what's actually working, optimizing your funnels, and scaling the winners systematically.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="content-section">
+          <h2>Real Results from Real Students</h2>
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <p>"I had tried to start an online business twice before and failed both times because I had no system — just ideas and hope. The Roadmap changed that. I followed it module by module, launched my first product in 11 days, and made my first sale on day 23. It works exactly as advertised."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"></div>
+                <div>
+                  <div class="testimonial-name">Derek M.</div>
+                  <div class="testimonial-role">Former retail manager, now full-time digital product seller</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p>"The ads modules alone were worth 10x the price. I've wasted thousands on Facebook ads before with nothing to show for it. The $5/day test framework showed me how to validate a campaign before spending real money. My current ads are running at 3x ROAS and I've never felt more in control."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"></div>
+                <div>
+                  <div class="testimonial-name">Layla T.</div>
+                  <div class="testimonial-role">E-commerce entrepreneur, 2 years in</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p>"I'm a freelance consultant and I always said I'd package my knowledge into a course 'someday.' Module 4 of this Roadmap made someday happen in a weekend. I used the AI product creation workflow to build my first digital guide, ran a small ad campaign, and made back the cost of this course in the first week."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar"></div>
+                <div>
+                  <div class="testimonial-name">Carlos V.</div>
+                  <div class="testimonial-role">Independent business consultant</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem;">* Testimonials from beta testers and early students. Individual results vary.</p>
+        </section>
+
+        <!-- Upsell Box -->
+        <div class="upsell-box">
+          <div class="upsell-label">Want the complete toolkit?</div>
+          <h3>Get the strategy AND the execution resources</h3>
+          <p>The Roadmap gives you the 10-module system. The Ultra AI Builder Kit bundles the full Roadmap with 500+ marketing resources — templates, SOPs, checklists, and done-for-you tools — for the team that wants to move at full speed from day one.</p>
+          <a href="ultra-ai-builder-kit.html" class="upsell-link">Upgrade to The Ultra AI Builder Kit &mdash; $67 &rarr;</a>
+        </div>
+
+        <!-- FAQ -->
+        <section class="content-section faq-section">
+          <h2>Frequently Asked Questions</h2>
+
+          <details class="faq-item">
+            <summary>Is this for beginners?</summary>
+            <p>Yes. Module 1 starts from absolute zero — the business model, how digital products work, what to sell, and how to think about building your first revenue stream. No prior business or tech experience is assumed. Experienced sellers will find the most value in Modules 5–10.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How fast can I make my first sale?</summary>
+            <p>The system is designed around a 30-day path to first sale. Following the modules in sequence, most students who do the work hit their first transaction within that window. Some have done it in 2 weeks. Others take 6 weeks. The pace depends entirely on how many hours per week you put in — but the process works.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I need money for ads?</summary>
+            <p>No — Modules 1–5 focus on building and selling organically first. By Module 6, you should already have proof the product sells before spending anything on paid traffic. Module 6 starts at $5/day so you can test ad copy, audiences, and creatives for minimal cost before committing a real budget.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What kinds of digital products will I create?</summary>
+            <p>The system works for e-books, prompt packs, template collections, guides, SOPs, mini-courses, and digital toolkits — all created at 10x speed using AI. Module 3 helps you choose the right product type for your market and personal strengths. You're not locked into any one format.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Is this just a collection of ChatGPT tutorials?</summary>
+            <p>No. ChatGPT is one tool within a much larger system. This course covers market research, product strategy, funnel building, paid advertising, performance measurement, and scaling — a complete business curriculum. AI accelerates every step, but the system would work (just slower) without it.</p>
+          </details>
+        </section>
+
+      </div><!-- /product-content -->
+
+      <!-- RIGHT COLUMN: Purchase Box -->
+      <aside class="product-purchase-box js-sticky-box">
+        <div class="purchase-box-inner">
+          <div class="purchase-price">
+            <span class="purchase-price-main">$47</span>
+            <span class="purchase-price-note">One-time &mdash; Lifetime access</span>
+          </div>
+          <ul class="purchase-includes">
+            <li>&#10003; 10 complete business modules</li>
+            <li>&#10003; 100+ action steps</li>
+            <li>&#10003; AI product creation workflow</li>
+            <li>&#10003; Funnel-building templates</li>
+            <li>&#10003; Paid ads framework ($5/day start)</li>
+            <li>&#10003; Scaling strategy (to $500/day)</li>
+            <li>&#10003; BONUS: AI Product Library</li>
+            <li>&#10003; Lifetime access — never expires</li>
+            <li>&#10003; 7-day money-back guarantee</li>
+          </ul>
+          <button class="cta-button cta-button-lg js-add-to-cart" data-product-id="roadmap" data-product-name="The 7-Figure AI Business Roadmap" data-product-price="47" style="width:100%">Add to Cart &mdash; $47</button>
+          <div class="purchase-guarantee">
+            <span class="guarantee-icon">&#128737;</span>
+            7-Day Money-Back Guarantee
+          </div>
+        </div>
+      </aside>
+
+    </div><!-- /product-layout -->
+  </main>
+
+  <!-- BOTTOM CTA -->
+  <section class="product-cta-section">
+    <div class="container product-cta-inner">
+      <h2>Get The 7-Figure AI Business Roadmap &mdash; $47</h2>
+      <p>10 modules. 100+ action steps. A proven system from zero to first sale in 30 days. No audience required. No large upfront investment. Just follow the roadmap.</p>
+      <button class="cta-button cta-button-lg js-add-to-cart" data-product-id="roadmap" data-product-name="The 7-Figure AI Business Roadmap" data-product-price="47">Get Instant Access &mdash; $47</button>
+      <p class="cta-sub">Instant delivery &bull; 10 modules &bull; Bonus product library &bull; 7-day guarantee</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>AI Gatecrashers</h4>
+        <p>Practical AI tools and digital resources for entrepreneurs, side hustlers, and creators who want results — not theory.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="chatgpt-accelerator-challenge.html">ChatGPT Accelerator Challenge</a></li>
+          <li><a href="7-figure-ai-roadmap.html">7-Figure AI Business Roadmap</a></li>
+          <li><a href="ultra-ai-builder-kit.html">Ultra AI Builder Kit</a></li>
+          <li><a href="ai-mega-collection.html">AI Mega Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../index.html#courses">Courses</a></li>
+          <li><a href="../index.html#products">All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="mailto:Support@aigatecrashers.com">Support@aigatecrashers.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 AI Gatecrashers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/store.js"></script>
+</body>
+</html>

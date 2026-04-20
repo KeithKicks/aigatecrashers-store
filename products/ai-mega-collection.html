@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The AI Mega Collection — Every Product, One Price | AI Gatecrashers</title>
+  <meta name="description" content="16 products. $336+ value. Every prompt pack, every course, every template, every resource we've ever created. 11,000+ prompts, 20 course modules, 500+ resources. One price: $97.">
+  <link rel="canonical" href="https://aigatecrashers.com/products/ai-mega-collection.html">
+  <meta property="og:title" content="The AI Mega Collection — Every Product, One Price | AI Gatecrashers">
+  <meta property="og:description" content="16 products. $400+ value. Everything we've ever made. 11,000+ prompts, 20 course modules, 500+ templates and resources. One price: $97.">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://aigatecrashers.com/products/ai-mega-collection.html">
+  <meta property="og:site_name" content="AI Gatecrashers">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@aigatecrashers">
+  <meta name="twitter:title" content="The AI Mega Collection — Every Product, One Price | AI Gatecrashers">
+  <meta name="twitter:description" content="16 products. $400+ value. Everything we've ever made. One price: $97.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <style>
+    /* === AI MEGA COLLECTION — PREMIUM / TOP TIER STYLES === */
+
+    /* Premium gradient for hero */
+    .product-hero--premium {
+      background: linear-gradient(135deg, #0a0a0f 0%, #12062e 40%, #050d1a 100%);
+      border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    .product-hero--premium::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 40% at 80% 50%, rgba(124,58,237,0.25) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 20% 30%, rgba(0,212,255,0.15) 0%, transparent 70%),
+        radial-gradient(ellipse 30% 30% at 50% 80%, rgba(255,215,0,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .premium-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: linear-gradient(135deg, #b8860b, #ffd700, #b8860b);
+      color: #000;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 0.35rem 1rem;
+      border-radius: var(--radius-full);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .stat-pill {
+      text-align: center;
+      padding: 1.25rem 0.75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+    }
+    .stat-pill.gold { border-color: rgba(255,215,0,0.3); }
+    .stat-pill .stat-num {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+    .stat-pill.gold .stat-num { color: #ffd700; }
+    .stat-pill .stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    /* Value Stack Table */
+    .value-stack-wrap {
+      overflow-x: auto;
+      margin: 1.5rem 0 2rem;
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border-light);
+    }
+    .value-stack {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    .value-stack thead th {
+      background: rgba(0,212,255,0.08);
+      color: var(--text-white);
+      font-weight: 700;
+      padding: 1rem 1.25rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border-light);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .value-stack thead th:last-child { text-align: right; }
+    .value-stack tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background var(--transition);
+    }
+    .value-stack tbody tr:hover { background: rgba(0,212,255,0.04); }
+    .value-stack tbody tr:last-child { border-bottom: none; }
+    .value-stack tbody td {
+      padding: 0.9rem 1.25rem;
+      color: var(--text-body);
+      vertical-align: middle;
+    }
+    .value-stack tbody td:last-child {
+      text-align: right;
+      font-weight: 600;
+      color: var(--text-white);
+      white-space: nowrap;
+    }
+    .value-stack tfoot td {
+      padding: 1rem 1.25rem;
+      font-weight: 700;
+      border-top: 2px solid var(--border-light);
+    }
+    .value-stack tfoot tr:first-child td { color: var(--text-muted); }
+    .value-stack tfoot tr:last-child { background: rgba(255,215,0,0.06); }
+    .value-stack tfoot tr:last-child td { color: var(--text-white); font-size: 1.1rem; }
+    .value-stack tfoot tr:last-child td:last-child {
+      color: #ffd700;
+      font-size: 1.25rem;
+      text-align: right;
+    }
+    .value-stack .strikethrough { text-decoration: line-through; color: var(--text-muted); font-weight: 400; }
+    /* Category Grid */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .category-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+      padding: 1.5rem;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .category-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+    }
+    .category-card .cc-icon { font-size: 2.25rem; margin-bottom: 0.75rem; display: block; }
+    .category-card h4 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .category-card .cc-stat {
+      font-size: 0.8rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .category-card p { font-size: 0.875rem; margin: 0; }
+    /* "This is everything" banner */
+    .everything-banner {
+      background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(124,58,237,0.12), rgba(0,212,255,0.08));
+      border: 2px solid rgba(255,215,0,0.35);
+      border-radius: var(--radius-card);
+      padding: 2rem;
+      text-align: center;
+      margin: 2.5rem 0;
+    }
+    .everything-banner .eb-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #ffd700;
+      margin-bottom: 0.75rem;
+    }
+    .everything-banner h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, #ffffff, #ffd700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .everything-banner p { font-size: 1rem; max-width: 560px; margin: 0 auto; }
+    /* Outcomes list */
+    .outcomes-list { list-style: none; padding: 0; margin: 1.25rem 0; }
+    .outcomes-list li {
+      padding: 0.6rem 0 0.6rem 1.75rem;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .outcomes-list li:last-child { border-bottom: none; }
+    .outcomes-list li::before {
+      position: absolute;
+      left: 0;
+      font-size: 1rem;
+    }
+    /* Who sections */
+    .who-list { list-style: none; padding: 0; margin: 1.25rem 0; }
+    .who-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-card);
+      margin-bottom: 0.75rem;
+    }
+    .who-list li .wi-icon { font-size: 1.75rem; flex-shrink: 0; }
+    .who-list li h4 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .who-list li p { font-size: 0.9rem; margin: 0; }
+    @media (max-width: 640px) {
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .category-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 420px) {
+      .category-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "The AI Mega Collection",
+    "description": "16 products. $336+ value. Every prompt pack, every course, every template, every resource we've ever created. One price: $97.",
+    "brand": { "@type": "Brand", "name": "AI Gatecrashers" },
+    "offers": {
+      "@type": "Offer",
+      "price": "97.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://aigatecrashers.com/products/ai-mega-collection.html"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aigatecrashers.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://aigatecrashers.com/#products" },
+      { "@type": "ListItem", "position": 3, "name": "The AI Mega Collection", "item": "https://aigatecrashers.com/products/ai-mega-collection.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is this literally everything you sell?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every product we sell, in one package. If we've made it, it's in here." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will I get future products too?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Any updates to existing products are included automatically. New standalone products may be offered to Mega Collection customers at a loyalty discount." }
+      },
+      {
+        "@type": "Question",
+        "name": "This seems too cheap — what's the catch?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No catch. We price to move. We'd rather have 1,000 happy customers at $97 than 100 at $400." }
+      },
+      {
+        "@type": "Question",
+        "name": "How is this delivered?",
+        "acceptedAnswer": { "@type": "Answer", "text": "One Notion link gives you organized access to everything. No downloads, no hassle, always up to date." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I get a refund if it's not what I expected?",
+        "acceptedAnswer": { "@type": "Answer", "text": "7-day money-back guarantee. Email Support@aigatecrashers.com. But nobody's asked for one yet." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header sticky-header">
+    <div class="header-inner container">
+      <a href="../index.html" class="logo">AI Gatecrashers</a>
+      <nav class="main-nav">
+        <a href="../index.html#products">Shop</a>
+        <a href="../index.html#courses">Courses</a>
+        <a href="../blog/">Blog</a>
+        <button class="cart-btn js-cart-open" aria-label="Open cart">Cart <span class="cart-count">0</span></button>
+      </nav>
+      <button class="mobile-menu-toggle js-mobile-menu" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <nav class="mobile-nav js-mobile-nav">
+      <a href="../index.html#products">Shop</a>
+      <a href="../index.html#courses">Courses</a>
+      <a href="../blog/">Blog</a>
+    </nav>
+  </header>
+
+  <!-- CART OVERLAY -->
+  <div class="cart-overlay js-cart-overlay"></div>
+  <aside class="cart-panel js-cart-panel" aria-label="Shopping cart">
+    <div class="cart-panel-header">
+      <h2>Your Cart</h2>
+      <button class="cart-close js-cart-close" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items js-cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: <span class="js-cart-total">$0.00</span></div>
+      <button class="cta-button js-checkout">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- BREADCRUMBS -->
+  <nav class="breadcrumbs container" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <a href="../index.html#products">Products</a>
+    <span class="breadcrumb-sep">&rsaquo;</span>
+    <span>The AI Mega Collection</span>
+  </nav>
+
+  <!-- PRODUCT HERO -->
+  <section class="product-hero product-hero--premium">
+    <div class="container product-hero-inner">
+      <div class="product-hero-text">
+        <div class="premium-badge">&#9733; The Complete Library</div>
+        <h1>The AI Mega Collection</h1>
+        <p class="product-tagline">16 products. $336+ value. Every prompt, every course, every template, every resource we've ever created. One price: $97.</p>
+        <div class="product-hero-price">
+          <span class="price-main">$97</span>
+          <span class="price-note"><s style="color:var(--text-muted)">$336+ value</s> &mdash; You save $239+. Instant access. Future updates included.</span>
+        </div>
+        <div class="hero-cta-wrap" style="margin-top:1.5rem;">
+          <button class="cta-button cta-button-lg js-add-to-cart" data-product-id="mega-collection" data-product-name="The AI Mega Collection" data-product-price="97">Get Everything &mdash; $97</button>
+        </div>
+      </div>
+      <div class="product-hero-image">
+        <div class="card-image bundle" style="background: linear-gradient(135deg, #1a0a3e, #0d1f3c); border: 1px solid rgba(255,215,0,0.3);">
+          <span class="card-image-label" style="background: linear-gradient(135deg, #b8860b, #ffd700); color: #000;">Every Product</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS ROW -->
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-pill gold"><span class="stat-num">11,000+</span><span class="stat-label">Prompts</span></div>
+      <div class="stat-pill gold"><span class="stat-num">20</span><span class="stat-label">Course Modules</span></div>
+      <div class="stat-pill gold"><span class="stat-num">500+</span><span class="stat-label">Resources</span></div>
+      <div class="stat-pill gold"><span class="stat-num">&#9733;</span><span class="stat-label">Updates Included</span></div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="product-main container">
+    <div class="product-layout">
+
+      <!-- LEFT COLUMN -->
+      <div class="product-content">
+
+        <!-- Introduction -->
+        <section class="content-section">
+          <h2>Everything We've Ever Built. One Price.</h2>
+          <p>Every product in the AI Gatecrashers library — the prompt packs, the courses, the challenge, the templates, the SOPs, the guides, the toolkits, the done-for-you resources — is in this collection. You're not picking and choosing what to buy. You're getting all of it.</p>
+          <p>This is the option for the person who reads a list of products and thinks "I want all of them." For the entrepreneur who understands that having the right resource at the right moment is worth more than the cost of the whole collection. For the team that wants a complete AI resource library they can hand to anyone who joins.</p>
+          <p>At $97, you're paying less per product than if you bought our cheapest item individually — and you're getting 16 of them. We did the math. The deal is absurd. That's intentional.</p>
+        </section>
+
+        <!-- Value Stack Table -->
+        <section class="content-section">
+          <h2>The Value Stack</h2>
+          <p>Here's everything that's in this collection, with its individual price. Add it up. Then compare it to $97.</p>
+
+          <div class="value-stack-wrap">
+            <table class="value-stack">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Individual Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10,000 ChatGPT Prompts (all categories)</td>
+                  <td>$35</td>
+                </tr>
+                <tr>
+                  <td>1,000 Midjourney AI Art Prompts (all styles)</td>
+                  <td>$21</td>
+                </tr>
+                <tr>
+                  <td>ChatGPT Accelerator Challenge (10-day course)</td>
+                  <td>$27</td>
+                </tr>
+                <tr>
+                  <td>ChatGPT Secrets (18 in-depth reports)</td>
+                  <td>$12</td>
+                </tr>
+                <tr>
+                  <td>The 7-Figure AI Business Roadmap (10 modules)</td>
+                  <td>$47</td>
+                </tr>
+                <tr>
+                  <td>The Ultimate Digital Product Kit (500+ resources)</td>
+                  <td>$97</td>
+                </tr>
+                <tr>
+                  <td>Mini Course Creator</td>
+                  <td>$17</td>
+                </tr>
+                <tr>
+                  <td>All Guides, Templates, SOPs, Checklists &amp; Tools</td>
+                  <td>$80+</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td><strong>Total Individual Value</strong></td>
+                  <td><strong>$336+</strong></td>
+                </tr>
+                <tr>
+                  <td><span class="strikethrough">$336+</span> &nbsp;<strong>Your Price Today</strong></td>
+                  <td><strong>$97</strong></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </section>
+
+        <!-- Category Grid -->
+        <section class="content-section">
+          <h2>What's Inside: Four Categories of Power</h2>
+          <p>The collection is organized into four major categories — find what you need in seconds, use it immediately.</p>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <span class="cc-icon">&#128196;</span>
+              <h4>Prompt Libraries</h4>
+              <div class="cc-stat">11,000+ Prompts</div>
+              <p>10,000 ChatGPT prompts spanning business, marketing, writing, creativity, coding, analysis, and more — plus 1,000 Midjourney prompts across every major art style. Never stare at a blank prompt box again.</p>
+            </div>
+            <div class="category-card">
+              <span class="cc-icon">&#127979;</span>
+              <h4>Courses &amp; Challenges</h4>
+              <div class="cc-stat">20 Modules of Training</div>
+              <p>The ChatGPT Accelerator Challenge (10 parts, beginner to advanced) plus The 7-Figure AI Business Roadmap (10 modules, zero to first sale). Structured, self-paced, and built for real results.</p>
+            </div>
+            <div class="category-card">
+              <span class="cc-icon">&#128295;</span>
+              <h4>Business Resources</h4>
+              <div class="cc-stat">500+ Templates, SOPs &amp; Tools</div>
+              <p>The Ultimate Digital Product Kit — 55 marketing SOPs, 20 optimization checklists, 350+ tools, done-for-you product templates, and digital marketing templates ready to deploy for any business or client.</p>
+            </div>
+            <div class="category-card">
+              <span class="cc-icon">&#128161;</span>
+              <h4>Guides &amp; Extras</h4>
+              <div class="cc-stat">Guides, Reports &amp; Ideas</div>
+              <p>ChatGPT Secrets (18 in-depth reports), beginner and expert guides, persona frameworks, AI use case collections, business idea databases, and the Mini Course Creator. The deep-dive resources that fill every gap.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Everything Banner -->
+        <div class="everything-banner">
+          <div class="eb-label">Top Tier — No Upsell Above This</div>
+          <h3>This is everything. You'll never need another AI resource pack.</h3>
+          <p>There's no premium tier above this. No hidden upsell. No "platinum" version. When you get the Mega Collection, you have the complete library — every resource, every tool, every course. Done.</p>
+        </div>
+
+        <!-- Who This Is For -->
+        <section class="content-section">
+          <h2>Who Should Get the Mega Collection</h2>
+          <ul class="who-list">
+            <li>
+              <span class="wi-icon">&#128293;</span>
+              <div>
+                <h4>The "I Want Everything" Buyer</h4>
+                <p>You've scanned the product list and thought "I'd end up buying most of these anyway." You're right — and at $97 for all 16, the math doesn't make sense to buy them individually. Get the collection and stop doing the calculations.</p>
+              </div>
+            </li>
+            <li>
+              <span class="wi-icon">&#127757;</span>
+              <div>
+                <h4>Entrepreneurs Building Multiple Revenue Streams</h4>
+                <p>You're not building one product — you're building a portfolio. The Mega Collection is the resource library that supports every stream: the prompts for content creation, the courses for building each product, the templates for marketing each one. One toolkit, many businesses.</p>
+              </div>
+            </li>
+            <li>
+              <span class="wi-icon">&#128104;&#8205;&#128187;</span>
+              <div>
+                <h4>Teams &amp; Agencies Who Need a Complete AI Resource Base</h4>
+                <p>Your team is using AI in every role. Instead of each person hunting for their own resources, give everyone access to the complete library. Prompt packs for content creators, SOPs for operations, course material for training, and templates for client deliverables — all in one Notion workspace.</p>
+              </div>
+            </li>
+            <li>
+              <span class="wi-icon">&#127919;</span>
+              <div>
+                <h4>Power Users Who Hate Gaps</h4>
+                <p>You've already bought some AI resources and find yourself constantly needing something that falls just outside what you have. The Mega Collection fills every gap. If it's AI-related and practical, it's in here.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- What You Get Concisely -->
+        <section class="content-section">
+          <h2>Everything You Get at a Glance</h2>
+          <ul class="checklist">
+            <li>
+              <span class="check">&#10003;</span>
+              <strong>10,000 ChatGPT Prompts</strong> — curated across business, marketing, content, creativity, coding, productivity, analysis, and more. Organized and searchable.
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <strong>1,000 Midjourney AI Art Prompts</strong> — every major style: photorealistic, illustration, abstract, cinematic, logo design, product photography, and more.
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <strong>ChatGPT Accelerator Challenge</strong> — the 10-day structured challenge from beginner to advanced power user, with 30+ hands-on exercises.
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <strong>ChatGPT Secrets: 18 Reports</strong> — deep-dive reports on specific ChatGPT techniques, use cases, and strategies most users never discover.
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <strong>The 7-Figure AI Business Roadmap</strong> — the 10-module system from zero to first digital product sale, including the AI Product Library bonus.
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <strong>The Ultimate Digital Product Kit</strong> — 500+ resources including 55 SOPs, 20 checklists, 350+ tools, done-for-you templates.
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <strong>Mini Course Creator</strong> — build and launch a profitable mini course using AI, even if you've never created a course before.
+            </li>
+            <li>
+              <span class="check">&#10003;</span>
+              <strong>All Guides, Templates &amp; Extras</strong> — beginner and expert AI guides, persona frameworks, business idea databases, use case collections.
+            </li>
+          </ul>
+        </section>
+
+        <!-- FAQ -->
+        <section class="content-section faq-section">
+          <h2>Frequently Asked Questions</h2>
+
+          <details class="faq-item">
+            <summary>Is this literally everything you sell?</summary>
+            <p>Yes. Every single product in the AI Gatecrashers library is included in this collection. The prompt packs, the courses, the challenge, the templates, the SOPs, the guides, the toolkits — all of it. If we've made it and it's available for sale, it's in here. No exceptions.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Will I get future products too?</summary>
+            <p>Any updates and improvements to existing products in the collection are included automatically — you'll always have the most current version. New standalone products that we create from scratch in the future may be offered to Mega Collection customers at a loyalty discount rather than full price. We'll always give Mega Collection buyers first access and the best deal.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>This seems too cheap for what you're offering — what's the catch?</summary>
+            <p>There is no catch. Our philosophy is simple: price to move, serve customers well, and build a business on volume and loyalty rather than squeezing every dollar from each transaction. We'd genuinely rather have 1,000 happy customers at $97 than 100 customers at $400. The Mega Collection gives us both: maximum value for customers and maximum reach for us. Everyone wins.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How is everything delivered and organized?</summary>
+            <p>One single Notion link gives you organized access to everything immediately after purchase. Everything is categorized, searchable, and logically structured — you won't spend time hunting for things. No downloads to manage, no files to organize, no version confusion. It works on any device and is always up to date. Access it from your laptop, phone, or tablet — whenever you need it.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can I get a refund if it's not what I expected?</summary>
+            <p>7-day money-back guarantee, no questions asked. Email Support@aigatecrashers.com within 7 days of purchase and we'll refund you immediately. That said — we're genuinely confident in this collection. Nobody has asked for a refund on the Mega Collection yet. We think you'll know within the first hour that you made the right decision.</p>
+          </details>
+        </section>
+
+      </div><!-- /product-content -->
+
+      <!-- RIGHT COLUMN: Purchase Box -->
+      <aside class="product-purchase-box js-sticky-box">
+        <div class="purchase-box-inner">
+          <div style="background: linear-gradient(135deg, rgba(255,215,0,0.08), rgba(124,58,237,0.06)); border: 1px solid rgba(255,215,0,0.2); border-radius: 8px; padding: 0.6rem 0.75rem; text-align: center; margin-bottom: 1rem; font-size: 0.8rem; color: #ffd700; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;">
+            &#9733; Top Tier &mdash; Everything Included
+          </div>
+          <div class="purchase-price">
+            <span class="purchase-price-main">$97</span>
+            <span class="purchase-price-note"><s style="color:var(--text-muted)">$336+ value</s> &mdash; Save $239+</span>
+          </div>
+          <ul class="purchase-includes">
+            <li>&#10003; 10,000 ChatGPT Prompts</li>
+            <li>&#10003; 1,000 Midjourney Prompts</li>
+            <li>&#10003; ChatGPT Accelerator Challenge</li>
+            <li>&#10003; ChatGPT Secrets (18 reports)</li>
+            <li>&#10003; 7-Figure AI Business Roadmap</li>
+            <li>&#10003; Ultimate Digital Product Kit</li>
+            <li>&#10003; Mini Course Creator</li>
+            <li>&#10003; All guides, templates &amp; extras</li>
+            <li>&#10003; Updates to all existing products</li>
+            <li>&#10003; Single Notion workspace</li>
+            <li>&#10003; 7-day money-back guarantee</li>
+          </ul>
+          <button class="cta-button cta-button-lg js-add-to-cart" data-product-id="mega-collection" data-product-name="The AI Mega Collection" data-product-price="97" style="width:100%">Add to Cart &mdash; $97</button>
+          <div class="purchase-guarantee">
+            <span class="guarantee-icon">&#128737;</span>
+            7-Day Money-Back Guarantee
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem; line-height: 1.5;">No upsell above this. This is everything.</p>
+        </div>
+      </aside>
+
+    </div><!-- /product-layout -->
+  </main>
+
+  <!-- BOTTOM CTA -->
+  <section class="product-cta-section">
+    <div class="container product-cta-inner">
+      <h2>Get The AI Mega Collection &mdash; $97</h2>
+      <p>16 products. 11,000+ prompts. 20 course modules. 500+ templates and resources. $336+ value. This is the complete AI Gatecrashers library. Everything you need to build, create, and scale with AI — in one place, for one price.</p>
+      <button class="cta-button cta-button-lg js-add-to-cart" data-product-id="mega-collection" data-product-name="The AI Mega Collection" data-product-price="97">Get Everything &mdash; $97</button>
+      <p class="cta-sub">Instant delivery via Notion &bull; $336+ value &bull; Updates included &bull; 7-day guarantee</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>AI Gatecrashers</h4>
+        <p>Practical AI tools and digital resources for entrepreneurs, side hustlers, and creators who want results — not theory.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="chatgpt-accelerator-challenge.html">ChatGPT Accelerator Challenge</a></li>
+          <li><a href="7-figure-ai-roadmap.html">7-Figure AI Business Roadmap</a></li>
+          <li><a href="ultra-ai-builder-kit.html">Ultra AI Builder Kit</a></li>
+          <li><a href="ai-mega-collection.html">AI Mega Collection</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../index.html#courses">Courses</a></li>
+          <li><a href="../index.html#products">All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="mailto:Support@aigatecrashers.com">Support@aigatecrashers.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 AI Gatecrashers. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/store.js"></script>
+</body>
+</html>
