@@ -3558,7 +3558,7 @@ body[data-hero-mode="light"] .nav-burger{background:var(--bg-panel);border-color
   font-size: clamp(44px, 6.2vw, 84px);
   line-height: 0.98;
   letter-spacing: -0.025em;
-  margin: 20px 0 22px;
+  margin: 40px 0 24px;
   white-space: pre-line;
 }
 .hero-title em{
