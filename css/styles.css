@@ -3555,7 +3555,7 @@ body[data-hero-mode="light"] .nav-burger{background:var(--bg-panel);border-color
 .hero-title{
   font-family: var(--f-serif);
   font-weight: 400;
-  font-size: clamp(44px, 6.2vw, 84px);
+  font-size: clamp(53px, 7.5vw, 100px);
   line-height: 0.98;
   letter-spacing: -0.025em;
   margin: 40px 0 24px;
