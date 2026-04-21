@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product — AI Gatecrashers</title>
+  <meta name="description" content="AI prompt packs, kits, and playbooks for small businesses and non-profits." />
+  <link rel="icon" href="/assets/logo-mark.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css?v=2026-04-21a" />
+  <style>
+    .pd-wrap { max-width: 780px; margin: 0 auto; padding: 48px 24px 96px; }
+    .pd-breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 32px; display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+    .pd-breadcrumb a { color: var(--text-muted); text-decoration:none; }
+    .pd-breadcrumb a:hover { color: var(--primary); }
+    .pd-tags { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
+    .pd-tag { font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.06em;
+               padding:4px 10px; border-radius:999px; background:rgba(15,164,217,.12); color:var(--primary); }
+    .pd-title { font-size: clamp(28px, 5vw, 44px); font-weight:800; line-height:1.1;
+                letter-spacing:-.02em; color: var(--text-heading); margin-bottom:16px; }
+    .pd-desc { font-size:1.1rem; color:var(--text-body); line-height:1.65; max-width:640px; margin-bottom:32px; }
+    .pd-price-row { display:flex; align-items:center; gap:20px; flex-wrap:wrap; margin-bottom:32px; }
+    .pd-price { font-size:2.4rem; font-weight:800; color: var(--text-heading); }
+    .pd-price-note { font-size:14px; color:var(--text-muted); }
+    .pd-actions { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:40px; }
+    .pd-btn-primary { display:inline-flex; align-items:center; gap:8px;
+                      padding:14px 28px; border-radius:999px; font-size:15px; font-weight:700;
+                      background: linear-gradient(135deg, var(--accent), var(--accent-deep));
+                      color:#fff; box-shadow: 0 6px 20px -6px var(--accent-glow);
+                      transition: transform .15s, box-shadow .2s; }
+    .pd-btn-primary:hover { transform:translateY(-2px); box-shadow: 0 10px 28px -6px var(--accent-glow); }
+    .pd-btn-secondary { display:inline-flex; align-items:center; gap:8px;
+                        padding:14px 24px; border-radius:999px; font-size:15px; font-weight:600;
+                        border: 1.5px solid var(--border); color:var(--text-body);
+                        transition: border-color .15s, color .15s; }
+    .pd-btn-secondary:hover { border-color:var(--primary); color:var(--text-heading); }
+    .pd-divider { border:none; border-top:1px solid var(--border); margin:40px 0; }
+    .pd-guarantee { display:flex; gap:14px; align-items:flex-start; padding:20px 24px;
+                    border-radius:14px; background:var(--bg-card); border:1px solid var(--border); }
+    .pd-guarantee-icon { font-size:22px; flex-shrink:0; }
+    .pd-guarantee-text { font-size:14px; color:var(--text-body); line-height:1.5; }
+    .pd-guarantee-text strong { color:var(--text-heading); }
+
+    /* Loading / error states */
+    .pd-loading { text-align:center; padding:80px 24px; color:var(--text-muted); font-size:15px; }
+    .pd-error { text-align:center; padding:80px 24px; }
+    .pd-error h2 { color:var(--text-heading); margin-bottom:12px; }
+    .pd-error p { color:var(--text-muted); margin-bottom:24px; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav-wrap" id="navWrap">
+  <div class="container">
+    <div class="nav">
+      <a href="/" class="brand">
+        <span class="brand-mark"></span>
+        <span class="wordmark" style="font-family: Helvetica"><span class="ai">Ai</span>GATECRASHERS</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#start">Start here</a>
+        <a href="/#trainings">Trainings</a>
+        <a href="/store/">Store</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#usecases" class="live">For non-profits</a>
+      </nav>
+      <div class="nav-right">
+        <a href="/store/" class="nav-search" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          Search <kbd>⌘K</kbd>
+        </a>
+        <a href="mailto:hello@aigatecrashers.com" class="nav-login">Contact Us</a>
+        <a href="/#newsletter" class="nav-cta">
+          <span class="cta-label-full">Get 50 free prompts</span>
+          <span class="cta-label-short">Free prompts</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <button class="nav-burger" aria-label="Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT CONTENT (rendered by JS) -->
+<main id="pd-main">
+  <div class="pd-loading">Loading product…</div>
+</main>
+
+<script>
+(function(){
+  var slug = new URLSearchParams(window.location.search).get('id');
+
+  if (!slug) { renderError('No product specified.', true); return; }
+
+  fetch('/products.json')
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(r.status); })
+    .then(function(products){
+      var p = products.find(function(x){ return x.slug === slug; });
+      if (!p) { renderError('Product not found.', true); return; }
+      renderProduct(p);
+    })
+    .catch(function(){ renderError('Could not load product data.', false); });
+
+  function renderProduct(p){
+    var tagHtml = (p.tags || []).map(function(t){
+      return '<span class="pd-tag">' + esc(t.replace(/-/g,' ')) + '</span>';
+    }).join('');
+
+    document.title = p.title + ' — AI Gatecrashers';
+
+    document.getElementById('pd-main').innerHTML =
+      '<div class="pd-wrap">' +
+        '<nav class="pd-breadcrumb" aria-label="Breadcrumb">' +
+          '<a href="/">Home</a> <span>›</span>' +
+          '<a href="/store/">Store</a> <span>›</span>' +
+          '<span>' + esc(p.title) + '</span>' +
+        '</nav>' +
+        (tagHtml ? '<div class="pd-tags">' + tagHtml + '</div>' : '') +
+        '<h1 class="pd-title">' + esc(p.title) + '</h1>' +
+        '<p class="pd-desc">' + esc(p.desc) + '</p>' +
+        '<div class="pd-price-row">' +
+          '<span class="pd-price">$' + p.price + '</span>' +
+          '<span class="pd-price-note">One-time · Instant download · Lifetime access</span>' +
+        '</div>' +
+        '<div class="pd-actions">' +
+          '<a href="' + esc(p.legacyUrl) + '" class="pd-btn-primary">' +
+            'Get instant access — $' + p.price +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M5 12h14M13 5l7 7-7 7"/></svg>' +
+          '</a>' +
+          '<a href="/store/" class="pd-btn-secondary">← Back to store</a>' +
+        '</div>' +
+        '<hr class="pd-divider" />' +
+        '<div class="pd-guarantee">' +
+          '<span class="pd-guarantee-icon">🛡</span>' +
+          '<div class="pd-guarantee-text">' +
+            '<strong>7-day money-back guarantee.</strong> Not useful? Email ' +
+            '<a href="mailto:hello@aigatecrashers.com">hello@aigatecrashers.com</a> ' +
+            'with your order number and we refund within 24 hours. No questions.' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  }
+
+  function renderError(msg, showStoreLink){
+    document.getElementById('pd-main').innerHTML =
+      '<div class="pd-error">' +
+        '<h2>Oops</h2>' +
+        '<p>' + esc(msg) + '</p>' +
+        (showStoreLink ? '<a href="/store/" class="pd-btn-secondary">Browse all products</a>' : '') +
+      '</div>';
+  }
+
+  function esc(s){
+    return String(s)
+      .replace(/&/g,'&amp;')
+      .replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;');
+  }
+})();
+</script>
+
+<script src="/js/nav.js?v=2026-04-21a"></script>
+</body>
+</html>

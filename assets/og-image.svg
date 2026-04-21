@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f1c3f"/>
+
+  <!-- Subtle grid -->
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow1" cx="30%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#0fa4d9" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#0f1c3f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="75%" cy="65%" r="40%">
+      <stop offset="0%" stop-color="#4cc9f0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0f1c3f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Cyan accent bar -->
+  <rect x="80" y="200" width="5" height="64" rx="3" fill="#0fa4d9"/>
+
+  <!-- Wordmark -->
+  <text x="105" y="248" font-family="Helvetica, Arial, sans-serif" font-size="52" font-weight="900" letter-spacing="-1" fill="#ffffff">
+    <tspan fill="#0fa4d9">Ai</tspan>GATECRASHERS
+  </text>
+
+  <!-- Tagline -->
+  <text x="106" y="300" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="400" fill="rgba(255,255,255,0.55)" letter-spacing="0.5">
+    AI for humans, not hype.
+  </text>
+
+  <!-- Description -->
+  <text x="106" y="370" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.38)">
+    Prompt packs · Playbooks · Kits for small business &amp; non-profits
+  </text>
+
+  <!-- Bottom pill -->
+  <rect x="106" y="430" width="220" height="44" rx="22" fill="#0fa4d9" opacity="0.15"/>
+  <rect x="106" y="430" width="220" height="44" rx="22" fill="none" stroke="#0fa4d9" stroke-width="1.5" opacity="0.4"/>
+  <text x="216" y="458" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#4cc9f0">
+    aigatecrashers.com
+  </text>
+</svg>

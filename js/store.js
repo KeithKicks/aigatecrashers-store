@@ -168,7 +168,7 @@
 
     // --- Cart total ---
     var total = cart.reduce(function (sum, item) { return sum + item.price; }, 0);
-    document.querySelectorAll('.cart-total-amount').forEach(function (el) {
+    document.querySelectorAll('.cart-total-amount, .js-cart-total').forEach(function (el) {
       el.textContent = '$' + total.toFixed(2);
     });
   }
@@ -420,7 +420,7 @@
   // ================================================================
 
   function setupMobileMenu() {
-    var toggle = document.querySelector('.mobile-menu-toggle');
+    var toggle = document.querySelector('.nav-burger') || document.querySelector('.mobile-menu-toggle');
     // Prefer canonical `.mobile-nav` (dropdown dedicated to mobile).
     // Fall back to legacy `.nav-links` for older pages.
     var nav    = document.querySelector('.mobile-nav') || document.querySelector('.nav-links');
@@ -475,6 +475,9 @@
           return;
         }
 
+        // Persist to localStorage
+        try { localStorage.setItem('newsletterEmail', input.value.trim()); } catch(e){}
+
         // Success state
         var parent = form.parentElement;
         form.style.display = 'none';
@@ -482,7 +485,7 @@
         var msg = document.createElement('p');
         msg.className = 'success-message';
         msg.style.display = 'block';
-        msg.textContent = "You\u2019re in! Check your email for your free prompts.";
+        msg.textContent = "Thanks! Check your inbox for your free prompts.";
         parent.appendChild(msg);
       });
     });
