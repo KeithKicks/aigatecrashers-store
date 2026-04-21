@@ -1,0 +1,462 @@
+[
+  {
+    "slug": "chatgpt-prompts-marketing",
+    "title": "500 ChatGPT Prompts for Marketing & Growth",
+    "price": 7,
+    "tags": ["get-customers", "content"],
+    "popularity": 92,
+    "date": "2025-09-01",
+    "desc": "SEO, social, content, and copy prompts that move the needle on real marketing outcomes.",
+    "legacyUrl": "/products/chatgpt-prompts-marketing.html"
+  },
+  {
+    "slug": "chatgpt-prompts-email-marketing",
+    "title": "500 ChatGPT Prompts for Email Marketing",
+    "price": 7,
+    "tags": ["get-customers", "content"],
+    "popularity": 88,
+    "date": "2025-11-01",
+    "desc": "List building, newsletters, automations, segmentation, revenue-driving broadcast emails.",
+    "legacyUrl": "/products/chatgpt-prompts-email-marketing.html"
+  },
+  {
+    "slug": "chatgpt-prompts-sales-funnels",
+    "title": "500 ChatGPT Prompts for Sales & Funnels",
+    "price": 9,
+    "tags": ["get-customers"],
+    "popularity": 82,
+    "date": "2025-11-10",
+    "desc": "Funnel architecture, landing pages, sales copy, upsells, and conversion-optimization prompts.",
+    "legacyUrl": "/products/chatgpt-prompts-sales-funnels.html"
+  },
+  {
+    "slug": "chatgpt-prompts-social-media",
+    "title": "500 ChatGPT Prompts for Social Media",
+    "price": 7,
+    "tags": ["get-customers", "content"],
+    "popularity": 85,
+    "date": "2025-11-14",
+    "desc": "Content strategy, short-form video, community building, paid ads, growth hacks.",
+    "legacyUrl": "/products/chatgpt-prompts-social-media.html"
+  },
+  {
+    "slug": "chatgpt-prompts-seo",
+    "title": "500 ChatGPT Prompts for SEO & Google Rankings",
+    "price": 7,
+    "tags": ["get-customers"],
+    "popularity": 78,
+    "date": "2025-12-02",
+    "desc": "On-page SEO, keyword research, link building, technical SEO, and local SEO prompts.",
+    "legacyUrl": "/products/chatgpt-prompts-seo.html"
+  },
+  {
+    "slug": "chatgpt-prompts-ecommerce",
+    "title": "500 ChatGPT Prompts for E-Commerce",
+    "price": 9,
+    "tags": ["get-customers"],
+    "popularity": 72,
+    "date": "2025-12-08",
+    "desc": "Store setup, product listings, traffic, retention, and marketplace selling strategies.",
+    "legacyUrl": "/products/chatgpt-prompts-ecommerce.html"
+  },
+  {
+    "slug": "chatgpt-prompts-b2b-sales",
+    "title": "500 ChatGPT Prompts for B2B Sales",
+    "price": 9,
+    "tags": ["get-customers"],
+    "popularity": 68,
+    "date": "2025-12-15",
+    "desc": "Account-based selling, LinkedIn prospecting, cold outreach, pipeline management.",
+    "legacyUrl": "/products/chatgpt-prompts-b2b-sales.html"
+  },
+  {
+    "slug": "228-phrases-that-sell",
+    "title": "228 Phrases That Sell",
+    "price": 7,
+    "tags": ["get-customers", "content"],
+    "popularity": 90,
+    "date": "2026-01-12",
+    "desc": "228 attention-grabbing power phrases that stop the scroll, boost clicks, and drive sales in any niche.",
+    "legacyUrl": "/products/228-phrases-that-sell.html"
+  },
+  {
+    "slug": "1-page-funnel-copy-generator",
+    "title": "1-Page Funnel Copy Generator",
+    "price": 12,
+    "tags": ["get-customers"],
+    "popularity": 75,
+    "date": "2026-02-01",
+    "desc": "One prompt generates a full sales page — intro, bullets, value stack, urgency, guarantee. 3 versions per run.",
+    "legacyUrl": "/products/1-page-funnel-copy-generator.html"
+  },
+  {
+    "slug": "viral-content-toolkit",
+    "title": "Viral Content Toolkit",
+    "price": 9,
+    "tags": ["get-customers", "content"],
+    "popularity": 80,
+    "date": "2026-01-20",
+    "desc": "31 viral hook templates + 16 hook frameworks + multi-platform adapter. A month of content in one sitting.",
+    "legacyUrl": "/products/viral-content-toolkit.html"
+  },
+  {
+    "slug": "copywriting-command-center",
+    "title": "Copywriting Command Center",
+    "price": 17,
+    "tags": ["get-customers", "content"],
+    "popularity": 70,
+    "date": "2026-02-20",
+    "desc": "1,051 copywriting prompts across every format — ads, emails, landing pages, VSL scripts, and more.",
+    "legacyUrl": "/products/copywriting-command-center.html"
+  },
+  {
+    "slug": "chatgpt-prompts-business",
+    "title": "500 ChatGPT Prompts for Business & Strategy",
+    "price": 7,
+    "tags": ["get-customers", "run-business"],
+    "popularity": 95,
+    "date": "2025-08-15",
+    "desc": "Strategy, operations, market research, and sales. The $7 business consultant in your pocket.",
+    "legacyUrl": "/products/chatgpt-prompts-business.html"
+  },
+  {
+    "slug": "ai-for-local-service-businesses",
+    "title": "AI for Local Service Businesses",
+    "price": 17,
+    "tags": ["get-customers", "run-business"],
+    "popularity": 76,
+    "date": "2026-04-20",
+    "desc": "Built for the trades. Quote-writing, review responses, Google Business copy, seasonal promos, nurture emails.",
+    "legacyUrl": "/products/ai-for-local-service-businesses.html"
+  },
+  {
+    "slug": "ai-for-etsy-shopify-shops",
+    "title": "AI for Etsy & Shopify Shop Owners",
+    "price": 17,
+    "tags": ["get-customers", "side-business"],
+    "popularity": 72,
+    "date": "2026-04-20",
+    "desc": "Listings that rank, emails that convert, replies that save time. Built for solo shop operators.",
+    "legacyUrl": "/products/ai-for-etsy-shopify-shops.html"
+  },
+  {
+    "slug": "ai-marketing-os",
+    "title": "The AI Marketing OS",
+    "price": 37,
+    "tags": ["get-customers", "run-business"],
+    "popularity": 70,
+    "date": "2026-04-20",
+    "desc": "A marketing operating system in Notion. 10 SOPs + prompt workflows + a 20-min walkthrough video.",
+    "legacyUrl": "/products/ai-marketing-os.html"
+  },
+  {
+    "slug": "marketing-sops-pack",
+    "title": "55 Digital Marketing SOPs",
+    "price": 17,
+    "tags": ["run-business"],
+    "popularity": 82,
+    "date": "2025-09-12",
+    "desc": "Plug-and-play procedures your team can follow today. Email campaigns, social, SEO audits, ad copy.",
+    "legacyUrl": "/products/marketing-sops-pack.html"
+  },
+  {
+    "slug": "chatgpt-prompts-productivity",
+    "title": "500 ChatGPT Prompts for Productivity & Career",
+    "price": 7,
+    "tags": ["run-business"],
+    "popularity": 74,
+    "date": "2025-09-20",
+    "desc": "Workflow hacks, meeting prep, performance reviews, career planning, and time-saving prompts.",
+    "legacyUrl": "/products/chatgpt-prompts-productivity.html"
+  },
+  {
+    "slug": "chatgpt-prompts-saas-tech",
+    "title": "500 ChatGPT Prompts for SaaS & Tech",
+    "price": 7,
+    "tags": ["run-business"],
+    "popularity": 62,
+    "date": "2025-12-10",
+    "desc": "Product dev, growth, pricing, onboarding, retention, and technical ops prompts.",
+    "legacyUrl": "/products/chatgpt-prompts-saas-tech.html"
+  },
+  {
+    "slug": "chatgpt-prompts-act-as",
+    "title": "150+ \"Act As\" Role-Play Prompts",
+    "price": 7,
+    "tags": ["run-business"],
+    "popularity": 76,
+    "date": "2026-01-05",
+    "desc": "Turn ChatGPT into a CEO, consultant, developer, coach, and 145+ more expert personas.",
+    "legacyUrl": "/products/chatgpt-prompts-act-as.html"
+  },
+  {
+    "slug": "ai-tool-directory",
+    "title": "The AI Tool Directory (1,500+ Tools)",
+    "price": 12,
+    "tags": ["run-business"],
+    "popularity": 70,
+    "date": "2026-02-15",
+    "desc": "1,500+ AI tools in a searchable Notion database. 8 bonuses and a 10,000 prompt library.",
+    "legacyUrl": "/products/ai-tool-directory.html"
+  },
+  {
+    "slug": "75-hard-notion-tracker",
+    "title": "75 Hard Notion Tracker",
+    "price": 9,
+    "tags": ["run-business"],
+    "popularity": 60,
+    "date": "2026-02-25",
+    "desc": "Complete 75 Hard challenge tracker — habits, workouts, meals, book notes, and photos in Notion.",
+    "legacyUrl": "/products/75-hard-notion-tracker.html"
+  },
+  {
+    "slug": "chatgpt-secrets-bundle",
+    "title": "ChatGPT Secrets: 18 Reports",
+    "price": 12,
+    "tags": ["run-business"],
+    "popularity": 65,
+    "date": "2025-10-28",
+    "desc": "18 insider reports on advanced ChatGPT strategies most people miss.",
+    "legacyUrl": "/products/chatgpt-secrets-bundle.html"
+  },
+  {
+    "slug": "ai-starter-pack",
+    "title": "The AI Starter Pack for Small Business",
+    "price": 9,
+    "tags": ["run-business", "get-customers", "content"],
+    "popularity": 88,
+    "date": "2026-04-20",
+    "desc": "The no-jargon starter pack for first-time AI users. 50 prompts, a 1-page quick-start, and a 7-day plan.",
+    "legacyUrl": "/products/ai-starter-pack.html"
+  },
+  {
+    "slug": "grant-writing-with-ai",
+    "title": "Grant Writing with AI: 80 Prompts + Templates",
+    "price": 17,
+    "tags": ["run-business", "get-customers"],
+    "popularity": 84,
+    "date": "2026-04-20",
+    "desc": "Draft grants 3x faster. 80 prompts for LOIs, case statements, budgets, and impact reports + 3 templates.",
+    "legacyUrl": "/products/grant-writing-with-ai.html"
+  },
+  {
+    "slug": "nonprofit-communications-pack",
+    "title": "The Non-Profit Communications Pack",
+    "price": 17,
+    "tags": ["get-customers", "run-business"],
+    "popularity": 80,
+    "date": "2026-04-20",
+    "desc": "Donor thank-yous, volunteer recruitment, newsletters, board reports. 60+ templates for lean non-profit teams.",
+    "legacyUrl": "/products/nonprofit-communications-pack.html"
+  },
+  {
+    "slug": "ai-for-coaches-and-therapists",
+    "title": "AI for Coaches & Therapists",
+    "price": 17,
+    "tags": ["run-business", "get-customers"],
+    "popularity": 74,
+    "date": "2026-04-20",
+    "desc": "Intake, session notes, marketing copy, and a liability-safe language library for private practice.",
+    "legacyUrl": "/products/ai-for-coaches-and-therapists.html"
+  },
+  {
+    "slug": "stop-guessing-prompt-builder",
+    "title": "The Stop Guessing Prompt Builder",
+    "price": 3,
+    "tags": ["run-business", "content", "get-customers"],
+    "popularity": 95,
+    "date": "2026-04-20",
+    "desc": "One master prompt that writes better prompts for you. Works with ChatGPT, Claude, or Gemini.",
+    "legacyUrl": "/products/stop-guessing-prompt-builder.html"
+  },
+  {
+    "slug": "ai-side-hustle-starter-kit",
+    "title": "The AI Side Hustle Starter Kit",
+    "price": 9,
+    "tags": ["side-business"],
+    "popularity": 90,
+    "date": "2025-08-20",
+    "desc": "101 business ideas + 487 niches + ChatGPT quick-start. The \"where do I even start\" kit.",
+    "legacyUrl": "/products/ai-side-hustle-starter-kit.html"
+  },
+  {
+    "slug": "mini-course-blueprint",
+    "title": "The Mini Course Blueprint",
+    "price": 17,
+    "tags": ["side-business"],
+    "popularity": 72,
+    "date": "2025-10-15",
+    "desc": "Build and sell a mini-course in a weekend. The complete 5-step system.",
+    "legacyUrl": "/products/mini-course-blueprint.html"
+  },
+  {
+    "slug": "chatgpt-prompts-side-hustles",
+    "title": "500 ChatGPT Prompts for Side Hustles",
+    "price": 9,
+    "tags": ["side-business"],
+    "popularity": 80,
+    "date": "2025-09-28",
+    "desc": "Launch and scale your online business with AI-powered prompts organized by monetization path.",
+    "legacyUrl": "/products/chatgpt-prompts-side-hustles.html"
+  },
+  {
+    "slug": "300-ways-make-money-chatgpt",
+    "title": "300+ Ways To Make Money With ChatGPT",
+    "price": 7,
+    "tags": ["side-business"],
+    "popularity": 78,
+    "date": "2026-01-28",
+    "desc": "The ultimate idea bank — 300+ proven methods to earn income with ChatGPT across freelancing, content, and e-commerce.",
+    "legacyUrl": "/products/300-ways-make-money-chatgpt.html"
+  },
+  {
+    "slug": "no-code-empire-prompts",
+    "title": "No-Code Empire Prompts",
+    "price": 17,
+    "tags": ["side-business"],
+    "popularity": 68,
+    "date": "2026-03-01",
+    "desc": "978 prompts for building no-code apps, landing pages, and MVPs without writing code.",
+    "legacyUrl": "/products/no-code-empire-prompts.html"
+  },
+  {
+    "slug": "7-figure-ai-roadmap",
+    "title": "The 7-Figure AI Business Roadmap",
+    "price": 47,
+    "tags": ["side-business"],
+    "popularity": 72,
+    "date": "2025-10-01",
+    "desc": "10-module system for building a digital product empire with AI. Frameworks + templates.",
+    "legacyUrl": "/products/7-figure-ai-roadmap.html"
+  },
+  {
+    "slug": "chatgpt-prompts-creators",
+    "title": "500 ChatGPT Prompts for Creators & Writers",
+    "price": 7,
+    "tags": ["content"],
+    "popularity": 78,
+    "date": "2025-09-06",
+    "desc": "Unlock creative flow for writing, design, podcasting, and video production.",
+    "legacyUrl": "/products/chatgpt-prompts-creators.html"
+  },
+  {
+    "slug": "chatgpt-prompts-crypto",
+    "title": "500 ChatGPT Prompts for Crypto & DeFi",
+    "price": 7,
+    "tags": ["content"],
+    "popularity": 48,
+    "date": "2025-12-22",
+    "desc": "DeFi strategies, trading analysis, portfolio management, security, on-chain research.",
+    "legacyUrl": "/products/chatgpt-prompts-crypto.html"
+  },
+  {
+    "slug": "ai-megaprompt-vault",
+    "title": "AI Megaprompt Vault",
+    "price": 27,
+    "tags": ["content", "bundles"],
+    "popularity": 65,
+    "date": "2026-03-15",
+    "desc": "The curated stash of our highest-performing AI prompts across every category, in one vault.",
+    "legacyUrl": "/products/ai-megaprompt-vault.html"
+  },
+  {
+    "slug": "content-repurposing-machine",
+    "title": "The Content Repurposing Machine",
+    "price": 47,
+    "tags": ["content", "get-customers"],
+    "popularity": 68,
+    "date": "2026-04-20",
+    "desc": "Turn one blog or video into 12 social posts, 3 emails, 1 newsletter. The prompt chain + platform adapters.",
+    "legacyUrl": "/products/content-repurposing-machine.html"
+  },
+  {
+    "slug": "midjourney-prompts-photography",
+    "title": "200 Midjourney Prompts: Photography & Realism",
+    "price": 7,
+    "tags": ["image"],
+    "popularity": 70,
+    "date": "2025-10-20",
+    "desc": "Photorealistic prompts for landscapes, portraits, product shots, and action scenes.",
+    "legacyUrl": "/products/midjourney-prompts-photography.html"
+  },
+  {
+    "slug": "midjourney-prompts-cyberpunk",
+    "title": "200 Midjourney Prompts: Cyberpunk & Digital Art",
+    "price": 7,
+    "tags": ["image"],
+    "popularity": 65,
+    "date": "2025-10-22",
+    "desc": "Neon-soaked cyberpunk and cutting-edge digital-art prompts with style references included.",
+    "legacyUrl": "/products/midjourney-prompts-cyberpunk.html"
+  },
+  {
+    "slug": "midjourney-prompts-fantasy",
+    "title": "200 Midjourney Prompts: Fantasy & Sci-Fi",
+    "price": 7,
+    "tags": ["image"],
+    "popularity": 62,
+    "date": "2025-10-25",
+    "desc": "Epic fantasy, steampunk, and sci-fi visuals ready to generate.",
+    "legacyUrl": "/products/midjourney-prompts-fantasy.html"
+  },
+  {
+    "slug": "chatgpt-accelerator-challenge",
+    "title": "The ChatGPT Accelerator Challenge",
+    "price": 27,
+    "tags": ["bundles", "run-business"],
+    "popularity": 96,
+    "date": "2025-08-30",
+    "desc": "10-day guided training: go from beginner to confident ChatGPT user. One lesson a day.",
+    "legacyUrl": "/products/chatgpt-accelerator-challenge.html"
+  },
+  {
+    "slug": "ultra-ai-builder-kit",
+    "title": "The Ultra AI Builder Kit",
+    "price": 67,
+    "tags": ["bundles", "side-business"],
+    "popularity": 68,
+    "date": "2025-11-05",
+    "desc": "Full roadmap + 500 marketing resources. For people ready to build and scale.",
+    "legacyUrl": "/products/ultra-ai-builder-kit.html"
+  },
+  {
+    "slug": "ai-mega-collection",
+    "title": "The AI Mega Collection",
+    "price": 97,
+    "tags": ["bundles"],
+    "popularity": 70,
+    "date": "2025-11-20",
+    "desc": "Every prompt, every course, every template. The complete library at ~$3 per product.",
+    "legacyUrl": "/products/ai-mega-collection.html"
+  },
+  {
+    "slug": "solo-marketers-toolkit",
+    "title": "The Solo Marketer's Toolkit",
+    "price": 27,
+    "tags": ["get-customers", "content", "bundles"],
+    "popularity": 86,
+    "date": "2026-04-20",
+    "desc": "Everything a 1-person marketing team needs. 1,500+ prompts for marketing, social, and email — pre-bundled.",
+    "legacyUrl": "/products/solo-marketers-toolkit.html"
+  },
+  {
+    "slug": "freelancer-ai-client-kit",
+    "title": "The Freelancer's AI Client Kit",
+    "price": 27,
+    "tags": ["side-business", "get-customers", "bundles"],
+    "popularity": 82,
+    "date": "2026-04-20",
+    "desc": "Win more clients. Deliver faster. Business prompts + 228 phrases that sell + copywriting essentials.",
+    "legacyUrl": "/products/freelancer-ai-client-kit.html"
+  },
+  {
+    "slug": "nonprofit-ai-playbook",
+    "title": "AI for Mission-Led Orgs: The Full Playbook",
+    "price": 37,
+    "tags": ["run-business", "get-customers", "bundles"],
+    "popularity": 78,
+    "date": "2026-04-20",
+    "desc": "The complete non-profit AI playbook. Grants + communications + 30-day rollout plan + board FAQ. One bundle.",
+    "legacyUrl": "/products/nonprofit-ai-playbook.html"
+  }
+]
