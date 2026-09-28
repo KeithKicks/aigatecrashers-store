@@ -1,0 +1,15 @@
+{
+  "name": "aigatecrashers-store",
+  "private": true,
+  "description": "Static storefront for aigatecrashers.com. Node is only used for build helpers (OG image compression).",
+  "scripts": {
+    "og": "python3 scripts/gen_og_images.py",
+    "sitemap": "python3 scripts/gen_sitemap.py",
+    "checkout": "python3 scripts/wire_checkout.py --apply",
+    "shell": "python3 scripts/sync_shell.py --apply"
+  },
+  "devDependencies": {
+    "pngjs": "^7.0.0",
+    "upng-js": "^2.1.0"
+  }
+}

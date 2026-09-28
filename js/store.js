@@ -29,6 +29,30 @@
     setupSmoothScroll();
     setupFadeAnimations();
     setupScrollTopButton();
+    applyUrlParams();
+  }
+
+  // ================================================================
+  // URL PARAMS: /store/?filter=<tag> jumps to that section,
+  //             /store/?q=<term> pre-fills search (WebSite SearchAction)
+  // ================================================================
+
+  function applyUrlParams() {
+    var params;
+    try { params = new URLSearchParams(window.location.search); } catch (e) { return; }
+    var q = params.get('q');
+    var input = document.getElementById('store-search-input');
+    if (q && input) {
+      input.value = q;
+      input.dispatchEvent(new Event('input'));
+    }
+    var filter = params.get('filter');
+    if (filter) {
+      var section = document.getElementById(filter);
+      if (section) {
+        setTimeout(function () { section.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 50);
+      }
+    }
   }
 
   // ================================================================
@@ -168,7 +192,7 @@
 
     // --- Cart total ---
     var total = cart.reduce(function (sum, item) { return sum + item.price; }, 0);
-    document.querySelectorAll('.cart-total-amount').forEach(function (el) {
+    document.querySelectorAll('.cart-total-amount, .js-cart-total').forEach(function (el) {
       el.textContent = '$' + total.toFixed(2);
     });
   }
@@ -421,6 +445,7 @@
 
   function setupMobileMenu() {
     var toggle = document.querySelector('.mobile-menu-toggle');
+    if (!toggle) return; // .nav-burger pages are handled by nav.js
     // Prefer canonical `.mobile-nav` (dropdown dedicated to mobile).
     // Fall back to legacy `.nav-links` for older pages.
     var nav    = document.querySelector('.mobile-nav') || document.querySelector('.nav-links');
