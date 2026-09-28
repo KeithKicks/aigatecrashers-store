@@ -1,0 +1,376 @@
+{
+  "_comment": "Maps each static product page (products/<slug>.html) to its ClickFunnels product. checkout_base + cf_path = the URL the Buy button sends people to. Re-run scripts/wire_checkout.py after editing.",
+  "checkout_base": "https://aigatecrashers.myclickfunnels.com/store/products",
+  "workspace_url": "https://aigatecrashers.myclickfunnels.com",
+  "workspace_id": 203529,
+  "products": [
+    {
+      "slug": "1-page-funnel-copy-generator",
+      "title": "1-Page Funnel Copy Generator",
+      "price": 12,
+      "cf_product_id": 1001319,
+      "cf_variant_id": 5579632,
+      "cf_path": "/1-page-funnel-copy-generator"
+    },
+    {
+      "slug": "228-phrases-that-sell",
+      "title": "228 Phrases That Sell",
+      "price": 7,
+      "cf_product_id": 1001320,
+      "cf_variant_id": 5579633,
+      "cf_path": "/228-phrases-that-sell"
+    },
+    {
+      "slug": "300-ways-make-money-chatgpt",
+      "title": "300+ Ways To Make Money With ChatGPT",
+      "price": 7,
+      "cf_product_id": 1001321,
+      "cf_variant_id": 5579634,
+      "cf_path": "/300-ways-to-make-money-with-chatgpt"
+    },
+    {
+      "slug": "7-figure-ai-roadmap",
+      "title": "The 7-Figure AI Business Roadmap",
+      "price": 47,
+      "cf_product_id": 1001322,
+      "cf_variant_id": 5579635,
+      "cf_path": "/the-7-figure-ai-business-roadmap"
+    },
+    {
+      "slug": "75-hard-notion-tracker",
+      "title": "75 Hard Notion Tracker",
+      "price": 9,
+      "cf_product_id": 1001323,
+      "cf_variant_id": 5579636,
+      "cf_path": "/75-hard-notion-tracker"
+    },
+    {
+      "slug": "ai-for-coaches-and-therapists",
+      "title": "AI for Coaches & Therapists",
+      "price": 17,
+      "cf_product_id": 1001324,
+      "cf_variant_id": 5579637,
+      "cf_path": "/ai-for-coaches-therapists"
+    },
+    {
+      "slug": "ai-for-etsy-shopify-shops",
+      "title": "AI for Etsy & Shopify Shop Owners",
+      "price": 17,
+      "cf_product_id": 1001325,
+      "cf_variant_id": 5579638,
+      "cf_path": "/ai-for-etsy-shopify-shop-owners"
+    },
+    {
+      "slug": "ai-for-local-service-businesses",
+      "title": "AI for Local Service Businesses",
+      "price": 17,
+      "cf_product_id": 1001326,
+      "cf_variant_id": 5579639,
+      "cf_path": "/ai-for-local-service-businesses"
+    },
+    {
+      "slug": "ai-marketing-os",
+      "title": "The AI Marketing OS",
+      "price": 37,
+      "cf_product_id": 1001327,
+      "cf_variant_id": 5579640,
+      "cf_path": "/the-ai-marketing-os"
+    },
+    {
+      "slug": "ai-mega-collection",
+      "title": "The AI Mega Collection",
+      "price": 97,
+      "cf_product_id": 1001328,
+      "cf_variant_id": 5579641,
+      "cf_path": "/the-ai-mega-collection"
+    },
+    {
+      "slug": "ai-megaprompt-vault",
+      "title": "AI Business Megaprompt Vault",
+      "price": 47,
+      "cf_product_id": 1001329,
+      "cf_variant_id": 5579642,
+      "cf_path": "/ai-business-megaprompt-vault"
+    },
+    {
+      "slug": "ai-side-hustle-starter-kit",
+      "title": "The AI Side Hustle Starter Kit",
+      "price": 9,
+      "cf_product_id": 1001330,
+      "cf_variant_id": 5579643,
+      "cf_path": "/the-ai-side-hustle-starter-kit"
+    },
+    {
+      "slug": "ai-starter-pack",
+      "title": "The AI Starter Pack for Small Business",
+      "price": 9,
+      "cf_product_id": 1001331,
+      "cf_variant_id": 5579644,
+      "cf_path": "/the-ai-starter-pack-for-small-business"
+    },
+    {
+      "slug": "ai-tool-directory",
+      "title": "The AI Tool Directory (1,500+ Tools)",
+      "price": 12,
+      "cf_product_id": 1001332,
+      "cf_variant_id": 5579645,
+      "cf_path": "/the-ai-tool-directory-1-500-tools"
+    },
+    {
+      "slug": "chatgpt-accelerator-challenge",
+      "title": "The ChatGPT Accelerator Challenge",
+      "price": 27,
+      "cf_product_id": 1001333,
+      "cf_variant_id": 5579646,
+      "cf_path": "/the-chatgpt-accelerator-challenge"
+    },
+    {
+      "slug": "chatgpt-prompts-act-as",
+      "title": "150+ Act As Role-Play Prompts",
+      "price": 7,
+      "cf_product_id": 1001335,
+      "cf_variant_id": 5579648,
+      "cf_path": "/150-act-as-role-play-prompts"
+    },
+    {
+      "slug": "chatgpt-prompts-b2b-sales",
+      "title": "500 ChatGPT Prompts for B2B Sales",
+      "price": 9,
+      "cf_product_id": 1001336,
+      "cf_variant_id": 5579649,
+      "cf_path": "/500-chatgpt-prompts-for-b2b-sales"
+    },
+    {
+      "slug": "chatgpt-prompts-business",
+      "title": "500 ChatGPT Prompts for Business & Strategy",
+      "price": 7,
+      "cf_product_id": 1001337,
+      "cf_variant_id": 5579650,
+      "cf_path": "/500-chatgpt-prompts-for-business-strategy"
+    },
+    {
+      "slug": "chatgpt-prompts-creators",
+      "title": "500 ChatGPT Prompts for Creators & Writers",
+      "price": 7,
+      "cf_product_id": 1001338,
+      "cf_variant_id": 5579651,
+      "cf_path": "/500-chatgpt-prompts-for-creators-writers"
+    },
+    {
+      "slug": "chatgpt-prompts-crypto",
+      "title": "500 ChatGPT Prompts for Crypto & DeFi",
+      "price": 7,
+      "cf_product_id": 1001339,
+      "cf_variant_id": 5579652,
+      "cf_path": "/500-chatgpt-prompts-for-crypto-defi"
+    },
+    {
+      "slug": "chatgpt-prompts-ecommerce",
+      "title": "500 ChatGPT Prompts for E-Commerce",
+      "price": 9,
+      "cf_product_id": 1001340,
+      "cf_variant_id": 5579653,
+      "cf_path": "/500-chatgpt-prompts-for-e-commerce"
+    },
+    {
+      "slug": "chatgpt-prompts-email-marketing",
+      "title": "500 ChatGPT Prompts for Email Marketing",
+      "price": 7,
+      "cf_product_id": 1001341,
+      "cf_variant_id": 5579654,
+      "cf_path": "/500-chatgpt-prompts-for-email-marketing"
+    },
+    {
+      "slug": "chatgpt-prompts-marketing",
+      "title": "500 ChatGPT Prompts for Marketing & Growth",
+      "price": 7,
+      "cf_product_id": 1001342,
+      "cf_variant_id": 5579655,
+      "cf_path": "/500-chatgpt-prompts-for-marketing-growth"
+    },
+    {
+      "slug": "chatgpt-prompts-productivity",
+      "title": "500 ChatGPT Prompts for Productivity & Career",
+      "price": 7,
+      "cf_product_id": 1001344,
+      "cf_variant_id": 5579657,
+      "cf_path": "/500-chatgpt-prompts-for-productivity-career"
+    },
+    {
+      "slug": "chatgpt-prompts-saas-tech",
+      "title": "500 ChatGPT Prompts for SaaS & Tech",
+      "price": 7,
+      "cf_product_id": 1001345,
+      "cf_variant_id": 5579658,
+      "cf_path": "/500-chatgpt-prompts-for-saas-tech"
+    },
+    {
+      "slug": "chatgpt-prompts-sales-funnels",
+      "title": "500 ChatGPT Prompts for Sales & Funnels",
+      "price": 9,
+      "cf_product_id": 1001346,
+      "cf_variant_id": 5579659,
+      "cf_path": "/500-chatgpt-prompts-for-sales-funnels"
+    },
+    {
+      "slug": "chatgpt-prompts-seo",
+      "title": "500 ChatGPT Prompts for SEO & Google Rankings",
+      "price": 7,
+      "cf_product_id": 1001347,
+      "cf_variant_id": 5579660,
+      "cf_path": "/500-chatgpt-prompts-for-seo-google-rankings"
+    },
+    {
+      "slug": "chatgpt-prompts-side-hustles",
+      "title": "500 ChatGPT Prompts for Side Hustles & E-Commerce",
+      "price": 9,
+      "cf_product_id": 1001348,
+      "cf_variant_id": 5579661,
+      "cf_path": "/500-chatgpt-prompts-for-side-hustles-e-commerce"
+    },
+    {
+      "slug": "chatgpt-prompts-social-media",
+      "title": "500 ChatGPT Prompts for Social Media",
+      "price": 7,
+      "cf_product_id": 1001349,
+      "cf_variant_id": 5579662,
+      "cf_path": "/500-chatgpt-prompts-for-social-media"
+    },
+    {
+      "slug": "chatgpt-secrets-bundle",
+      "title": "ChatGPT Secrets: 18 Reports Bundle",
+      "price": 12,
+      "cf_product_id": 1001350,
+      "cf_variant_id": 5579663,
+      "cf_path": "/chatgpt-secrets-18-reports-bundle"
+    },
+    {
+      "slug": "content-repurposing-machine",
+      "title": "The Content Repurposing Machine",
+      "price": 47,
+      "cf_product_id": 1001351,
+      "cf_variant_id": 5579664,
+      "cf_path": "/the-content-repurposing-machine"
+    },
+    {
+      "slug": "copywriting-command-center",
+      "title": "Copywriting Command Center",
+      "price": 27,
+      "cf_product_id": 1001352,
+      "cf_variant_id": 5579665,
+      "cf_path": "/copywriting-command-center"
+    },
+    {
+      "slug": "freelancer-ai-client-kit",
+      "title": "The Freelancer's AI Client Kit",
+      "price": 27,
+      "cf_product_id": 1001353,
+      "cf_variant_id": 5579666,
+      "cf_path": "/the-freelancer-s-ai-client-kit"
+    },
+    {
+      "slug": "grant-writing-with-ai",
+      "title": "Grant Writing with AI: 80 Prompts + Templates",
+      "price": 17,
+      "cf_product_id": 1001354,
+      "cf_variant_id": 5579667,
+      "cf_path": "/grant-writing-with-ai-80-prompts-templates"
+    },
+    {
+      "slug": "marketing-sops-pack",
+      "title": "55 Digital Marketing SOPs",
+      "price": 17,
+      "cf_product_id": 1001355,
+      "cf_variant_id": 5579668,
+      "cf_path": "/55-digital-marketing-sops"
+    },
+    {
+      "slug": "midjourney-prompts-cyberpunk",
+      "title": "200 Midjourney Prompts: Cyberpunk & Digital Art",
+      "price": 7,
+      "cf_product_id": 1001356,
+      "cf_variant_id": 5579669,
+      "cf_path": "/200-midjourney-prompts-cyberpunk-digital-art"
+    },
+    {
+      "slug": "midjourney-prompts-fantasy",
+      "title": "200 Midjourney Prompts: Fantasy & Sci-Fi Edition",
+      "price": 7,
+      "cf_product_id": 1001357,
+      "cf_variant_id": 5579670,
+      "cf_path": "/200-midjourney-prompts-fantasy-sci-fi-edition"
+    },
+    {
+      "slug": "midjourney-prompts-photography",
+      "title": "200 Midjourney Prompts: Photography & Realism",
+      "price": 7,
+      "cf_product_id": 1001358,
+      "cf_variant_id": 5579671,
+      "cf_path": "/200-midjourney-prompts-photography-realism"
+    },
+    {
+      "slug": "mini-course-blueprint",
+      "title": "The Mini Course Blueprint",
+      "price": 17,
+      "cf_product_id": 1001359,
+      "cf_variant_id": 5579672,
+      "cf_path": "/the-mini-course-blueprint"
+    },
+    {
+      "slug": "no-code-empire-prompts",
+      "title": "No-Code Empire Prompt Pack",
+      "price": 17,
+      "cf_product_id": 1001360,
+      "cf_variant_id": 5579673,
+      "cf_path": "/no-code-empire-prompt-pack"
+    },
+    {
+      "slug": "nonprofit-ai-playbook",
+      "title": "AI for Mission-Led Orgs: The Full Playbook",
+      "price": 47,
+      "cf_product_id": 1001361,
+      "cf_variant_id": 5579674,
+      "cf_path": "/ai-for-mission-led-orgs-the-full-playbook"
+    },
+    {
+      "slug": "nonprofit-communications-pack",
+      "title": "The Non-Profit Communications Pack",
+      "price": 17,
+      "cf_product_id": 1001362,
+      "cf_variant_id": 5579675,
+      "cf_path": "/the-non-profit-communications-pack"
+    },
+    {
+      "slug": "solo-marketers-toolkit",
+      "title": "The Solo Marketer's Toolkit",
+      "price": 27,
+      "cf_product_id": 1001363,
+      "cf_variant_id": 5579676,
+      "cf_path": "/the-solo-marketer-s-toolkit"
+    },
+    {
+      "slug": "stop-guessing-prompt-builder",
+      "title": "The Stop Guessing Prompt Builder",
+      "price": 3,
+      "cf_product_id": 1001364,
+      "cf_variant_id": 5579677,
+      "cf_path": "/the-stop-guessing-prompt-builder"
+    },
+    {
+      "slug": "ultra-ai-builder-kit",
+      "title": "The Ultra AI Business Builder Kit",
+      "price": 67,
+      "cf_product_id": 1001365,
+      "cf_variant_id": 5579678,
+      "cf_path": "/the-ultra-ai-business-builder-kit"
+    },
+    {
+      "slug": "viral-content-toolkit",
+      "title": "Viral Content Toolkit",
+      "price": 9,
+      "cf_product_id": 1001366,
+      "cf_variant_id": 5579679,
+      "cf_path": "/viral-content-toolkit"
+    }
+  ]
+}
